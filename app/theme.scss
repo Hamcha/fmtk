@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway:400,700');
+
+//font-family: 'Raleway', sans-serif;
+//font-family: 'Oswald', sans-serif;
+
+body {
+	background: #eaeaea;
+	font-family: 'Raleway', sans-serif;
+	margin: 0; padding: 0;
+}
+
+header {
+	background: linear-gradient(to bottom, white, #f3f3f3);
+	border-bottom: 1px solid #ccc;
+	margin: 0; padding: 0;
+	padding-left: 10pt;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	padding: 0; margin: 25pt 0 15pt 0;
+}
+.prehead {
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: -15pt;
+	padding-top: 10pt;
+	font-size: 10pt;
+	color: #666;
+}
