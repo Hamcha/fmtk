@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400|Libre+Baskerville|Raleway:400,700');
 
 //font-family: 'Oswald', sans-serif;
+//font-family: 'Libre Baskerville', serif;
 
 body {
 	background: #efeff4;
@@ -19,12 +20,18 @@ header input[type=search] {
 	border-radius: 10px;
 	font-size: 12pt;
 	padding: 8px 10px;
+	padding-left: 30px;
 	color: black;
 	-webkit-appearance: none;
 	transition: all 100ms;
+	background-image: url("res/icons/search.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	outline: 0;
 }
 
 header.shrink input[type=search] {
 	font-size: 10pt;
 	padding: 4px 8px;
+	padding-left: 20px;
 }

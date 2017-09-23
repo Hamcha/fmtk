@@ -1,3 +1,18 @@
+export type Card = {
+	Name: string,
+	CardType: string,
+	MonsterType: ?string,
+	Level: ?int,
+	ATK: ?int,
+	DEF: ?int,
+	Cost: ?int,
+	GuardianStars: ?string,
+	Password: ?string,
+	Lore: string,
+	ImageID: string,
+	Wiki: string
+};
+
 const cards = {
 	"1": {
 		"Name": "Blue-eyes White Dragon",
@@ -10,7 +25,7 @@ const cards = {
 		"GuardianStars": "Sun,Mars",
 		"Password": "89631139",
 		"Lore": "An extremely rare card with unsurpassed attack and defense power.",
-		"ImageID": "BlueeyesWhiteDragon-FMR-EN-VG.png",
+		"ImageID": "BlueeyesWhiteDragon-FMR-EN-VG.jpg",
 		"Wiki": "Blue-eyes White Dragon (FMR)"
 	},
 	"10": {
@@ -24,7 +39,7 @@ const cards = {
 		"GuardianStars": "Mercury,Moon",
 		"Password": "87564352",
 		"Lore": "A dragon that dwells in the depths of darkness. Its defensive capability suffers from its poor eyesight",
-		"ImageID": "BlacklandFireDragon-FMR-EN-VG.png",
+		"ImageID": "BlacklandFireDragon-FMR-EN-VG.jpg",
 		"Wiki": "Blackland Fire Dragon (FMR)"
 	},
 	"100": {
@@ -38,7 +53,7 @@ const cards = {
 		"GuardianStars": "Uranus,Moon",
 		"Password": "55550921",
 		"Lore": "A warrior that fights with his bare hands.",
-		"ImageID": "BattleWarrior-FMR-EN-VG.png",
+		"ImageID": "BattleWarrior-FMR-EN-VG.jpg",
 		"Wiki": "Battle Warrior (FMR)"
 	},
 	"101": {
@@ -52,7 +67,7 @@ const cards = {
 		"GuardianStars": "Mars,Saturn",
 		"Password": "92944626",
 		"Lore": "Soaring over its enemies on wings of crimson fire, this monster attacks by blasting flames from its body.",
-		"ImageID": "WingsofWickedFlame-FMR-EN-VG.png",
+		"ImageID": "WingsofWickedFlame-FMR-EN-VG.jpg",
 		"Wiki": "Wings of Wicked Flame (FMR)"
 	},
 	"102": {
@@ -66,7 +81,7 @@ const cards = {
 		"GuardianStars": "Mercury,Moon",
 		"Password": "28933734",
 		"Lore": "A shadow mask created by the hands of a dark mage.",
-		"ImageID": "MaskofDarkness-FMR-EN-VG.png",
+		"ImageID": "MaskofDarkness-FMR-EN-VG.jpg",
 		"Wiki": "Mask of Darkness (FMR)"
 	},
 	"103": {
@@ -80,7 +95,7 @@ const cards = {
 		"GuardianStars": "Mars,Mercury",
 		"Password": "55337339",
 		"Lore": "An indestructible, wicked mirror that blocks enemy attacks.",
-		"ImageID": "JobChangeMirror-FMR-EN-VG.png",
+		"ImageID": "JobChangeMirror-FMR-EN-VG.jpg",
 		"Wiki": "Job-Change Mirror (FMR)"
 	},
 	"104": {
@@ -94,7 +109,7 @@ const cards = {
 		"GuardianStars": "Mercury,Jupiter",
 		"Password": "22026707",
 		"Lore": "A curtain woven by the hands of a sorcerer. It is said to enhance the power of magic-users.",
-		"ImageID": "CurtainoftheDarkOnes-FMR-EN-VG.png",
+		"ImageID": "CurtainoftheDarkOnes-FMR-EN-VG.jpg",
 		"Wiki": "Curtain of the Dark Ones (FMR)"
 	},
 	"105": {
@@ -108,7 +123,7 @@ const cards = {
 		"GuardianStars": "Uranus,Venus",
 		"Password": "46457856",
 		"Lore": "A deceivingly small creature that is so vicious it attacks both friend and foe without discretion.",
-		"ImageID": "Tomozaurus-FMR-EN-VG.png",
+		"ImageID": "Tomozaurus-FMR-EN-VG.jpg",
 		"Wiki": "Tomozaurus (FMR)"
 	},
 	"106": {
@@ -122,7 +137,7 @@ const cards = {
 		"GuardianStars": "Saturn,Sun",
 		"Password": "54615781",
 		"Lore": "A spirit of the wind that freely sails the skies. Known to generate storms when it's in a bad mood.",
-		"ImageID": "SpiritoftheWinds-FMR-EN-VG.png",
+		"ImageID": "SpiritoftheWinds-FMR-EN-VG.jpg",
 		"Wiki": "Spirit of the Winds (FMR)"
 	},
 	"107": {
@@ -136,7 +151,7 @@ const cards = {
 		"GuardianStars": "Moon,Mars",
 		"Password": "80600490",
 		"Lore": "Uses both physical and shadow forms to attack, making it a difficult creature to overcome.",
-		"ImageID": "Kageningen-FMR-EN-VG.png",
+		"ImageID": "Kageningen-FMR-EN-VG.jpg",
 		"Wiki": "Kageningen (FMR)"
 	},
 	"108": {
@@ -150,7 +165,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "27094595",
 		"Lore": "A final resting place that enhances the power of the doomed and drains that of the living.",
-		"ImageID": "GraveyardandtheHandofInvitation-FMR-EN-VG.png",
+		"ImageID": "GraveyardandtheHandofInvitation-FMR-EN-VG.jpg",
 		"Wiki": "Graveyard and the Hand of Invitation (FMR)"
 	},
 	"109": {
@@ -164,7 +179,7 @@ const cards = {
 		"GuardianStars": "Sun,Venus",
 		"Password": "53493204",
 		"Lore": "A goddess with an all-seeing eye that reveals all.",
-		"ImageID": "GoddesswiththeThirdEye-FMR-EN-VG.png",
+		"ImageID": "GoddesswiththeThirdEye-FMR-EN-VG.jpg",
 		"Wiki": "Goddess with the Third Eye (FMR)"
 	},
 	"11": {
@@ -178,7 +193,7 @@ const cards = {
 		"GuardianStars": "Uranus,Moon",
 		"Password": "13069066",
 		"Lore": "With a body covered in sword-like thorns, nothing dares stand in the way of this monster when it changes.",
-		"ImageID": "SwordArmofDragon-FMR-EN-VG.png",
+		"ImageID": "SwordArmofDragon-FMR-EN-VG.jpg",
 		"Wiki": "Sword Arm of Dragon (FMR)"
 	},
 	"110": {
@@ -192,7 +207,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mercury",
 		"Password": "89987208",
 		"Lore": "A samurai from the Far East armed with a razor-sharp sword.",
-		"ImageID": "HerooftheEast-FMR-EN-VG.png",
+		"ImageID": "HerooftheEast-FMR-EN-VG.jpg",
 		"Wiki": "Hero of the East (FMR)"
 	},
 	"111": {
@@ -206,7 +221,7 @@ const cards = {
 		"GuardianStars": "Mercury,Saturn",
 		"Password": "16972957",
 		"Lore": "This angel rules over the doomed and administers it when necessary.",
-		"ImageID": "DomaTheAngelofSilence-FMR-EN-VG.png",
+		"ImageID": "DomaTheAngelofSilence-FMR-EN-VG.jpg",
 		"Wiki": "Doma The Angel of Silence (FMR)"
 	},
 	"112": {
@@ -220,7 +235,7 @@ const cards = {
 		"GuardianStars": "Mercury,Uranus",
 		"Password": "52367652",
 		"Lore": "A vile monster that fuels it power by draining the essence of life from its opponents.",
-		"ImageID": "ThatWhichFeedsonLife-FMR-EN-VG.png",
+		"ImageID": "ThatWhichFeedsonLife-FMR-EN-VG.jpg",
 		"Wiki": "That Which Feeds on Life (FMR)"
 	},
 	"113": {
@@ -234,7 +249,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "09159938",
 		"Lore": "Entirely gray, this beast has rarely been seen by mortal eyes.",
-		"ImageID": "DarkGray-FMR-EN-VG.png",
+		"ImageID": "DarkGray-FMR-EN-VG.jpg",
 		"Wiki": "Dark Gray (FMR)"
 	},
 	"114": {
@@ -248,7 +263,7 @@ const cards = {
 		"GuardianStars": "Sun,Mars",
 		"Password": "15150365",
 		"Lore": "A gentleman thief that eludes the law despite the fact that he sticks out like a sore thumb wit his silk hat and white cape.",
-		"ImageID": "WhiteMagicalHat-FMR-EN-VG.png",
+		"ImageID": "WhiteMagicalHat-FMR-EN-VG.jpg",
 		"Wiki": "White Magical Hat (FMR)"
 	},
 	"115": {
@@ -262,7 +277,7 @@ const cards = {
 		"GuardianStars": "Mercury,Pluto",
 		"Password": "41544074",
 		"Lore": "A magic-user that controls chaos and wields a mighty sickle.",
-		"ImageID": "KamionWizard-FMR-EN-VG.png",
+		"ImageID": "KamionWizard-FMR-EN-VG.jpg",
 		"Wiki": "Kamion Wizard (FMR)"
 	},
 	"116": {
@@ -276,7 +291,7 @@ const cards = {
 		"GuardianStars": "Uranus,Neptune",
 		"Password": "88643173",
 		"Lore": "A very toxic creature that induces nightmares and attacks its victims with four poison- tipped stingers.",
-		"ImageID": "NightmareScorpion-FMR-EN-VG.png",
+		"ImageID": "NightmareScorpion-FMR-EN-VG.jpg",
 		"Wiki": "Nightmare Scorpion (FMR)"
 	},
 	"117": {
@@ -290,7 +305,7 @@ const cards = {
 		"GuardianStars": "Saturn,Moon",
 		"Password": "14037717",
 		"Lore": "A spirit of the book with infinite knowledge and an endless variety of attack strategies.",
-		"ImageID": "SpiritoftheBooks-FMR-EN-VG.png",
+		"ImageID": "SpiritoftheBooks-FMR-EN-VG.jpg",
 		"Wiki": "Spirit of the Books (FMR)"
 	},
 	"118": {
@@ -304,7 +319,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Venus",
 		"Password": "41422426",
 		"Lore": "A cute elf that assists against enemies while remaining hidden from sight.",
-		"ImageID": "SupporterintheShadows-FMR-EN-VG.png",
+		"ImageID": "SupporterintheShadows-FMR-EN-VG.jpg",
 		"Wiki": "Supporter in the Shadows (FMR)"
 	},
 	"119": {
@@ -318,7 +333,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "77827521",
 		"Lore": "Passes judgment on enemies that are locked in coffins.",
-		"ImageID": "TrialofNightmares-FMR-EN-VG.png",
+		"ImageID": "TrialofNightmares-FMR-EN-VG.jpg",
 		"Wiki": "Trial of Nightmares (FMR)"
 	},
 	"12": {
@@ -332,7 +347,7 @@ const cards = {
 		"GuardianStars": "Mercury,Mars",
 		"Password": "40453765",
 		"Lore": "This creature is armed with a spiked club that can destroy almost anything in its path. Rumored to have a brother that is just as destructive.",
-		"ImageID": "SwampBattleguard-FMR-EN-VG.png",
+		"ImageID": "SwampBattleguard-FMR-EN-VG.jpg",
 		"Wiki": "Swamp Battleguard (FMR)"
 	},
 	"120": {
@@ -346,7 +361,7 @@ const cards = {
 		"GuardianStars": "Venus,Saturn",
 		"Password": "13215230",
 		"Lore": "The mysterious dance of this creature draws its enemies into eternal slumber.",
-		"ImageID": "DreamClown-FMR-EN-VG.png",
+		"ImageID": "DreamClown-FMR-EN-VG.jpg",
 		"Wiki": "Dream Clown (FMR)"
 	},
 	"121": {
@@ -360,7 +375,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "40200834",
 		"Lore": "Frequently found sleeping, this monster is very dangerous when awakened.",
-		"ImageID": "SleepingLion-FMR-EN-VG.png",
+		"ImageID": "SleepingLion-FMR-EN-VG.jpg",
 		"Wiki": "Sleeping Lion (FMR)"
 	},
 	"122": {
@@ -374,7 +389,7 @@ const cards = {
 		"GuardianStars": "Saturn,Venus",
 		"Password": "76704943",
 		"Lore": "This dragon is conjured from a picture scroll to attack enemies. It has a pretty low defense factor.",
-		"ImageID": "YamatanoDragonScroll-FMR-EN-VG.png",
+		"ImageID": "YamatanoDragonScroll-FMR-EN-VG.jpg",
 		"Wiki": "Yamatano Dragon Scroll (FMR)"
 	},
 	"123": {
@@ -388,7 +403,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "13193642",
 		"Lore": "A vicious flower raised from polluted soil and fertilized by dark forces.",
-		"ImageID": "DarkPlant-FMR-EN-VG.png",
+		"ImageID": "DarkPlant-FMR-EN-VG.jpg",
 		"Wiki": "Dark Plant (FMR)"
 	},
 	"124": {
@@ -402,7 +417,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "49587396",
 		"Lore": "An engine of destruction discovered in the ruins of an ancient civilization.",
-		"ImageID": "AncientTool-FMR-EN-VG.png",
+		"ImageID": "AncientTool-FMR-EN-VG.jpg",
 		"Wiki": "Ancient Tool (FMR)"
 	},
 	"125": {
@@ -416,7 +431,7 @@ const cards = {
 		"GuardianStars": "Sun,Jupiter",
 		"Password": "75582395",
 		"Lore": "A bird with a very long tail that attacks with a light that emanates from its entire being.",
-		"ImageID": "FaithBird-FMR-EN-VG.png",
+		"ImageID": "FaithBird-FMR-EN-VG.jpg",
 		"Wiki": "Faith Bird (FMR)"
 	},
 	"126": {
@@ -430,7 +445,7 @@ const cards = {
 		"GuardianStars": "Sun,Saturn",
 		"Password": "02971090",
 		"Lore": "A mysterious creature known as the king of warriors, but nobody has lived to tell how it earned its reputation.",
-		"ImageID": "OriontheBattleKing-FMR-EN-VG.png",
+		"ImageID": "OriontheBattleKing-FMR-EN-VG.jpg",
 		"Wiki": "Orion the Battle King (FMR)"
 	},
 	"127": {
@@ -444,7 +459,7 @@ const cards = {
 		"GuardianStars": "Mercury,Neptune",
 		"Password": "48365709",
 		"Lore": "A silent and swift warrior.",
-		"ImageID": "Ansatsu-FMR-EN-VG.png",
+		"ImageID": "Ansatsu-FMR-EN-VG.jpg",
 		"Wiki": "Ansatsu (FMR)"
 	},
 	"128": {
@@ -458,7 +473,7 @@ const cards = {
 		"GuardianStars": "Sun,Uranus",
 		"Password": "75850803",
 		"Lore": "A sorcerer who lives on the moon and attacks opponents with the power of lunar light.",
-		"ImageID": "LaMoon-FMR-EN-VG.png",
+		"ImageID": "LaMoon-FMR-EN-VG.jpg",
 		"Wiki": "LaMoon (FMR)"
 	},
 	"129": {
@@ -472,7 +487,7 @@ const cards = {
 		"GuardianStars": "Mercury,Moon",
 		"Password": "90963488",
 		"Lore": "A child-like creature that controls a sleep spirit to beckon enemies into an eternal slumber.",
-		"ImageID": "Nemuriko-FMR-EN-VG.png",
+		"ImageID": "Nemuriko-FMR-EN-VG.jpg",
 		"Wiki": "Nemuriko (FMR)"
 	},
 	"13": {
@@ -486,7 +501,7 @@ const cards = {
 		"GuardianStars": "Saturn,Venus",
 		"Password": "72842870",
 		"Lore": "Capable of firing cannonballs from its mouth for long range attacks against enemies.",
-		"ImageID": "Tyhone-FMR-EN-VG.png",
+		"ImageID": "Tyhone-FMR-EN-VG.jpg",
 		"Wiki": "Tyhone (FMR)"
 	},
 	"130": {
@@ -500,7 +515,7 @@ const cards = {
 		"GuardianStars": "Sun,Pluto",
 		"Password": "37243151",
 		"Lore": "This monster is capable of manipulating the weather. This power is the reason behind the changing climate of mountains.",
-		"ImageID": "WeatherControl-FMR-EN-VG.png",
+		"ImageID": "WeatherControl-FMR-EN-VG.jpg",
 		"Wiki": "Weather Control (FMR)"
 	},
 	"131": {
@@ -514,7 +529,7 @@ const cards = {
 		"GuardianStars": "Neptune,Moon",
 		"Password": "74637266",
 		"Lore": "A strange creature with the head of a fish and the tentacles of an octopus that attacks its enemies with spears.",
-		"ImageID": "Octoberser-FMR-EN-VG.png",
+		"ImageID": "Octoberser-FMR-EN-VG.jpg",
 		"Wiki": "Octoberser (FMR)"
 	},
 	"132": {
@@ -528,7 +543,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "00032864",
 		"Lore": "A zombie that suddenly appeared from plot #13 - supposedly an empty plot.",
-		"ImageID": "The13thGrave-FMR-EN-VG.png",
+		"ImageID": "The13thGrave-FMR-EN-VG.jpg",
 		"Wiki": "The 13th Grave (FMR)"
 	},
 	"133": {
@@ -542,7 +557,7 @@ const cards = {
 		"GuardianStars": "Mars,Uranus",
 		"Password": "37421579",
 		"Lore": "A warrior protected by a shell that can even deflect the heat of burning flames.",
-		"ImageID": "CharubintheFireKnight-FMR-EN-VG.png",
+		"ImageID": "CharubintheFireKnight-FMR-EN-VG.jpg",
 		"Wiki": "Charubin the Fire Knight (FMR)"
 	},
 	"134": {
@@ -556,7 +571,7 @@ const cards = {
 		"GuardianStars": "Sun,Neptune",
 		"Password": "63515678",
 		"Lore": "A mystical chain that is believed capable of binding its enemies and preventing their attacks.",
-		"ImageID": "MysticalCaptureChain-FMR-EN-VG.png",
+		"ImageID": "MysticalCaptureChain-FMR-EN-VG.jpg",
 		"Wiki": "Mystical Capture Chain (FMR)"
 	},
 	"135": {
@@ -570,7 +585,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "52800428",
 		"Lore": "Long arms reach out from the swamp of chaos to drag in enemy creatures.",
-		"ImageID": "FiendsHand-FMR-EN-VG.png",
+		"ImageID": "FiendsHand-FMR-EN-VG.jpg",
 		"Wiki": "Fiend's Hand (FMR)"
 	},
 	"136": {
@@ -584,7 +599,7 @@ const cards = {
 		"GuardianStars": "Mercury,Mars",
 		"Password": "36304921",
 		"Lore": "Dressed in a night-black tuxedo, this creature presides over the doomed.",
-		"ImageID": "WittyPhantom-FMR-EN-VG.png",
+		"ImageID": "WittyPhantom-FMR-EN-VG.jpg",
 		"Wiki": "Witty Phantom (FMR)"
 	},
 	"137": {
@@ -598,7 +613,7 @@ const cards = {
 		"GuardianStars": "Moon,Uranus",
 		"Password": "62793020",
 		"Lore": "Twisting the fabric of reality, arms stretch out from another dimension to attack opponents.",
-		"ImageID": "MysteryHand-FMR-EN-VG.png",
+		"ImageID": "MysteryHand-FMR-EN-VG.jpg",
 		"Wiki": "Mystery Hand (FMR)"
 	},
 	"138": {
@@ -612,7 +627,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mars",
 		"Password": "09197735",
 		"Lore": "A granite warrior with a dragon's soul wields a powerful sword against all enemies.",
-		"ImageID": "DragonStatue-FMR-EN-VG.png",
+		"ImageID": "DragonStatue-FMR-EN-VG.jpg",
 		"Wiki": "Dragon Statue (FMR)"
 	},
 	"139": {
@@ -626,7 +641,7 @@ const cards = {
 		"GuardianStars": "Sun,Pluto",
 		"Password": "35282433",
 		"Lore": "A creature rumored to turn enemies in to zombies with a strange ray that emanates from its eyes.",
-		"ImageID": "BlueeyedSilverZombie-FMR-EN-VG.png",
+		"ImageID": "BlueeyedSilverZombie-FMR-EN-VG.jpg",
 		"Wiki": "Blue-eyed Silver Zombie (FMR)"
 	},
 	"14": {
@@ -640,7 +655,7 @@ const cards = {
 		"GuardianStars": "Moon,Uranus",
 		"Password": "18246479",
 		"Lore": "A bull monster often found in the woods. Charges enemy monsters with a pair of\nrazor-sharp horns.",
-		"ImageID": "BattleSteer-FMR-EN-VG.png",
+		"ImageID": "BattleSteer-FMR-EN-VG.jpg",
 		"Wiki": "Battle Steer (FMR)"
 	},
 	"140": {
@@ -654,7 +669,7 @@ const cards = {
 		"GuardianStars": "Neptune,Venus",
 		"Password": "62671448",
 		"Lore": "Thousands of years old, this frog wizard attacks enemies with an army of tadpoles.",
-		"ImageID": "ToadMaster-FMR-EN-VG.png",
+		"ImageID": "ToadMaster-FMR-EN-VG.jpg",
 		"Wiki": "Toad Master (FMR)"
 	},
 	"141": {
@@ -668,7 +683,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "98075147",
 		"Lore": "Evolving from the powers of darkness, this snail has arms and legs that allow swift attacks against its enemies.",
-		"ImageID": "SpikedSnail-FMR-EN-VG.png",
+		"ImageID": "SpikedSnail-FMR-EN-VG.jpg",
 		"Wiki": "Spiked Snail (FMR)"
 	},
 	"142": {
@@ -682,7 +697,7 @@ const cards = {
 		"GuardianStars": "Mars,Pluto",
 		"Password": "34460851",
 		"Lore": "Attacks enemies with fire-related spells, such as the \"Sea of Flames\" and \"Wall of Fire\".",
-		"ImageID": "FlameManipulator-FMR-EN-VG.png",
+		"ImageID": "FlameManipulator-FMR-EN-VG.jpg",
 		"Wiki": "Flame Manipulator (FMR)"
 	},
 	"143": {
@@ -696,7 +711,7 @@ const cards = {
 		"GuardianStars": "Venus,Uranus",
 		"Password": "61454890",
 		"Lore": "The first in a line of golems that appear almost from with in a dimensional ring.",
-		"ImageID": "NecrolancertheTimelord-FMR-EN-VG.png",
+		"ImageID": "NecrolancertheTimelord-FMR-EN-VG.jpg",
 		"Wiki": "Necrolancer the Timelord (FMR)"
 	},
 	"144": {
@@ -710,7 +725,7 @@ const cards = {
 		"GuardianStars": "Saturn,Mercury",
 		"Password": "97843505",
 		"Lore": "Controls the air currents to create violent winds and tornadoes to blow away its enemies.",
-		"ImageID": "DjinntheWatcheroftheWind-FMR-EN-VG.png",
+		"ImageID": "DjinntheWatcheroftheWind-FMR-EN-VG.jpg",
 		"Wiki": "Djinn the Watcher of the Wind (FMR)"
 	},
 	"145": {
@@ -724,7 +739,7 @@ const cards = {
 		"GuardianStars": "Venus,Pluto",
 		"Password": "24348204",
 		"Lore": "A flashy, black-caped thief who wields a magic cane.",
-		"ImageID": "TheBewitchingPhantomThief-FMR-EN-VG.png",
+		"ImageID": "TheBewitchingPhantomThief-FMR-EN-VG.jpg",
 		"Wiki": "The Bewitching Phantom Thief (FMR)"
 	},
 	"146": {
@@ -738,7 +753,7 @@ const cards = {
 		"GuardianStars": "Mercury,Pluto",
 		"Password": "00732302",
 		"Lore": "A weird temple of skulls and bones that sucks the living essence of all those who dare approach it.",
-		"ImageID": "TempleofSkulls-FMR-EN-VG.png",
+		"ImageID": "TempleofSkulls-FMR-EN-VG.jpg",
 		"Wiki": "Temple of Skulls (FMR)"
 	},
 	"147": {
@@ -752,7 +767,7 @@ const cards = {
 		"GuardianStars": "Uranus,Jupiter",
 		"Password": "36121917",
 		"Lore": "A warrior hidden within an egg that attacks enemies by flinging eggshells.",
-		"ImageID": "MonsterEgg-FMR-EN-VG.png",
+		"ImageID": "MonsterEgg-FMR-EN-VG.jpg",
 		"Wiki": "Monster Egg (FMR)"
 	},
 	"148": {
@@ -766,7 +781,7 @@ const cards = {
 		"GuardianStars": "Mercury,Jupiter",
 		"Password": "63125616",
 		"Lore": "A living shadow that dwells in the realm of darkness. It paralyzes its enemies to prevent attacks.",
-		"ImageID": "TheShadowWhoControlstheDark-FMR-EN-VG.png",
+		"ImageID": "TheShadowWhoControlstheDark-FMR-EN-VG.jpg",
 		"Wiki": "The Shadow Who Controls the Dark (FMR)"
 	},
 	"149": {
@@ -780,7 +795,7 @@ const cards = {
 		"GuardianStars": "Mercury,Saturn",
 		"Password": "99510761",
 		"Lore": "A giant that appears from a mystic lamp and follows the orders of the lamp's owner.",
-		"ImageID": "LordoftheLamp-FMR-EN-VG.png",
+		"ImageID": "LordoftheLamp-FMR-EN-VG.jpg",
 		"Wiki": "Lord of the Lamp (FMR)"
 	},
 	"15": {
@@ -794,7 +809,7 @@ const cards = {
 		"GuardianStars": "Mars,Sun",
 		"Password": "45231177",
 		"Lore": "A fighter gifted with the power of fire. Attacks enemies with a sword that launches flames.",
-		"ImageID": "FlameSwordsman-FMR-EN-VG.png",
+		"ImageID": "FlameSwordsman-FMR-EN-VG.jpg",
 		"Wiki": "Flame Swordsman (FMR)"
 	},
 	"150": {
@@ -808,7 +823,7 @@ const cards = {
 		"GuardianStars": "Neptune,Jupiter",
 		"Password": "36904469",
 		"Lore": "A mysterious creature that dwells below the sea.",
-		"ImageID": "Akihiron-FMR-EN-VG.png",
+		"ImageID": "Akihiron-FMR-EN-VG.jpg",
 		"Wiki": "Akihiron (FMR)"
 	},
 	"151": {
@@ -822,7 +837,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mars",
 		"Password": "62403074",
 		"Lore": "A warrior armed with the sword of crimson flames. Uses fire to bind the movement\nof its enemies.",
-		"ImageID": "RhaimundosoftheRedSword-FMR-EN-VG.png",
+		"ImageID": "RhaimundosoftheRedSword-FMR-EN-VG.jpg",
 		"Wiki": "Rhaimundos of the Red Sword (FMR)"
 	},
 	"152": {
@@ -836,7 +851,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "98898173",
 		"Lore": "A creature that melts into the earth then melds with an opponent's shadow, and attacks from below.",
-		"ImageID": "TheMeltingRedShadow-FMR-EN-VG.png",
+		"ImageID": "TheMeltingRedShadow-FMR-EN-VG.jpg",
 		"Wiki": "The Melting Red Shadow (FMR)"
 	},
 	"153": {
@@ -850,7 +865,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "25882881",
 		"Lore": "A living spirit that preys on the living essence of enemies.",
-		"ImageID": "DokuroizotheGrimReaper-FMR-EN-VG.png",
+		"ImageID": "DokuroizotheGrimReaper-FMR-EN-VG.jpg",
 		"Wiki": "Dokuroizo the Grim Reaper (FMR)"
 	},
 	"154": {
@@ -864,7 +879,7 @@ const cards = {
 		"GuardianStars": "Mars,Sun",
 		"Password": "53581214",
 		"Lore": "A creature that deals out punishment with its flaming arrows.",
-		"ImageID": "FireReaper-FMR-EN-VG.png",
+		"ImageID": "FireReaper-FMR-EN-VG.jpg",
 		"Wiki": "Fire Reaper (FMR)"
 	},
 	"155": {
@@ -878,7 +893,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "94675535",
 		"Lore": "A fast-moving, bird-like creature that strangles an opposing monster with its long, thin arms.",
-		"ImageID": "Larvas-FMR-EN-VG.png",
+		"ImageID": "Larvas-FMR-EN-VG.jpg",
 		"Wiki": "Larvas (FMR)"
 	},
 	"156": {
@@ -892,7 +907,7 @@ const cards = {
 		"GuardianStars": "Uranus,sun",
 		"Password": "20060230",
 		"Lore": "A living suit of armor that attacks enemies with a bone-jarring tackle.",
-		"ImageID": "HardArmor-FMR-EN-VG.png",
+		"ImageID": "HardArmor-FMR-EN-VG.jpg",
 		"Wiki": "Hard Armor (FMR)"
 	},
 	"157": {
@@ -906,7 +921,7 @@ const cards = {
 		"GuardianStars": "Mars,moon",
 		"Password": "53293545",
 		"Lore": "A fire-breathing plant found growing near volcanoes.",
-		"ImageID": "Firegrass-FMR-EN-VG.png",
+		"ImageID": "Firegrass-FMR-EN-VG.jpg",
 		"Wiki": "Firegrass (FMR)"
 	},
 	"158": {
@@ -920,7 +935,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Uranus",
 		"Password": "93553943",
 		"Lore": "Man-eating plant with poison feelers for attacking enemies.",
-		"ImageID": "ManEater-FMR-EN-VG.png",
+		"ImageID": "ManEater-FMR-EN-VG.jpg",
 		"Wiki": "Man Eater (FMR)"
 	},
 	"159": {
@@ -934,7 +949,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Pluto",
 		"Password": "29948642",
 		"Lore": "Coiling its serpent-like body, this creature spins ans attacks with its snapping beak.",
-		"ImageID": "DigBeak-FMR-EN-VG.png",
+		"ImageID": "DigBeak-FMR-EN-VG.jpg",
 		"Wiki": "Dig Beak (FMR)"
 	},
 	"16": {
@@ -948,7 +963,7 @@ const cards = {
 		"GuardianStars": "Venus,Sun",
 		"Password": "71625222",
 		"Lore": "A sorcerer capable of bending time to his will. Though not powerful at first glance, appearances can be deceiving.",
-		"ImageID": "TimeWizard-FMR-EN-VG.png",
+		"ImageID": "TimeWizard-FMR-EN-VG.jpg",
 		"Wiki": "Time Wizard (FMR)"
 	},
 	"160": {
@@ -962,7 +977,7 @@ const cards = {
 		"GuardianStars": "Uranus,Moon",
 		"Password": "56342351",
 		"Lore": "Specializing in combination attacks, this warrior uses magnetism to block an enemy's attack.",
-		"ImageID": "Mwarrior1-FMR-EN-VG.png",
+		"ImageID": "Mwarrior1-FMR-EN-VG.jpg",
 		"Wiki": "M-warrior 1 (FMR)"
 	},
 	"161": {
@@ -976,7 +991,7 @@ const cards = {
 		"GuardianStars": "Uranus,Venus",
 		"Password": "92731455",
 		"Lore": "Specializing in combination attacks, this warrior is equipped with a tough, magnetically coated armor.",
-		"ImageID": "Mwarrior2-FMR-EN-VG.png",
+		"ImageID": "Mwarrior2-FMR-EN-VG.jpg",
 		"Wiki": "M-warrior 2 (FMR)"
 	},
 	"162": {
@@ -990,7 +1005,7 @@ const cards = {
 		"GuardianStars": "Moon,Mercury",
 		"Password": "28725004",
 		"Lore": "A parasite brain that preys on the knowledge and intelligence of its opponents.",
-		"ImageID": "TaintedWisdom-FMR-EN-VG.png",
+		"ImageID": "TaintedWisdom-FMR-EN-VG.jpg",
 		"Wiki": "Tainted Wisdom (FMR)"
 	},
 	"163": {
@@ -1004,7 +1019,7 @@ const cards = {
 		"GuardianStars": "Saturn,Pluto",
 		"Password": "55210709",
 		"Lore": "An unusual creature with sapphire eyes that creates visions to confuse the enemy.",
-		"ImageID": "Lisark-FMR-EN-VG.png",
+		"ImageID": "Lisark-FMR-EN-VG.jpg",
 		"Wiki": "Lisark (FMR)"
 	},
 	"164": {
@@ -1018,7 +1033,7 @@ const cards = {
 		"GuardianStars": "Mercury,Uranus",
 		"Password": "81618817",
 		"Lore": "A vile entity that deceives enemies into walking the path of destruction",
-		"ImageID": "LordofZemia-FMR-EN-VG.png",
+		"ImageID": "LordofZemia-FMR-EN-VG.jpg",
 		"Wiki": "Lord of Zemia (FMR)"
 	},
 	"165": {
@@ -1032,7 +1047,7 @@ const cards = {
 		"GuardianStars": "Sun,Venus",
 		"Password": "28003512",
 		"Lore": "The hand of final judgement is capable of intense attacks against the enemy.",
-		"ImageID": "TheJudgementHand-FMR-EN-VG.png",
+		"ImageID": "TheJudgementHand-FMR-EN-VG.jpg",
 		"Wiki": "The Judgement Hand (FMR)"
 	},
 	"166": {
@@ -1046,7 +1061,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mercury",
 		"Password": "54098121",
 		"Lore": "A puppet master that manipulates enemies during battle.",
-		"ImageID": "MysteriousPuppeteer-FMR-EN-VG.png",
+		"ImageID": "MysteriousPuppeteer-FMR-EN-VG.jpg",
 		"Wiki": "Mysterious Puppeteer (FMR)"
 	},
 	"167": {
@@ -1060,7 +1075,7 @@ const cards = {
 		"GuardianStars": "Uranus,Neptune",
 		"Password": "81492226",
 		"Lore": "A fragile jar from the past containing a mysterious creature.",
-		"ImageID": "AncientJar-FMR-EN-VG.png",
+		"ImageID": "AncientJar-FMR-EN-VG.jpg",
 		"Wiki": "Ancient Jar (FMR)"
 	},
 	"168": {
@@ -1074,7 +1089,7 @@ const cards = {
 		"GuardianStars": "Mars,Venus",
 		"Password": "17881964",
 		"Lore": "Scorching flames that whip out enemies in a blink of an eye.",
-		"ImageID": "DarkfireDragon-FMR-EN-VG.png",
+		"ImageID": "DarkfireDragon-FMR-EN-VG.jpg",
 		"Wiki": "Darkfire Dragon (FMR)"
 	},
 	"169": {
@@ -1088,7 +1103,7 @@ const cards = {
 		"GuardianStars": "Mercury,Pluto",
 		"Password": "53375573",
 		"Lore": "King of the netherworld. It's said that he once had the power to rule over the dark.",
-		"ImageID": "DarkKingoftheAbyss-FMR-EN-VG.png",
+		"ImageID": "DarkKingoftheAbyss-FMR-EN-VG.jpg",
 		"Wiki": "Dark King of the Abyss (FMR)"
 	},
 	"17": {
@@ -1102,7 +1117,7 @@ const cards = {
 		"GuardianStars": "Mercury,Jupiter",
 		"Password": "08124921",
 		"Lore": "A forbidden limb sealed by magic. Who ever breaks this seal will know infinite power. Only one card of this type can be included in a deck.",
-		"ImageID": "RightLegoftheForbiddenOne-FMR-EN-VG.png",
+		"ImageID": "RightLegoftheForbiddenOne-FMR-EN-VG.jpg",
 		"Wiki": "Right Leg of the Forbidden One (FMR)"
 	},
 	"170": {
@@ -1116,7 +1131,7 @@ const cards = {
 		"GuardianStars": "Mars,Sun",
 		"Password": "80770678",
 		"Lore": "A spirit that soothes the soul with music of its glorious harp.",
-		"ImageID": "SpiritoftheHarp-FMR-EN-VG.png",
+		"ImageID": "SpiritoftheHarp-FMR-EN-VG.jpg",
 		"Wiki": "Spirit of the Harp (FMR)"
 	},
 	"171": {
@@ -1130,7 +1145,7 @@ const cards = {
 		"GuardianStars": "Venus,Neptune",
 		"Password": "16768387",
 		"Lore": "This creature is covered with hypnotic eyes for mesmerizing its enemies.",
-		"ImageID": "BigEye-FMR-EN-VG.png",
+		"ImageID": "BigEye-FMR-EN-VG.jpg",
 		"Wiki": "Big Eye (FMR)"
 	},
 	"172": {
@@ -1144,7 +1159,7 @@ const cards = {
 		"GuardianStars": "Mars,Mercury",
 		"Password": "53153481",
 		"Lore": "A strange warrior who manipulates three fearsome blades with both hands and its tail.",
-		"ImageID": "Armaill-FMR-EN-VG.png",
+		"ImageID": "Armaill-FMR-EN-VG.jpg",
 		"Wiki": "Armaill (FMR)"
 	},
 	"173": {
@@ -1158,7 +1173,7 @@ const cards = {
 		"GuardianStars": "Mercury,Neptune",
 		"Password": "89558090",
 		"Lore": "This creature manipulates light to eliminate all traces of its appearance.",
-		"ImageID": "DarkPrisoner-FMR-EN-VG.png",
+		"ImageID": "DarkPrisoner-FMR-EN-VG.jpg",
 		"Wiki": "Dark Prisoner (FMR)"
 	},
 	"174": {
@@ -1172,7 +1187,7 @@ const cards = {
 		"GuardianStars": "Saturn,Neptune",
 		"Password": "15042735",
 		"Lore": "A twister that runs rampant in the wastelands, cutting its enemies with blades of wind.",
-		"ImageID": "Hurricail-FMR-EN-VG.png",
+		"ImageID": "Hurricail-FMR-EN-VG.jpg",
 		"Wiki": "Hurricail (FMR)"
 	},
 	"175": {
@@ -1186,7 +1201,7 @@ const cards = {
 		"GuardianStars": "Mercury,Moon",
 		"Password": "42431843",
 		"Lore": "Exiled from reality, this creature is adept at fighting in the dark.",
-		"ImageID": "AncientBrain-FMR-EN-VG.png",
+		"ImageID": "AncientBrain-FMR-EN-VG.jpg",
 		"Wiki": "Ancient Brain (FMR)"
 	},
 	"176": {
@@ -1200,7 +1215,7 @@ const cards = {
 		"GuardianStars": "Mars,Saturn",
 		"Password": "88435542",
 		"Lore": "A winged eye enveloped in flames that attacks enemies with fire.",
-		"ImageID": "FireEye-FMR-EN-VG.png",
+		"ImageID": "FireEye-FMR-EN-VG.jpg",
 		"Wiki": "Fire Eye (FMR)"
 	},
 	"177": {
@@ -1214,7 +1229,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mercury",
 		"Password": "15820147",
 		"Lore": "A vicious turtle with a spiked shell.",
-		"ImageID": "Monsturtle-FMR-EN-VG.png",
+		"ImageID": "Monsturtle-FMR-EN-VG.jpg",
 		"Wiki": "Monsturtle (FMR)"
 	},
 	"178": {
@@ -1228,7 +1243,7 @@ const cards = {
 		"GuardianStars": "Mercury,Mars",
 		"Password": "41218256",
 		"Lore": "Stretching arms and razor-sharp claws make this monster a formidable opponent.",
-		"ImageID": "ClawReacher-FMR-EN-VG.png",
+		"ImageID": "ClawReacher-FMR-EN-VG.jpg",
 		"Wiki": "Claw Reacher (FMR)"
 	},
 	"179": {
@@ -1242,7 +1257,7 @@ const cards = {
 		"GuardianStars": "Mercury,Jupiter",
 		"Password": "77603950",
 		"Lore": "A wizard that freezes an enemy's movement with a single curse.",
-		"ImageID": "PhantomDewan-FMR-EN-VG.png",
+		"ImageID": "PhantomDewan-FMR-EN-VG.jpg",
 		"Wiki": "Phantom Dewan (FMR)"
 	},
 	"18": {
@@ -1256,7 +1271,7 @@ const cards = {
 		"GuardianStars": "Mercury,Saturn",
 		"Password": "44519536",
 		"Lore": "A forbidden limb sealed by magic. Who ever breaks this seal will know infinite power. Only one card of this type can be included in a deck.",
-		"ImageID": "LeftLegoftheForbiddenOne-FMR-EN-VG.png",
+		"ImageID": "LeftLegoftheForbiddenOne-FMR-EN-VG.jpg",
 		"Wiki": "Left Leg of the Forbidden One (FMR)"
 	},
 	"180": {
@@ -1270,7 +1285,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "14708569",
 		"Lore": "A maiden in the flower blossoms spreads poisonous pollen against opponents.",
-		"ImageID": "Arlownay-FMR-EN-VG.png",
+		"ImageID": "Arlownay-FMR-EN-VG.jpg",
 		"Wiki": "Arlownay (FMR)"
 	},
 	"181": {
@@ -1284,7 +1299,7 @@ const cards = {
 		"GuardianStars": "Saturn,Mars",
 		"Password": "40196604",
 		"Lore": "Emits a dazzling light from its crystal to blind its enemies.",
-		"ImageID": "DarkShade-FMR-EN-VG.png",
+		"ImageID": "DarkShade-FMR-EN-VG.jpg",
 		"Wiki": "Dark Shade (FMR)"
 	},
 	"182": {
@@ -1298,7 +1313,7 @@ const cards = {
 		"GuardianStars": "Mercury,Saturn",
 		"Password": "77581312",
 		"Lore": "A dancing warrior that makes mincemeat out of opponents with a sharp scythe.",
-		"ImageID": "MaskedClown-FMR-EN-VG.png",
+		"ImageID": "MaskedClown-FMR-EN-VG.jpg",
 		"Wiki": "Masked Clown (FMR)"
 	},
 	"183": {
@@ -1312,7 +1327,7 @@ const cards = {
 		"GuardianStars": "Sun,Jupiter",
 		"Password": "03985011",
 		"Lore": "A thin and reedy creature protected by sacred power.",
-		"ImageID": "LuckyTrinket-FMR-EN-VG.png",
+		"ImageID": "LuckyTrinket-FMR-EN-VG.jpg",
 		"Wiki": "Lucky Trinket (FMR)"
 	},
 	"184": {
@@ -1326,7 +1341,7 @@ const cards = {
 		"GuardianStars": "Venus,Sun",
 		"Password": "49370026",
 		"Lore": "Uses amazing sleight-of-hand to fool an destroy enemies.",
-		"ImageID": "Genin-FMR-EN-VG.png",
+		"ImageID": "Genin-FMR-EN-VG.jpg",
 		"Wiki": "Genin (FMR)"
 	},
 	"185": {
@@ -1340,7 +1355,7 @@ const cards = {
 		"GuardianStars": "Mars,Uranus",
 		"Password": "64511793",
 		"Lore": "This warrior confuses and destroys enemies by adopting their image.",
-		"ImageID": "Eyearmor-FMR-EN-VG.png",
+		"ImageID": "Eyearmor-FMR-EN-VG.jpg",
 		"Wiki": "Eyearmor (FMR)"
 	},
 	"186": {
@@ -1354,7 +1369,7 @@ const cards = {
 		"GuardianStars": "Venus,Mars",
 		"Password": "02863439",
 		"Lore": "A bird-beast that summons reinforcements with a hand mirror.",
-		"ImageID": "FiendRefrection2-FMR-EN-VG.png",
+		"ImageID": "FiendRefrection2-FMR-EN-VG.jpg",
 		"Wiki": "Fiend Refrection 2"
 	},
 	"187": {
@@ -1368,7 +1383,7 @@ const cards = {
 		"GuardianStars": "Moon,Mars",
 		"Password": "49258578",
 		"Lore": "A creature with an abdominal portal used for summoning monsters from the netherworld.",
-		"ImageID": "GateDeeg-FMR-EN-VG.png",
+		"ImageID": "GateDeeg-FMR-EN-VG.jpg",
 		"Wiki": "Gate Deeg (FMR)"
 	},
 	"188": {
@@ -1382,7 +1397,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "75646173",
 		"Lore": "An ugly creature with two heads and a mouth for blasting laser beams.",
-		"ImageID": "Synchar-FMR-EN-VG.png",
+		"ImageID": "Synchar-FMR-EN-VG.jpg",
 		"Wiki": "Synchar (FMR)"
 	},
 	"189": {
@@ -1396,7 +1411,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "01641882",
 		"Lore": "A monstrous cat with wings and a long striking tail.",
-		"ImageID": "Fusionist-FMR-EN-VG.png",
+		"ImageID": "Fusionist-FMR-EN-VG.jpg",
 		"Wiki": "Fusionist (FMR)"
 	},
 	"19": {
@@ -1410,7 +1425,7 @@ const cards = {
 		"GuardianStars": "Mercury,Uranus",
 		"Password": "70903634",
 		"Lore": "A forbidden limb sealed by magic. Who ever breaks this seal will know infinite power. Only one card of this type can be included in a deck.",
-		"ImageID": "RightArmoftheForbiddenOne-FMR-EN-VG.png",
+		"ImageID": "RightArmoftheForbiddenOne-FMR-EN-VG.jpg",
 		"Wiki": "Right Arm of the Forbidden One (FMR)"
 	},
 	"190": {
@@ -1424,7 +1439,7 @@ const cards = {
 		"GuardianStars": "Mercury,Uranus",
 		"Password": "38035986",
 		"Lore": "A wizard whose incantations numb the senses of opposing monsters.",
-		"ImageID": "Akakieisu-FMR-EN-VG.png",
+		"ImageID": "Akakieisu-FMR-EN-VG.jpg",
 		"Wiki": "Akakieisu (FMR)"
 	},
 	"191": {
@@ -1438,7 +1453,7 @@ const cards = {
 		"GuardianStars": "Pluto,Moon",
 		"Password": "09430387",
 		"Lore": "Protected by thunder, this dangerous cloud attacks its enemies with acid rain.",
-		"ImageID": "LALALioon-FMR-EN-VG.png",
+		"ImageID": "LALALioon-FMR-EN-VG.jpg",
 		"Wiki": "LALA Li-oon (FMR)"
 	},
 	"192": {
@@ -1452,7 +1467,7 @@ const cards = {
 		"GuardianStars": "Sun,Saturn",
 		"Password": "01929294",
 		"Lore": "A small angel whose cuteness melts the hearts of its enemies.",
-		"ImageID": "KeyMace-FMR-EN-VG.png",
+		"ImageID": "KeyMace-FMR-EN-VG.jpg",
 		"Wiki": "Key Mace (FMR)"
 	},
 	"193": {
@@ -1466,7 +1481,7 @@ const cards = {
 		"GuardianStars": "Neptune,Saturn",
 		"Password": "37313348",
 		"Lore": "A tiger encased in a protective shell that attacks its enemies with its razor-sharp fangs.",
-		"ImageID": "TurtleTiger-FMR-EN-VG.png",
+		"ImageID": "TurtleTiger-FMR-EN-VG.jpg",
 		"Wiki": "Turtle Tiger (FMR)"
 	},
 	"194": {
@@ -1480,7 +1495,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "63308047",
 		"Lore": "Know as a dweller of the swamps, this creature is a minion of the dark forces.",
-		"ImageID": "TerratheTerrible-FMR-EN-VG.png",
+		"ImageID": "TerratheTerrible-FMR-EN-VG.jpg",
 		"Wiki": "Terra the Terrible (FMR)"
 	},
 	"195": {
@@ -1494,7 +1509,7 @@ const cards = {
 		"GuardianStars": "Neptune,Moon",
 		"Password": "00756652",
 		"Lore": "An unpredictable creature that splits in two and attacks the enemy from two opposite directions.",
-		"ImageID": "Doron-FMR-EN-VG.png",
+		"ImageID": "Doron-FMR-EN-VG.jpg",
 		"Wiki": "Doron (FMR)"
 	},
 	"196": {
@@ -1508,7 +1523,7 @@ const cards = {
 		"GuardianStars": "Neptune,Venus",
 		"Password": "36151751",
 		"Lore": "An ammonite warrior that has protected the seas from the dawn of time.",
-		"ImageID": "ArmaKnight-FMR-EN-VG.png",
+		"ImageID": "ArmaKnight-FMR-EN-VG.jpg",
 		"Wiki": "Arma Knight (FMR)"
 	},
 	"197": {
@@ -1522,7 +1537,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "63545455",
 		"Lore": "A creature of the night that attacks enemies with its rocket-powered arms.",
-		"ImageID": "MechMoleZombie-FMR-EN-VG.png",
+		"ImageID": "MechMoleZombie-FMR-EN-VG.jpg",
 		"Wiki": "Mech Mole Zombie (FMR)"
 	},
 	"198": {
@@ -1536,7 +1551,7 @@ const cards = {
 		"GuardianStars": "Sun,Uranus",
 		"Password": "99030164",
 		"Lore": "A little angel that fires beams of happiness from the heart jewel on its forehead.",
-		"ImageID": "HappyLover-FMR-EN-VG.png",
+		"ImageID": "HappyLover-FMR-EN-VG.jpg",
 		"Wiki": "Happy Lover (FMR)"
 	},
 	"199": {
@@ -1550,7 +1565,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mercury",
 		"Password": "36039163",
 		"Lore": "A penguin-like creature that slides on its belly to deliver a blow with its outstretched sword.",
-		"ImageID": "PenguinKnight-FMR-EN-VG.png",
+		"ImageID": "PenguinKnight-FMR-EN-VG.jpg",
 		"Wiki": "Penguin Knight (FMR)"
 	},
 	"2": {
@@ -1564,7 +1579,7 @@ const cards = {
 		"GuardianStars": "Sun,Jupiter",
 		"Password": "15025844",
 		"Lore": "A delicate elf that lacks in offence but has terrific defense backed by mystical power.",
-		"ImageID": "MysticalElf-FMR-EN-VG.png",
+		"ImageID": "MysticalElf-FMR-EN-VG.jpg",
 		"Wiki": "Mystical Elf (FMR)"
 	},
 	"20": {
@@ -1578,7 +1593,7 @@ const cards = {
 		"GuardianStars": "Mercury,Pluto",
 		"Password": "07902349",
 		"Lore": "A forbidden limb sealed by magic. Who ever breaks this seal will know infinite power. Only one card of this type can be included in a deck.",
-		"ImageID": "LeftArmoftheForbiddenOne-FMR-EN-VG.png",
+		"ImageID": "LeftArmoftheForbiddenOne-FMR-EN-VG.jpg",
 		"Wiki": "Left Arm of the Forbidden One (FMR)"
 	},
 	"200": {
@@ -1592,7 +1607,7 @@ const cards = {
 		"GuardianStars": "Saturn,Sun",
 		"Password": "75356564",
 		"Lore": "A very small dragon known for its vicious attacks.",
-		"ImageID": "PetitDragon-FMR-EN-VG.png",
+		"ImageID": "PetitDragon-FMR-EN-VG.jpg",
 		"Wiki": "Petit Dragon (FMR)"
 	},
 	"201": {
@@ -1606,7 +1621,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Venus",
 		"Password": "98818516",
 		"Lore": "A savage beast that carries a big bamboo stick for beating down its enemies.",
-		"ImageID": "FrenziedPanda-FMR-EN-VG.png",
+		"ImageID": "FrenziedPanda-FMR-EN-VG.jpg",
 		"Wiki": "Frenzied Panda (FMR)"
 	},
 	"202": {
@@ -1620,7 +1635,7 @@ const cards = {
 		"GuardianStars": "Uranus,Moon",
 		"Password": "75889523",
 		"Lore": "A horned beaver with wings that throw high-velocity acorns from the sky with uncanny accuracy.",
-		"ImageID": "AirMarmotofNefariousness-FMR-EN-VG.png",
+		"ImageID": "AirMarmotofNefariousness-FMR-EN-VG.jpg",
 		"Wiki": "Air Marmot of Nefariousness (FMR)"
 	},
 	"203": {
@@ -1634,7 +1649,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "61201220",
 		"Lore": "Malicious spirits that walk the world of the living, unable to find their final resting place.",
-		"ImageID": "PhantomGhost-FMR-EN-VG.png",
+		"ImageID": "PhantomGhost-FMR-EN-VG.jpg",
 		"Wiki": "Phantom Ghost (FMR)"
 	},
 	"204": {
@@ -1648,7 +1663,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "98795934",
 		"Lore": "A cannon-like monster that rapidly fires eyeballs at the enemy.",
-		"ImageID": "Mabarrel-FMR-EN-VG.png",
+		"ImageID": "Mabarrel-FMR-EN-VG.jpg",
 		"Wiki": "Mabarrel (FMR)"
 	},
 	"205": {
@@ -1662,7 +1677,7 @@ const cards = {
 		"GuardianStars": "Neptune,Sun",
 		"Password": "24194033",
 		"Lore": "An ugly, melting creature that breathes out poison gas.",
-		"ImageID": "Dorover-FMR-EN-VG.png",
+		"ImageID": "Dorover-FMR-EN-VG.jpg",
 		"Wiki": "Dorover (FMR)"
 	},
 	"206": {
@@ -1676,7 +1691,7 @@ const cards = {
 		"GuardianStars": "Moon,Mercury",
 		"Password": "60589682",
 		"Lore": "This creature swings its whip-like arms for mid range attacks against the enemies.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Twin Long Rods 1 (FMR)"
 	},
 	"207": {
@@ -1690,7 +1705,7 @@ const cards = {
 		"GuardianStars": "Saturn,Moon",
 		"Password": "97973387",
 		"Lore": "With a battle cry that curdles the blood of its opponent, this creature attacks with its massive beak.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Droll Bird (FMR)"
 	},
 	"208": {
@@ -1704,7 +1719,7 @@ const cards = {
 		"GuardianStars": "Sun,Pluto",
 		"Password": "38142739",
 		"Lore": "A quick-moving and tiny angel that's very difficult to hit.",
-		"ImageID": "PetitAngel-FMR-EN-VG.png",
+		"ImageID": "PetitAngel-FMR-EN-VG.jpg",
 		"Wiki": "Petit Angel (FMR)"
 	},
 	"209": {
@@ -1718,7 +1733,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "39175982",
 		"Lore": "This creature attacks by swinging around its sickle-like arms.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Winged Cleaver (FMR)"
 	},
 	"210": {
@@ -1732,7 +1747,7 @@ const cards = {
 		"GuardianStars": "Mars,Uranus",
 		"Password": "96851799",
 		"Lore": "An intensely hot flame creature that rams anything that stands in its way.",
-		"ImageID": "HinotamaSoul-FMR-EN-VG.png",
+		"ImageID": "HinotamaSoul-FMR-EN-VG.jpg",
 		"Wiki": "Hinotama Soul (FMR)"
 	},
 	"211": {
@@ -1746,7 +1761,7 @@ const cards = {
 		"GuardianStars": "Pluto,Venus",
 		"Password": "15510988",
 		"Lore": "This creature stores lightning within its body to deliver electrifying attacks.",
-		"ImageID": "Kaminarikozou-FMR-EN-VG.png",
+		"ImageID": "Kaminarikozou-FMR-EN-VG.jpg",
 		"Wiki": "Kaminarikozou (FMR)"
 	},
 	"212": {
@@ -1760,7 +1775,7 @@ const cards = {
 		"GuardianStars": "Moon,Mars",
 		"Password": "53832650",
 		"Lore": "A huge monster with a single eye that fires an intense beam.",
-		"ImageID": "Meotoko-FMR-EN-VG.png",
+		"ImageID": "Meotoko-FMR-EN-VG.jpg",
 		"Wiki": "Meotoko (FMR)"
 	},
 	"213": {
@@ -1774,7 +1789,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mercury",
 		"Password": "85639257",
 		"Lore": "A wizard of the waters that conjures up a liquid wall to crush any enemies that oppose him.",
-		"ImageID": "AquaMadoor-FMR-EN-VG.png",
+		"ImageID": "AquaMadoor-FMR-EN-VG.jpg",
 		"Wiki": "Aqua Madoor (FMR)"
 	},
 	"214": {
@@ -1788,7 +1803,7 @@ const cards = {
 		"GuardianStars": "Mars,Sun",
 		"Password": "15401633",
 		"Lore": "Serves as a double for the ruler of the blue flame. A master swordsman that wields a fine blade.",
-		"ImageID": "KagemushaoftheBlueFlame-FMR-EN-VG.png",
+		"ImageID": "KagemushaoftheBlueFlame-FMR-EN-VG.jpg",
 		"Wiki": "Kagemusha of the Blue Flame (FMR)"
 	},
 	"215": {
@@ -1802,7 +1817,7 @@ const cards = {
 		"GuardianStars": "Mars,Pluto",
 		"Password": "58528964",
 		"Lore": "A fiery spirit that burns anything in its path.",
-		"ImageID": "FlameGhost-FMR-EN-VG.png",
+		"ImageID": "FlameGhost-FMR-EN-VG.jpg",
 		"Wiki": "Flame Ghost (FMR)"
 	},
 	"216": {
@@ -1816,7 +1831,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Uranus",
 		"Password": "84916669",
 		"Lore": "A spirit of the forest protected by the surrounding plant life.",
-		"ImageID": "Dryad-FMR-EN-VG.png",
+		"ImageID": "Dryad-FMR-EN-VG.jpg",
 		"Wiki": "Dryad (FMR)"
 	},
 	"217": {
@@ -1830,7 +1845,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "11901678",
 		"Lore": "A very rare creature from the fusion of an uncommon beast and a vicious dragon.",
-		"ImageID": "BSkullDragon-FMR-EN-VG.png",
+		"ImageID": "BSkullDragon-FMR-EN-VG.jpg",
 		"Wiki": "B. Skull Dragon (FMR)"
 	},
 	"218": {
@@ -1844,7 +1859,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "57305373",
 		"Lore": "A Dinosaur with two crushing jaws. Stores electricity in its horn and releases high voltage bolts from the back mouth on its head.",
-		"ImageID": "TwomouthDarkruler-FMR-EN-VG.png",
+		"ImageID": "TwomouthDarkruler-FMR-EN-VG.jpg",
 		"Wiki": "Two-mouth Darkruler (FMR)"
 	},
 	"219": {
@@ -1858,7 +1873,7 @@ const cards = {
 		"GuardianStars": "Moon,Uranus",
 		"Password": "84794011",
 		"Lore": "A beast-warrior that swings a massive scythe that draws on the spirit of its enemies to deliver devastating blows.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Solitude (FMR)"
 	},
 	"22": {
@@ -1872,7 +1887,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "70781052",
 		"Lore": "An entity with dark powers for confusing the enemy. Among the FIEND class of monsters, this is a pretty rare card.",
-		"ImageID": "SummonedSkull-FMR-EN-VG.png",
+		"ImageID": "SummonedSkull-FMR-EN-VG.jpg",
 		"Wiki": "Summoned Skull (FMR)"
 	},
 	"220": {
@@ -1886,7 +1901,7 @@ const cards = {
 		"GuardianStars": "Mercury,Neptune",
 		"Password": "10189126",
 		"Lore": "A mysterious wizard whose face remains forever hidden behind a strange mask.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Masked Sorcerer (FMR)"
 	},
 	"221": {
@@ -1900,7 +1915,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Pluto",
 		"Password": "56283725",
 		"Lore": "A massive, intelligent spider that traps its enemies with webbing.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Kumootoko (FMR)"
 	},
 	"222": {
@@ -1914,7 +1929,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "83678433",
 		"Lore": "A winged creature rumored to appear at midnight.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Midnight Fiend (FMR)"
 	},
 	"223": {
@@ -1928,7 +1943,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mars",
 		"Password": "19066538",
 		"Lore": "A massive sea serpent that creates tidal waves to wipe out its enemies.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Roaring Ocean Snake (FMR)"
 	},
 	"224": {
@@ -1942,7 +1957,7 @@ const cards = {
 		"GuardianStars": "Mercury,Moon",
 		"Password": "46461247",
 		"Lore": "A warrior that excels in laying traps such as a bottomless pit, for eternally ensnaring opponents.",
-		"ImageID": "TrapMaster-FMR-EN-VG.png",
+		"ImageID": "TrapMaster-FMR-EN-VG.jpg",
 		"Wiki": "Trap Master (FMR)"
 	},
 	"225": {
@@ -1956,7 +1971,7 @@ const cards = {
 		"GuardianStars": "Moon,Mercury",
 		"Password": "22855882",
 		"Lore": "Few have escaped the creature. Those that have done so have gained untold power.",
-		"ImageID": "FiendSword-FMR-EN-VG.png",
+		"ImageID": "FiendSword-FMR-EN-VG.jpg",
 		"Wiki": "Fiend Sword (FMR)"
 	},
 	"226": {
@@ -1970,7 +1985,7 @@ const cards = {
 		"GuardianStars": "Moon,Mars",
 		"Password": "54844990",
 		"Lore": "Swift and vicious, this monster grabs its victim with its pincers and attack the captive with its poison stinger.",
-		"ImageID": "SkullStalker-FMR-EN-VG.png",
+		"ImageID": "SkullStalker-FMR-EN-VG.jpg",
 		"Wiki": "Skull Stalker (FMR)"
 	},
 	"227": {
@@ -1984,7 +1999,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mars",
 		"Password": "46718686",
 		"Lore": "A vicious starfish that spits acid to melt away its enemies.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Hitodenchak (FMR)"
 	},
 	"228": {
@@ -1998,7 +2013,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "17733394",
 		"Lore": "A zombie that rose from the remains of the woodland ruler.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Wood Remains (FMR)"
 	},
 	"229": {
@@ -2012,7 +2027,7 @@ const cards = {
 		"GuardianStars": "Sun,Neptune",
 		"Password": "08783685",
 		"Lore": "A creature that allows power to be gained at the cost of life.",
-		"ImageID": "HourglassofLife-FMR-EN-VG.png",
+		"ImageID": "HourglassofLife-FMR-EN-VG.jpg",
 		"Wiki": "Hourglass of Life (FMR)"
 	},
 	"23": {
@@ -2026,7 +2041,7 @@ const cards = {
 		"GuardianStars": "Uranus,Venus",
 		"Password": "06285791",
 		"Lore": "A monster worm created by the darkness. It suddenly appears from under the ground to attack its enemies.",
-		"ImageID": "TheWickedWormBeast-FMR-EN-VG.png",
+		"ImageID": "TheWickedWormBeast-FMR-EN-VG.jpg",
 		"Wiki": "The Wicked Worm Beast (FMR)"
 	},
 	"230": {
@@ -2040,7 +2055,7 @@ const cards = {
 		"GuardianStars": "Neptune,Jupiter",
 		"Password": "80516007",
 		"Lore": "An unusual and ferocious fish with the head of a beast.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Rare Fish (FMR)"
 	},
 	"231": {
@@ -2054,7 +2069,7 @@ const cards = {
 		"GuardianStars": "Mercury,Mars",
 		"Password": "17511156",
 		"Lore": "An unpleasantly smiling creature that wields a scythe to avoid enemy blows.",
-		"ImageID": "WoodClown-FMR-EN-VG.png",
+		"ImageID": "WoodClown-FMR-EN-VG.jpg",
 		"Wiki": "Wood Clown (FMR)"
 	},
 	"232": {
@@ -2068,7 +2083,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "43905751",
 		"Lore": "A living weapon that fires projectiles from its mouth.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Madjinn Gunn (FMR)"
 	},
 	"233": {
@@ -2082,7 +2097,7 @@ const cards = {
 		"GuardianStars": "Mercury,Jupiter",
 		"Password": "89494469",
 		"Lore": "A spirit said to dwell in the world of dreams. Attacks enemies in their sleep.",
-		"ImageID": "DarkTitanofTerror-FMR-EN-VG.png",
+		"ImageID": "DarkTitanofTerror-FMR-EN-VG.jpg",
 		"Wiki": "Dark Titan of Terror (FMR)"
 	},
 	"234": {
@@ -2096,7 +2111,7 @@ const cards = {
 		"GuardianStars": "Mercury,Saturn",
 		"Password": "16899564",
 		"Lore": "A lovely swordmaster with some very agile moves.",
-		"ImageID": "BeautifulHeadhuntress-FMR-EN-VG.png",
+		"ImageID": "BeautifulHeadhuntress-FMR-EN-VG.jpg",
 		"Wiki": "Beautiful Headhuntress (FMR)"
 	},
 	"235": {
@@ -2110,7 +2125,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "42883273",
 		"Lore": "A warrior that has long resided in the forest and enjoys the protection of Mother Nature.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Wodan the Resident of the Forest (FMR)"
 	},
 	"236": {
@@ -2124,7 +2139,7 @@ const cards = {
 		"GuardianStars": "Pluto,Mercury",
 		"Password": "89272878",
 		"Lore": "A warrior that guards the entrance to the netherworld.",
-		"ImageID": "GuardianoftheLabyrinth-FMR-EN-VG.png",
+		"ImageID": "GuardianoftheLabyrinth-FMR-EN-VG.jpg",
 		"Wiki": "Guardian of the Labyrinth (FMR)"
 	},
 	"237": {
@@ -2138,7 +2153,7 @@ const cards = {
 		"GuardianStars": "Uranus,Jupiter",
 		"Password": "84285623",
 		"Lore": "An earthen doll that protects the treasure in the tombs of the ancient kings.",
-		"ImageID": "Haniwa-FMR-EN-VG.png",
+		"ImageID": "Haniwa-FMR-EN-VG.jpg",
 		"Wiki": "Haniwa (FMR)"
 	},
 	"238": {
@@ -2152,7 +2167,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "41061625",
 		"Lore": "A palm tree with a will of its own that attacks enemies by flinging coconuts.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Yashinoki (FMR)"
 	},
 	"239": {
@@ -2166,7 +2181,7 @@ const cards = {
 		"GuardianStars": "Mercury,Uranus",
 		"Password": "78556320",
 		"Lore": "A woman warrior that serves the forces of darkness.",
-		"ImageID": "VishwarRandi-FMR-EN-VG.png",
+		"ImageID": "VishwarRandi-FMR-EN-VG.jpg",
 		"Wiki": "Vishwar Randi (FMR)"
 	},
 	"24": {
@@ -2180,7 +2195,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "32274490",
 		"Lore": "A skeletal ghost that isn't strong but can mean trouble in large numbers.",
-		"ImageID": "SkullServant-FMR-EN-VG.png",
+		"ImageID": "SkullServant-FMR-EN-VG.jpg",
 		"Wiki": "Skull Servant (FMR)"
 	},
 	"240": {
@@ -2194,7 +2209,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "08944575",
 		"Lore": "An eyeball creature with legs for jumping high and delivering finishing blows with its sharp claws.",
-		"ImageID": "TheDrdek-FMR-EN-VG.png",
+		"ImageID": "TheDrdek-FMR-EN-VG.jpg",
 		"Wiki": "The Drdek (FMR)"
 	},
 	"241": {
@@ -2208,7 +2223,7 @@ const cards = {
 		"GuardianStars": "Moon,Uranus",
 		"Password": "41949033",
 		"Lore": "armed with psycho sword, this sinister cutthroat rules the outer lands.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Dark Assailant (FMR)"
 	},
 	"242": {
@@ -2222,7 +2237,7 @@ const cards = {
 		"GuardianStars": "Mars,moon",
 		"Password": "47695416",
 		"Lore": "An opponent's fate is decided when the flames of each finger are extinguished.",
-		"ImageID": "CandleofFate-FMR-EN-VG.png",
+		"ImageID": "CandleofFate-FMR-EN-VG.jpg",
 		"Wiki": "Candle of Fate (FMR)"
 	},
 	"243": {
@@ -2236,7 +2251,7 @@ const cards = {
 		"GuardianStars": "Neptune,Saturn",
 		"Password": "03732747",
 		"Lore": "A water spirit that envelops its opponent in a think fog to cover its attack.",
-		"ImageID": "WaterElement-FMR-EN-VG.png",
+		"ImageID": "WaterElement-FMR-EN-VG.jpg",
 		"Wiki": "Water Element (FMR)"
 	},
 	"244": {
@@ -2250,7 +2265,7 @@ const cards = {
 		"GuardianStars": "Mars,Venus",
 		"Password": "40826495",
 		"Lore": "A monster born from the lava pits. Generates intensive  heat that can melt away its enemies.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Dissolverock (FMR)"
 	},
 	"245": {
@@ -2264,7 +2279,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "76211194",
 		"Lore": "An eyeball fiend created by a servant of darkness. Uses \"Dark Spheres\" to blow away its enemies.",
-		"ImageID": "MedaBat-FMR-EN-VG.png",
+		"ImageID": "MedaBat-FMR-EN-VG.jpg",
 		"Wiki": "Meda Bat (FMR)"
 	},
 	"246": {
@@ -2278,7 +2293,7 @@ const cards = {
 		"GuardianStars": "Moon,Mercury",
 		"Password": "03606209",
 		"Lore": "A creature with a sword that gains its power from the life forces of its victims.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "One Who Hunts Souls (FMR)"
 	},
 	"247": {
@@ -2292,7 +2307,7 @@ const cards = {
 		"GuardianStars": "Neptune,sun",
 		"Password": "39004808",
 		"Lore": "An amphibian capable of calling up a massive tidal wave from the dark seas to wipe out enemy monsters.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Root Water (FMR)"
 	},
 	"248": {
@@ -2306,7 +2321,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Venus",
 		"Password": "75499502",
 		"Lore": "A fearsome duo consisting of a beast master and its loyal servant.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Master \u0026 Expert (FMR)"
 	},
 	"249": {
@@ -2320,7 +2335,7 @@ const cards = {
 		"GuardianStars": "Neptune,Moon",
 		"Password": "02483611",
 		"Lore": "transforms the water overflowing from a jar into attacking dragon.",
-		"ImageID": "WaterOmotics-FMR-EN-VG.png",
+		"ImageID": "WaterOmotics-FMR-EN-VG.jpg",
 		"Wiki": "Water Omotics (FMR)"
 	},
 	"25": {
@@ -2334,7 +2349,7 @@ const cards = {
 		"GuardianStars": "Moon,Mercury",
 		"Password": "69669405",
 		"Lore": "A small imp that dwells in the dark. Its single horn makes it a formidable opponent.",
-		"ImageID": "HornImp-FMR-EN-VG.png",
+		"ImageID": "HornImp-FMR-EN-VG.jpg",
 		"Wiki": "Horn Imp (FMR)"
 	},
 	"250": {
@@ -2348,7 +2363,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mercury",
 		"Password": "38982356",
 		"Lore": "An ice warrior whose slightest touch freezes an opponent.",
-		"ImageID": "Hyo-FMR-EN-VG.png",
+		"ImageID": "Hyo-FMR-EN-VG.jpg",
 		"Wiki": "Hyo (FMR)"
 	},
 	"251": {
@@ -2362,7 +2377,7 @@ const cards = {
 		"GuardianStars": "Neptune,Venus",
 		"Password": "75376965",
 		"Lore": "A beautiful mermaid that lures voyagers to a watery grave.",
-		"ImageID": "EnchantingMermaid-FMR-EN-VG.png",
+		"ImageID": "EnchantingMermaid-FMR-EN-VG.jpg",
 		"Wiki": "Enchanting Mermaid (FMR)"
 	},
 	"252": {
@@ -2376,7 +2391,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "01761063",
 		"Lore": "A cat creature that looks cute but delivers scratching blows with its sharp claws.",
-		"ImageID": "Nekogal1-FMR-EN-VG.png",
+		"ImageID": "Nekogal1-FMR-EN-VG.jpg",
 		"Wiki": "Nekogal 1 (FMR)"
 	},
 	"253": {
@@ -2390,7 +2405,7 @@ const cards = {
 		"GuardianStars": "Mercury,Neptune",
 		"Password": "37160778",
 		"Lore": "A creature that chose the path of sorcery to become a witch.",
-		"ImageID": "Angelwitch-FMR-EN-VG.png",
+		"ImageID": "Angelwitch-FMR-EN-VG.jpg",
 		"Wiki": "Angelwitch (FMR)"
 	},
 	"254": {
@@ -2404,7 +2419,7 @@ const cards = {
 		"GuardianStars": "Moon,Mars",
 		"Password": "64154377",
 		"Lore": "A repulsive monster with a gaping belly that swallows almost anything.",
-		"ImageID": "EmbryonicBeast-FMR-EN-VG.png",
+		"ImageID": "EmbryonicBeast-FMR-EN-VG.jpg",
 		"Wiki": "Embryonic Beast (FMR)"
 	},
 	"255": {
@@ -2418,7 +2433,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Uranus",
 		"Password": "00549481",
 		"Lore": "This monster is shielded by a hide covered in thick hair.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Prevent Rat (FMR)"
 	},
 	"256": {
@@ -2432,7 +2447,7 @@ const cards = {
 		"GuardianStars": "Venus,Mars",
 		"Password": "37043180",
 		"Lore": "A monster capable of creating dimensional rifts to trap its enemies.",
-		"ImageID": "DimensionalWarrior-FMR-EN-VG.png",
+		"ImageID": "DimensionalWarrior-FMR-EN-VG.jpg",
 		"Wiki": "Dimensional Warrior (FMR)"
 	},
 	"257": {
@@ -2446,7 +2461,7 @@ const cards = {
 		"GuardianStars": "Uranus,Sun",
 		"Password": "63432835",
 		"Lore": "With a body armored by rock hard fur, this monster features excellent defense capabilities.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Stone Armadiller (FMR)"
 	},
 	"258": {
@@ -2460,7 +2475,7 @@ const cards = {
 		"GuardianStars": "Mercury,Uranus",
 		"Password": "99426834",
 		"Lore": "This creature changes the ground at its feet into quicksand to ensnare its\nenemies.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Beastking of the Swamps (FMR)"
 	},
 	"259": {
@@ -2474,7 +2489,7 @@ const cards = {
 		"GuardianStars": "Moon,Mercury",
 		"Password": "36821538",
 		"Lore": "A master fighter that uses various staffs to render enemies unconscious.",
-		"ImageID": "AncientSorcerer-FMR-EN-VG.png",
+		"ImageID": "AncientSorcerer-FMR-EN-VG.jpg",
 		"Wiki": "Ancient Sorcerer (FMR)"
 	},
 	"26": {
@@ -2488,7 +2503,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "05053103",
 		"Lore": "A monster with tremendous power. Destroys enemies with a swing of its axe.",
-		"ImageID": "BattleOx-FMR-EN-VG.png",
+		"ImageID": "BattleOx-FMR-EN-VG.jpg",
 		"Wiki": "Battle Ox (FMR)"
 	},
 	"260": {
@@ -2502,7 +2517,7 @@ const cards = {
 		"GuardianStars": "Moon,Venus",
 		"Password": "62210247",
 		"Lore": "A lovely moon goddess that can throw up a lunar curtain to block attacks.",
-		"ImageID": "LunarQueenElzaim-FMR-EN-VG.png",
+		"ImageID": "LunarQueenElzaim-FMR-EN-VG.jpg",
 		"Wiki": "Lunar Queen Elzaim (FMR)"
 	},
 	"261": {
@@ -2516,7 +2531,7 @@ const cards = {
 		"GuardianStars": "Venus,Jupiter",
 		"Password": "15150371",
 		"Lore": "A malevolent mirror that hypnotizes a beholder and renders the victim susceptible to attacks.",
-		"ImageID": "WickedMirror-FMR-EN-VG.png",
+		"ImageID": "WickedMirror-FMR-EN-VG.jpg",
 		"Wiki": "Wicked Mirror (FMR)"
 	},
 	"262": {
@@ -2530,7 +2545,7 @@ const cards = {
 		"GuardianStars": "Mars,Neptune",
 		"Password": "25109950",
 		"Lore": "An elf warrior mounted on a huge lizard.",
-		"ImageID": "TheLittleSwordsmanofAile-FMR-EN-VG.png",
+		"ImageID": "TheLittleSwordsmanofAile-FMR-EN-VG.jpg",
 		"Wiki": "The Little Swordsman of Aile (FMR)"
 	},
 	"263": {
@@ -2544,7 +2559,7 @@ const cards = {
 		"GuardianStars": "Uranus,Sun",
 		"Password": "62193699",
 		"Lore": "A stone golem that turns opponents in to rocks and then crushes them.",
-		"ImageID": "RockOgreGrotto2-FMR-EN-VG.png",
+		"ImageID": "RockOgreGrotto2-FMR-EN-VG.jpg",
 		"Wiki": "Rock Ogre Grotto 2 (FMR)"
 	},
 	"264": {
@@ -2558,7 +2573,7 @@ const cards = {
 		"GuardianStars": "Sun,Mars",
 		"Password": "98582704",
 		"Lore": "Hiding within is eggshell, this creature blocks enemy attacks with its massive wings.",
-		"ImageID": "WingEggElf-FMR-EN-VG.png",
+		"ImageID": "WingEggElf-FMR-EN-VG.jpg",
 		"Wiki": "Wing Egg Elf (FMR)"
 	},
 	"265": {
@@ -2572,7 +2587,7 @@ const cards = {
 		"GuardianStars": "Neptune,Jupiter",
 		"Password": "18710707",
 		"Lore": "Grand King of the Seven Seas. Able to summon massive tidal waves to drown the enemy.",
-		"ImageID": "TheFuriousSeaKing-FMR-EN-VG.png",
+		"ImageID": "TheFuriousSeaKing-FMR-EN-VG.jpg",
 		"Wiki": "The Furious Sea King (FMR)"
 	},
 	"266": {
@@ -2586,7 +2601,7 @@ const cards = {
 		"GuardianStars": "Saturn,Venus",
 		"Password": "51371017",
 		"Lore": "A queen of swords that is virtually unequaled in her mastery of every blade to man.",
-		"ImageID": "PrincessofTsurugi-FMR-EN-VG.png",
+		"ImageID": "PrincessofTsurugi-FMR-EN-VG.jpg",
 		"Wiki": "Princess of Tsurugi (FMR)"
 	},
 	"267": {
@@ -2600,7 +2615,7 @@ const cards = {
 		"GuardianStars": "Mercury,Mars",
 		"Password": "97360116",
 		"Lore": "The speed of this warrior creates an intense vacuum that can actually slice\nthrew a monster's hide.",
-		"ImageID": "UnknownWarriorofFiend-FMR-EN-VG.png",
+		"ImageID": "UnknownWarriorofFiend-FMR-EN-VG.jpg",
 		"Wiki": "Unknown Warrior of Fiend (FMR)"
 	},
 	"268": {
@@ -2614,7 +2629,7 @@ const cards = {
 		"GuardianStars": "Mercury,Jupiter",
 		"Password": "15507080",
 		"Lore": "A sorcerer that worships the dark forces and can summon a massive hand to drag away opponents into the netherworld.",
-		"ImageID": "SectarianofSecrets-FMR-EN-VG.png",
+		"ImageID": "SectarianofSecrets-FMR-EN-VG.jpg",
 		"Wiki": "Sectarian of Secrets (FMR)"
 	},
 	"269": {
@@ -2628,7 +2643,7 @@ const cards = {
 		"GuardianStars": "Mercury,Saturn",
 		"Password": "50259460",
 		"Lore": "A lord of destruction born from the heart of darkness, this creature can summon\nstorms to destroy opponents.",
-		"ImageID": "VersagotheDestroyer-FMR-EN-VG.png",
+		"ImageID": "VersagotheDestroyer-FMR-EN-VG.jpg",
 		"Wiki": "Versago the Destroyer (FMR)"
 	},
 	"27": {
@@ -2642,7 +2657,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Venus",
 		"Password": "32452818",
 		"Lore": "What this creature lacks in size, it makes up for in defense when battling in the meadow.",
-		"ImageID": "BeaverWarrior-FMR-EN-VG.png",
+		"ImageID": "BeaverWarrior-FMR-EN-VG.jpg",
 		"Wiki": "Beaver Warrior (FMR)"
 	},
 	"270": {
@@ -2656,7 +2671,7 @@ const cards = {
 		"GuardianStars": "Neptune,Saturn",
 		"Password": "96643568",
 		"Lore": "A rain spirit that can summon typhoons to blow away its enemies.",
-		"ImageID": "Wetha-FMR-EN-VG.png",
+		"ImageID": "Wetha-FMR-EN-VG.jpg",
 		"Wiki": "Wetha (FMR)"
 	},
 	"271": {
@@ -2670,7 +2685,7 @@ const cards = {
 		"GuardianStars": "Mercury,Uranus",
 		"Password": "23032273",
 		"Lore": "This creature's ominous eyes can unleash piercing rays against its enemies.",
-		"ImageID": "MegirusLight-FMR-EN-VG.png",
+		"ImageID": "MegirusLight-FMR-EN-VG.jpg",
 		"Wiki": "Megirus Light (FMR)"
 	},
 	"272": {
@@ -2684,7 +2699,7 @@ const cards = {
 		"GuardianStars": "Mars,Mercury",
 		"Password": "59036972",
 		"Lore": "Related to the phoenix, this creature dwells in the mountains. Its fiery breath is extremely scorching.",
-		"ImageID": "Mavelus-FMR-EN-VG.png",
+		"ImageID": "Mavelus-FMR-EN-VG.jpg",
 		"Wiki": "Mavelus (FMR)"
 	},
 	"273": {
@@ -2698,7 +2713,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Pluto",
 		"Password": "86421986",
 		"Lore": "Armed with a wealth of knowledge, this monster is able to block just about any attack.",
-		"ImageID": "AncientTreeofEnlightenment-FMR-EN-VG.png",
+		"ImageID": "AncientTreeofEnlightenment-FMR-EN-VG.jpg",
 		"Wiki": "Ancient Tree of Enlightenment (FMR)"
 	},
 	"274": {
@@ -2712,7 +2727,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "22910685",
 		"Lore": "This youthful king of the forests lives in a green world, abundant with trees and wildlife.",
-		"ImageID": "GreenPhantomKing-FMR-EN-VG.png",
+		"ImageID": "GreenPhantomKing-FMR-EN-VG.jpg",
 		"Wiki": "Green Phantom King (FMR)"
 	},
 	"275": {
@@ -2726,7 +2741,7 @@ const cards = {
 		"GuardianStars": "Uranus,Moon",
 		"Password": "58314394",
 		"Lore": "A land-based armored robot that is said to once have marine attack capabilities.",
-		"ImageID": "GroundAttackerBugroth-FMR-EN-VG.png",
+		"ImageID": "GroundAttackerBugroth-FMR-EN-VG.jpg",
 		"Wiki": "Ground Attacker Bugroth (FMR)"
 	},
 	"276": {
@@ -2740,7 +2755,7 @@ const cards = {
 		"GuardianStars": "Sun,Saturn",
 		"Password": "85309439",
 		"Lore": "The Sun and the North Wind join hands to deliver a devastating combination of heat and gale-force winds.",
-		"ImageID": "RayTemperature-FMR-EN-VG.png",
+		"ImageID": "RayTemperature-FMR-EN-VG.jpg",
 		"Wiki": "Ray \u0026 Temperature (FMR)"
 	},
 	"277": {
@@ -2754,7 +2769,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "11793047",
 		"Lore": "A gorgon's egg with eyes said to create whatever creature crosses its view.",
-		"ImageID": "GorgonEgg-FMR-EN-VG.png",
+		"ImageID": "GorgonEgg-FMR-EN-VG.jpg",
 		"Wiki": "Gorgon Egg (FMR)"
 	},
 	"278": {
@@ -2768,7 +2783,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "58192742",
 		"Lore": "Nobody has any idea what creature may spawn from this mysterious larva.",
-		"ImageID": "PetitMoth-FMR-EN-VG.png",
+		"ImageID": "PetitMoth-FMR-EN-VG.jpg",
 		"Wiki": "Petit Moth (FMR)"
 	},
 	"279": {
@@ -2782,7 +2797,7 @@ const cards = {
 		"GuardianStars": "Mercury,Neptune",
 		"Password": "84686841",
 		"Lore": "A specter that dwells in a blinding curtain of smoke.",
-		"ImageID": "KingFog-FMR-EN-VG.png",
+		"ImageID": "KingFog-FMR-EN-VG.jpg",
 		"Wiki": "King Fog (FMR)"
 	},
 	"28": {
@@ -2796,7 +2811,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mercury",
 		"Password": "68846917",
 		"Lore": "Protected by a solid body of rock, this creature throws a bone-shattering punch.",
-		"ImageID": "RockOgreGrotto1-FMR-EN-VG.png",
+		"ImageID": "RockOgreGrotto1-FMR-EN-VG.jpg",
 		"Wiki": "Rock Ogre Grotto 1 (FMR)"
 	},
 	"280": {
@@ -2810,7 +2825,7 @@ const cards = {
 		"GuardianStars": "Uranus,Venus",
 		"Password": "10071456",
 		"Lore": "A creature that protects the king's throne from usurpers.",
-		"ImageID": "ProtectoroftheThrone-FMR-EN-VG.png",
+		"ImageID": "ProtectoroftheThrone-FMR-EN-VG.jpg",
 		"Wiki": "Protector of the Throne (FMR)"
 	},
 	"281": {
@@ -2824,7 +2839,7 @@ const cards = {
 		"GuardianStars": "Mercury,Moon",
 		"Password": "47060154",
 		"Lore": "Nothing can stop the mad attack of this powerful creature.",
-		"ImageID": "MysticClown-FMR-EN-VG.png",
+		"ImageID": "MysticClown-FMR-EN-VG.jpg",
 		"Wiki": "Mystic Clown (FMR)"
 	},
 	"282": {
@@ -2838,7 +2853,7 @@ const cards = {
 		"GuardianStars": "Venus,Saturn",
 		"Password": "83464209",
 		"Lore": "A monstrous sheep with a long tail for hypnotizing enemies to render them powerless.",
-		"ImageID": "MysticalSheep2-FMR-EN-VG.png",
+		"ImageID": "MysticalSheep2-FMR-EN-VG.jpg",
 		"Wiki": "Mystical Sheep 2 (FMR)"
 	},
 	"283": {
@@ -2852,7 +2867,7 @@ const cards = {
 		"GuardianStars": "Sun,Jupiter",
 		"Password": "10859908",
 		"Lore": "A monster machine that generates images to confuse its enemies, making them prone to attacks.",
-		"ImageID": "Holograh-FMR-EN-VG.png",
+		"ImageID": "Holograh-FMR-EN-VG.jpg",
 		"Wiki": "Holograh (FMR)"
 	},
 	"284": {
@@ -2866,7 +2881,7 @@ const cards = {
 		"GuardianStars": "Venus,Uranus",
 		"Password": "46247516",
 		"Lore": "A magic user that corrodes the yin and yang to create a twisted power to attack enemies.",
-		"ImageID": "TaotheChanter-FMR-EN-VG.png",
+		"ImageID": "TaotheChanter-FMR-EN-VG.jpg",
 		"Wiki": "Tao the Chanter (FMR)"
 	},
 	"285": {
@@ -2880,7 +2895,7 @@ const cards = {
 		"GuardianStars": "Sun,Neptune",
 		"Password": "82742611",
 		"Lore": "A snake with a single eye that blows an icy breath to freeze it opponents.",
-		"ImageID": "SerpentMarauder-FMR-EN-VG.png",
+		"ImageID": "SerpentMarauder-FMR-EN-VG.jpg",
 		"Wiki": "Serpent Marauder (FMR)"
 	},
 	"286": {
@@ -2894,7 +2909,7 @@ const cards = {
 		"GuardianStars": "Mercury,Mars",
 		"Password": "19737320",
 		"Lore": "An indestructible machine built to protect key entrances.",
-		"ImageID": "Gatekeeper-FMR-EN-VG.png",
+		"ImageID": "Gatekeeper-FMR-EN-VG.jpg",
 		"Wiki": "Gatekeeper (FMR)"
 	},
 	"287": {
@@ -2908,7 +2923,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "45121025",
 		"Lore": "An ogre possessed by the powers of the dark. Few can withstand its rapid charge.",
-		"ImageID": "OgreoftheBlackShadow-FMR-EN-VG.png",
+		"ImageID": "OgreoftheBlackShadow-FMR-EN-VG.jpg",
 		"Wiki": "Ogre of the Black Shadow (FMR)"
 	},
 	"288": {
@@ -2922,7 +2937,7 @@ const cards = {
 		"GuardianStars": "Mercury,Jupiter",
 		"Password": "72520073",
 		"Lore": "A demented artist that creates objects d'art to crunch enemies.",
-		"ImageID": "DarkArtist-FMR-EN-VG.png",
+		"ImageID": "DarkArtist-FMR-EN-VG.jpg",
 		"Wiki": "Dark Artist (FMR)"
 	},
 	"289": {
@@ -2936,7 +2951,7 @@ const cards = {
 		"GuardianStars": "Neptune,Moon",
 		"Password": "18914778",
 		"Lore": "A shape-shifting slime that is capable of adopting the form of other creatures.",
-		"ImageID": "ChangeSlime-FMR-EN-VG.png",
+		"ImageID": "ChangeSlime-FMR-EN-VG.jpg",
 		"Wiki": "Change Slime (FMR)"
 	},
 	"29": {
@@ -2950,7 +2965,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mars",
 		"Password": "04931562",
 		"Lore": "A solid warrior that can move swiftly over rough terrain.",
-		"ImageID": "MountainWarrior-FMR-EN-VG.png",
+		"ImageID": "MountainWarrior-FMR-EN-VG.jpg",
 		"Wiki": "Mountain Warrior (FMR)"
 	},
 	"290": {
@@ -2964,7 +2979,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "45909477",
 		"Lore": "A servant of the moon goddess, This warrior wields a pike with a spectacular crescent-shaped blade.",
-		"ImageID": "MoonEnvoy-FMR-EN-VG.png",
+		"ImageID": "MoonEnvoy-FMR-EN-VG.jpg",
 		"Wiki": "Moon Envoy (FMR)"
 	},
 	"291": {
@@ -2978,7 +2993,7 @@ const cards = {
 		"GuardianStars": "Mars,Saturn",
 		"Password": "71407486",
 		"Lore": "A malevolent creature wrapped in flames that attacks enemies with intense fire.",
-		"ImageID": "Fireyarou-FMR-EN-VG.png",
+		"ImageID": "Fireyarou-FMR-EN-VG.jpg",
 		"Wiki": "Fireyarou (FMR)"
 	},
 	"292": {
@@ -2992,7 +3007,7 @@ const cards = {
 		"GuardianStars": "Neptune,Venus",
 		"Password": "07892180",
 		"Lore": "An amphibian with extrasensory powers for blocking attacks.",
-		"ImageID": "PsychicKappa-FMR-EN-VG.png",
+		"ImageID": "PsychicKappa-FMR-EN-VG.jpg",
 		"Wiki": "Psychic Kappa (FMR)"
 	},
 	"293": {
@@ -3006,7 +3021,7 @@ const cards = {
 		"GuardianStars": "Sun,Uranus",
 		"Password": "44287299",
 		"Lore": "Legendary swordmaster and a veteran of over 100 battles.",
-		"ImageID": "MasakitheLegendarySwordsman-FMR-EN-VG.png",
+		"ImageID": "MasakitheLegendarySwordsman-FMR-EN-VG.jpg",
 		"Wiki": "Masaki the Legendary Swordsman (FMR)"
 	},
 	"294": {
@@ -3020,7 +3035,7 @@ const cards = {
 		"GuardianStars": "Saturn,Mercury",
 		"Password": "70681994",
 		"Lore": "A warrior equipped with equipment fashioned from dragon scales.",
-		"ImageID": "DragonesstheWickedKnight-FMR-EN-VG.png",
+		"ImageID": "DragonesstheWickedKnight-FMR-EN-VG.jpg",
 		"Wiki": "Dragoness the Wicked Knight (FMR)"
 	},
 	"295": {
@@ -3034,7 +3049,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "07670542",
 		"Lore": "A monstrous creature born from failed lab experiment.",
-		"ImageID": "BioPlant-FMR-EN-VG.png",
+		"ImageID": "BioPlant-FMR-EN-VG.jpg",
 		"Wiki": "Bio Plant (FMR)"
 	},
 	"296": {
@@ -3048,7 +3063,7 @@ const cards = {
 		"GuardianStars": "Saturn,Pluto",
 		"Password": "33064647",
 		"Lore": "This dragon wears a shield not only for protection but also for ramming its enemies.",
-		"ImageID": "OneeyedShieldDragon-FMR-EN-VG.png",
+		"ImageID": "OneeyedShieldDragon-FMR-EN-VG.jpg",
 		"Wiki": "One-eyed Shield Dragon (FMR)"
 	},
 	"297": {
@@ -3062,7 +3077,7 @@ const cards = {
 		"GuardianStars": "Moon,Uranus",
 		"Password": "75559356",
 		"Lore": "An unstoppable mechanical soldier powered by dark forces.",
-		"ImageID": "CyberSoldierofDarkworld-FMR-EN-VG.png",
+		"ImageID": "CyberSoldierofDarkworld-FMR-EN-VG.jpg",
 		"Wiki": "Cyber Soldier of Darkworld (FMR)"
 	},
 	"298": {
@@ -3076,7 +3091,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "02957055",
 		"Lore": "A two-headed dragon with a pair of vicious jaws for crushing its enemies.",
-		"ImageID": "WickedDragonwiththeErsatzHead-FMR-EN-VG.png",
+		"ImageID": "WickedDragonwiththeErsatzHead-FMR-EN-VG.jpg",
 		"Wiki": "Wicked Dragon with the Ersatz Head (FMR)"
 	},
 	"299": {
@@ -3090,7 +3105,7 @@ const cards = {
 		"GuardianStars": "Sun,Pluto",
 		"Password": "38942059",
 		"Lore": "A maiden that uses sound to her advantage. She wields a scythe that's shaped like a musical note.",
-		"ImageID": "SonicMaid-FMR-EN-VG.png",
+		"ImageID": "SonicMaid-FMR-EN-VG.jpg",
 		"Wiki": "Sonic Maid (FMR)"
 	},
 	"3": {
@@ -3104,7 +3119,7 @@ const cards = {
 		"GuardianStars": "Moon,Mars",
 		"Password": "76184692",
 		"Lore": "A one-eyed behemoth with thick, powerful arms made for delivering punishing blows.",
-		"ImageID": "HitotsumeGiant-FMR-EN-VG.png",
+		"ImageID": "HitotsumeGiant-FMR-EN-VG.jpg",
 		"Wiki": "Hitotsu-me Giant (FMR)"
 	},
 	"30": {
@@ -3118,7 +3133,7 @@ const cards = {
 		"GuardianStars": "Moon,Mars",
 		"Password": "31339260",
 		"Lore": "A deceptively fragile-looking skeleton warrior that is known for its swift and precise attacks.",
-		"ImageID": "ZombieWarrior-FMR-EN-VG.png",
+		"ImageID": "ZombieWarrior-FMR-EN-VG.jpg",
 		"Wiki": "Zombie Warrior (FMR)"
 	},
 	"300": {
@@ -3132,7 +3147,7 @@ const cards = {
 		"GuardianStars": "Saturn,Neptune",
 		"Password": "85705804",
 		"Lore": "A vicious bird that attacks from the skies with its whip-like tail.",
-		"ImageID": "Kurama-FMR-EN-VG.png",
+		"ImageID": "Kurama-FMR-EN-VG.jpg",
 		"Wiki": "Kurama (FMR)"
 	},
 	"301": {
@@ -3141,7 +3156,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "61854111",
 		"Lore": "A sword that brings out the best in warriors. It cannot be used by servants of the dark.",
-		"ImageID": "LegendarySword-FMR-EN-VG.png",
+		"ImageID": "LegendarySword-FMR-EN-VG.jpg",
 		"Wiki": "Legendary Sword (FMR)"
 	},
 	"302": {
@@ -3150,7 +3165,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "37120512",
 		"Lore": "Dark forces increase the power of Warriors.",
-		"ImageID": "SwordofDarkDestruction-FMR-EN-VG.png",
+		"ImageID": "SwordofDarkDestruction-FMR-EN-VG.jpg",
 		"Wiki": "Sword of Dark Destruction (FMR)"
 	},
 	"303": {
@@ -3159,7 +3174,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "04614116",
 		"Lore": "Dark forces increase the power of Fiends and other monsters of the Dark!",
-		"ImageID": "DarkEnergy-FMR-EN-VG.png",
+		"ImageID": "DarkEnergy-FMR-EN-VG.jpg",
 		"Wiki": "Dark Energy (FMR)"
 	},
 	"304": {
@@ -3168,7 +3183,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "40619825",
 		"Lore": "Fiends and Beast-Warriors can constantly use their maximum strength!",
-		"ImageID": "AxeofDespair-FMR-EN-VG.png",
+		"ImageID": "AxeofDespair-FMR-EN-VG.jpg",
 		"Wiki": "Axe of Despair (FMR)"
 	},
 	"305": {
@@ -3177,7 +3192,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "77007920",
 		"Lore": "Arms insects with a powerful laser!",
-		"ImageID": "LaserCannonArmor-FMR-EN-VG.png",
+		"ImageID": "LaserCannonArmor-FMR-EN-VG.jpg",
 		"Wiki": "Laser Cannon Armor (FMR)"
 	},
 	"306": {
@@ -3186,7 +3201,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "03492538",
 		"Lore": "Allows Insects to fire an intense blast of fire!",
-		"ImageID": "InsectArmorwithLaserCannon-FMR-EN-VG.png",
+		"ImageID": "InsectArmorwithLaserCannon-FMR-EN-VG.jpg",
 		"Wiki": "Insect Armor with Laser Cannon (FMR)"
 	},
 	"307": {
@@ -3195,7 +3210,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "39897277",
 		"Lore": "Increases the power of elves with mystical light!",
-		"ImageID": "ElfsLight-FMR-EN-VG.png",
+		"ImageID": "ElfsLight-FMR-EN-VG.jpg",
 		"Wiki": "Elf's Light (FMR)"
 	},
 	"308": {
@@ -3204,7 +3219,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "46009906",
 		"Lore": "Increases the power of Beasts and other fanged monsters!",
-		"ImageID": "BeastFangs-FMR-EN-VG.png",
+		"ImageID": "BeastFangs-FMR-EN-VG.jpg",
 		"Wiki": "Beast Fangs (FMR)"
 	},
 	"309": {
@@ -3213,7 +3228,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "02370081",
 		"Lore": "Boosts the power of shelled monsters! said to have no effect on those without shells.",
-		"ImageID": "SteelShell-FMR-EN-VG.png",
+		"ImageID": "SteelShell-FMR-EN-VG.jpg",
 		"Wiki": "Steel Shell (FMR)"
 	},
 	"31": {
@@ -3227,7 +3242,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "67724379",
 		"Lore": "A vicious fire-breathing dragon whose wicked flames corrupt the souls of its victims.",
-		"ImageID": "KoumoriDragon-FMR-EN-VG.png",
+		"ImageID": "KoumoriDragon-FMR-EN-VG.jpg",
 		"Wiki": "Koumori Dragon (FMR)"
 	},
 	"310": {
@@ -3236,7 +3251,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "39774685",
 		"Lore": "Vile microbes boosts the power of Plants in the woods!",
-		"ImageID": "VileGerms-FMR-EN-VG.png",
+		"ImageID": "VileGerms-FMR-EN-VG.jpg",
 		"Wiki": "Vile Germs (FMR)"
 	},
 	"311": {
@@ -3245,7 +3260,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "65169794",
 		"Lore": "This pendant grants extra power to Dark sorcerers!",
-		"ImageID": "BlackPendant-FMR-EN-VG.png",
+		"ImageID": "BlackPendant-FMR-EN-VG.jpg",
 		"Wiki": "Black Pendant (FMR)"
 	},
 	"312": {
@@ -3254,7 +3269,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "01557499",
 		"Lore": "Silver bow and arrow enhances the power of Fairies.",
-		"ImageID": "SilverBowandArrow-FMR-EN-VG.png",
+		"ImageID": "SilverBowandArrow-FMR-EN-VG.jpg",
 		"Wiki": "Silver Bow and Arrow (FMR)"
 	},
 	"313": {
@@ -3263,7 +3278,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "38552107",
 		"Lore": "Increases the power of horned creatures! Has no effect on Dark monsters.",
-		"ImageID": "HornofLight-FMR-EN-VG.png",
+		"ImageID": "HornofLight-FMR-EN-VG.jpg",
 		"Wiki": "Horn of Light (FMR)"
 	},
 	"314": {
@@ -3272,7 +3287,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "64047146",
 		"Lore": "Increases the power of Dark monsters with horns!",
-		"ImageID": "HornoftheUnicorn-FMR-EN-VG.png",
+		"ImageID": "HornoftheUnicorn-FMR-EN-VG.jpg",
 		"Wiki": "Horn of the Unicorn (FMR)"
 	},
 	"315": {
@@ -3281,7 +3296,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "01435851",
 		"Lore": "A legendary treasure that increases the power of dragons.",
-		"ImageID": "DragonTreasure-FMR-EN-VG.png",
+		"ImageID": "DragonTreasure-FMR-EN-VG.jpg",
 		"Wiki": "Dragon Treasure (FMR)"
 	},
 	"316": {
@@ -3290,7 +3305,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "37820550",
 		"Lore": "A whip for paralyzing enemies. Increases power when equipped with female creatures.",
-		"ImageID": "Electrowhip-FMR-EN-VG.png",
+		"ImageID": "Electrowhip-FMR-EN-VG.jpg",
 		"Wiki": "Electro-whip (FMR)"
 	},
 	"317": {
@@ -3299,7 +3314,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "63224564",
 		"Lore": "Increases the power of female monsters by changing their attitudes.",
-		"ImageID": "CyberShield-FMR-EN-VG.png",
+		"ImageID": "CyberShield-FMR-EN-VG.jpg",
 		"Wiki": "Cyber Shield (FMR)"
 	},
 	"318": {
@@ -3308,7 +3323,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "90219263",
 		"Lore": "Creates the doppelgangers of Harpie Lady for three-pronged attacks!",
-		"ImageID": "ElegantEgotist-FMR-EN-VG.png",
+		"ImageID": "ElegantEgotist-FMR-EN-VG.jpg",
 		"Wiki": "Elegant Egotist (FMR)"
 	},
 	"319": {
@@ -3317,7 +3332,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "36607978",
 		"Lore": "Moonlight increases the power of Beasts!",
-		"ImageID": "MysticalMoon-FMR-EN-VG.png",
+		"ImageID": "MysticalMoon-FMR-EN-VG.jpg",
 		"Wiki": "Mystical Moon (FMR)"
 	},
 	"32": {
@@ -3331,7 +3346,7 @@ const cards = {
 		"GuardianStars": "Uranus,Neptune",
 		"Password": "94119974",
 		"Lore": "An unusual and rarely seen two headed dragon.",
-		"ImageID": "TwoheadedKingRex-FMR-EN-VG.png",
+		"ImageID": "TwoheadedKingRex-FMR-EN-VG.jpg",
 		"Wiki": "Two-headed King Rex (FMR)"
 	},
 	"320": {
@@ -3340,7 +3355,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "63102017",
 		"Lore": "Forces an opponent's monster card positioned for defense into the attack position.",
-		"ImageID": "StopDefense-FMR-EN-VG.png",
+		"ImageID": "StopDefense-FMR-EN-VG.jpg",
 		"Wiki": "Stop Defense (FMR)"
 	},
 	"321": {
@@ -3349,7 +3364,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "99597615",
 		"Lore": "Diabolic forces act to increase the power of monsters!",
-		"ImageID": "MalevolentNuzzler-FMR-EN-VG.png",
+		"ImageID": "MalevolentNuzzler-FMR-EN-VG.jpg",
 		"Wiki": "Malevolent Nuzzler (FMR)"
 	},
 	"322": {
@@ -3358,7 +3373,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "15052462",
 		"Lore": "Mystic forces from the crystal increase the power of Zombies.",
-		"ImageID": "VioletCrystal-FMR-EN-VG.png",
+		"ImageID": "VioletCrystal-FMR-EN-VG.jpg",
 		"Wiki": "Violet Crystal (FMR)"
 	},
 	"323": {
@@ -3367,7 +3382,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "91595718",
 		"Lore": "A magic book for increasing the power of magic-users. It cannot be used by bad-hearted sorcerers.",
-		"ImageID": "BookofSecretArts-FMR-EN-VG.png",
+		"ImageID": "BookofSecretArts-FMR-EN-VG.jpg",
 		"Wiki": "Book of Secret Arts (FMR)"
 	},
 	"324": {
@@ -3376,7 +3391,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "98374133",
 		"Lore": "Increases the power of monsters!",
-		"ImageID": "Invigoration-FMR-EN-VG.png",
+		"ImageID": "Invigoration-FMR-EN-VG.jpg",
 		"Wiki": "Invigoration (FMR)"
 	},
 	"325": {
@@ -3385,7 +3400,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "25769732",
 		"Lore": "A manufacturing facility that tunes up all monsters.",
-		"ImageID": "MachineConversionFactory-FMR-EN-VG.png",
+		"ImageID": "MachineConversionFactory-FMR-EN-VG.jpg",
 		"Wiki": "Machine Conversion Factory (FMR)"
 	},
 	"326": {
@@ -3394,7 +3409,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "51267887",
 		"Lore": "Absorbs the sun's energy to increase the power of Dinosaurs!",
-		"ImageID": "RaiseBodyHeat-FMR-EN-VG.png",
+		"ImageID": "RaiseBodyHeat-FMR-EN-VG.jpg",
 		"Wiki": "Raise Body Heat (FMR)"
 	},
 	"327": {
@@ -3403,7 +3418,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "98252586",
 		"Lore": "The winds provide support to increase the power of monsters!",
-		"ImageID": "FollowWind-FMR-EN-VG.png",
+		"ImageID": "FollowWind-FMR-EN-VG.jpg",
 		"Wiki": "Follow Wind (FMR)"
 	},
 	"328": {
@@ -3412,7 +3427,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "77027445",
 		"Lore": "Poseidon's strength is shared to boost the power of monsters!",
-		"ImageID": "PowerofKaishin-FMR-EN-VG.png",
+		"ImageID": "PowerofKaishin-FMR-EN-VG.jpg",
 		"Wiki": "Power of Kaishin (FMR)"
 	},
 	"329": {
@@ -3421,7 +3436,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "50045299",
 		"Lore": "monsters on the playfield!",
-		"ImageID": "DragonCaptureJar-FMR-EN-VG.png",
+		"ImageID": "DragonCaptureJar-FMR-EN-VG.jpg",
 		"Wiki": "Dragon Capture Jar (FMR)"
 	},
 	"33": {
@@ -3435,7 +3450,7 @@ const cards = {
 		"GuardianStars": "Sun,Saturn",
 		"Password": "30113682",
 		"Lore": "For this club-wielding warrior, there is no other outcome to battle than victory or defeat.",
-		"ImageID": "JudgeMan-FMR-EN-VG.png",
+		"ImageID": "JudgeMan-FMR-EN-VG.jpg",
 		"Wiki": "Judge Man (FMR)"
 	},
 	"330": {
@@ -3444,7 +3459,7 @@ const cards = {
 		"Cost": 55,
 		"Password": "87430998",
 		"Lore": "Changes the field in favor of monsters!",
-		"ImageID": "Forest-FMR-EN-VG.png",
+		"ImageID": "Forest-FMR-EN-VG.jpg",
 		"Wiki": "Forest (FMR)"
 	},
 	"331": {
@@ -3453,7 +3468,7 @@ const cards = {
 		"Cost": 55,
 		"Password": "23424603",
 		"Lore": "Changes the field in favor of monsters!",
-		"ImageID": "Wasteland-FMR-EN-VG.png",
+		"ImageID": "Wasteland-FMR-EN-VG.jpg",
 		"Wiki": "Wasteland (FMR)"
 	},
 	"332": {
@@ -3462,7 +3477,7 @@ const cards = {
 		"Cost": 55,
 		"Password": "50913601",
 		"Lore": "Changes the field in favor of monsters!",
-		"ImageID": "Mountain-FMR-EN-VG.png",
+		"ImageID": "Mountain-FMR-EN-VG.jpg",
 		"Wiki": "Mountain (FMR)"
 	},
 	"333": {
@@ -3471,7 +3486,7 @@ const cards = {
 		"Cost": 55,
 		"Password": "86318356",
 		"Lore": "Changes the field to monsters!",
-		"ImageID": "Sogen-FMR-EN-VG.png",
+		"ImageID": "Sogen-FMR-EN-VG.jpg",
 		"Wiki": "Sogen (FMR)"
 	},
 	"334": {
@@ -3480,7 +3495,7 @@ const cards = {
 		"Cost": 55,
 		"Password": "22702055",
 		"Lore": "Changes the field in favor of monsters, but unfavorable to monsters!",
-		"ImageID": "Umi-FMR-EN-VG.png",
+		"ImageID": "Umi-FMR-EN-VG.jpg",
 		"Wiki": "Umi (FMR)"
 	},
 	"335": {
@@ -3489,7 +3504,7 @@ const cards = {
 		"Cost": 55,
 		"Password": "59197169",
 		"Lore": "Changes the field in favor of Magic-User and monsters, but unfavorable to Fairy monsters!",
-		"ImageID": "Yami-FMR-EN-VG.png",
+		"ImageID": "Yami-FMR-EN-VG.jpg",
 		"Wiki": "Yami (FMR)"
 	},
 	"336": {
@@ -3498,7 +3513,7 @@ const cards = {
 		"Cost": 20000,
 		"Password": "53129443",
 		"Lore": "Sucks up every card in play on the field!",
-		"ImageID": "DarkHole-FMR-EN-VG.png",
+		"ImageID": "DarkHole-FMR-EN-VG.jpg",
 		"Wiki": "Dark Hole (FMR)"
 	},
 	"337": {
@@ -3507,7 +3522,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "12580477",
 		"Lore": "monster with a stroke of lightning!",
-		"ImageID": "Raigeki-FMR-EN-VG.png",
+		"ImageID": "Raigeki-FMR-EN-VG.jpg",
 		"Wiki": "Raigeki (FMR)"
 	},
 	"338": {
@@ -3516,7 +3531,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "58074572",
 		"Lore": "A delicious beef curry increases Life Points by 200!",
-		"ImageID": "MooyanCurry-FMR-EN-VG.png",
+		"ImageID": "MooyanCurry-FMR-EN-VG.jpg",
 		"Wiki": "Mooyan Curry (FMR)"
 	},
 	"339": {
@@ -3525,7 +3540,7 @@ const cards = {
 		"Cost": 55,
 		"Password": "38199696",
 		"Lore": "A magic potion that increases Life Points by 500!",
-		"ImageID": "RedMedicine-FMR-EN-VG.png",
+		"ImageID": "RedMedicine-FMR-EN-VG.jpg",
 		"Wiki": "Red Medicine (FMR)"
 	},
 	"34": {
@@ -3539,7 +3554,7 @@ const cards = {
 		"GuardianStars": "Mercury,Moon",
 		"Password": "66602787",
 		"Lore": "This clown appears out of nowhere and executes some very strange moves to avoid enemy attacks.",
-		"ImageID": "SaggitheDarkClown-FMR-EN-VG.png",
+		"ImageID": "SaggitheDarkClown-FMR-EN-VG.jpg",
 		"Wiki": "Saggi the Dark Clown (FMR)"
 	},
 	"340": {
@@ -3548,7 +3563,7 @@ const cards = {
 		"Cost": 20000,
 		"Password": "11868825",
 		"Lore": "A goblin's herb that increases Life Points by 1000!",
-		"ImageID": "GoblinsSecretRemedy-FMR-EN-VG.png",
+		"ImageID": "GoblinsSecretRemedy-FMR-EN-VG.jpg",
 		"Wiki": "Goblin's Secret Remedy (FMR)"
 	},
 	"341": {
@@ -3557,7 +3572,7 @@ const cards = {
 		"Cost": 35000,
 		"Password": "47852924",
 		"Lore": "A fairy potion that increases Life Points by 2000!",
-		"ImageID": "SoulofthePure-FMR-EN-VG.png",
+		"ImageID": "SoulofthePure-FMR-EN-VG.jpg",
 		"Wiki": "Soul of the Pure (FMR)"
 	},
 	"342": {
@@ -3566,7 +3581,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "84257639",
 		"Lore": "A mystical power that increases Life Points by 5000!",
-		"ImageID": "DianKetotheCureMaster-FMR-EN-VG.png",
+		"ImageID": "DianKetotheCureMaster-FMR-EN-VG.jpg",
 		"Wiki": "Dian Keto the Cure Master (FMR)"
 	},
 	"343": {
@@ -3575,7 +3590,7 @@ const cards = {
 		"Cost": 10,
 		"Password": "76103675",
 		"Lore": "A shower of sparks inflicts 50 points of damage to your opponent's Life Points!",
-		"ImageID": "Sparks-FMR-EN-VG.png",
+		"ImageID": "Sparks-FMR-EN-VG.jpg",
 		"Wiki": "Sparks (FMR)"
 	},
 	"344": {
@@ -3584,7 +3599,7 @@ const cards = {
 		"Cost": 55,
 		"Password": "46130346",
 		"Lore": "A fireball inflicts 100 points of damage to your opponent's Life Points!",
-		"ImageID": "Hinotama-FMR-EN-VG.png",
+		"ImageID": "Hinotama-FMR-EN-VG.jpg",
 		"Wiki": "Hinotama (FMR)"
 	},
 	"345": {
@@ -3593,7 +3608,7 @@ const cards = {
 		"Cost": 20000,
 		"Password": "73134081",
 		"Lore": "A flame inflicts 200 points of damage to your opponent's Life Points!",
-		"ImageID": "FinalFlame-FMR-EN-VG.png",
+		"ImageID": "FinalFlame-FMR-EN-VG.jpg",
 		"Wiki": "Final Flame (FMR)"
 	},
 	"346": {
@@ -3602,7 +3617,7 @@ const cards = {
 		"Cost": 35000,
 		"Password": "19523799",
 		"Lore": "A flame inflicts 500 points of damage to your opponent's Life Points!",
-		"ImageID": "Ookazi-FMR-EN-VG.png",
+		"ImageID": "Ookazi-FMR-EN-VG.jpg",
 		"Wiki": "Ookazi (FMR)"
 	},
 	"347": {
@@ -3611,7 +3626,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "46918794",
 		"Lore": "An inferno inflicts 1000 points of damage to your opponent's Life Points!",
-		"ImageID": "TremendousFire-FMR-EN-VG.png",
+		"ImageID": "TremendousFire-FMR-EN-VG.jpg",
 		"Wiki": "Tremendous Fire (FMR)"
 	},
 	"348": {
@@ -3620,7 +3635,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "72302403",
 		"Lore": "Enemy monsters are revealed and your opponent cannot attack for three turns.",
-		"ImageID": "SwordsofRevealingLight-FMR-EN-VG.png",
+		"ImageID": "SwordsofRevealingLight-FMR-EN-VG.jpg",
 		"Wiki": "Swords of Revealing Light (FMR)"
 	},
 	"349": {
@@ -3629,7 +3644,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "18807108",
 		"Lore": "A curse reduces the power of all enemy monsters!",
-		"ImageID": "SpellbindingCircle-FMR-EN-VG.png",
+		"ImageID": "SpellbindingCircle-FMR-EN-VG.jpg",
 		"Wiki": "Spellbinding Circle (FMR)"
 	},
 	"35": {
@@ -3643,7 +3658,7 @@ const cards = {
 		"GuardianStars": "Mercury,Mars",
 		"Password": "46986414",
 		"Lore": "The ultimate wizard in terms of attacks and defense.",
-		"ImageID": "DarkMagician-FMR-EN-VG.png",
+		"ImageID": "DarkMagician-FMR-EN-VG.jpg",
 		"Wiki": "Dark Magician (FMR)"
 	},
 	"351": {
@@ -3657,7 +3672,7 @@ const cards = {
 		"GuardianStars": "Moon,Mercury",
 		"Password": "71280811",
 		"Lore": "A monster that attacks anybody who attempts to open its lid.",
-		"ImageID": "Yaranzo-FMR-EN-VG.png",
+		"ImageID": "Yaranzo-FMR-EN-VG.jpg",
 		"Wiki": "Yaranzo (FMR)"
 	},
 	"352": {
@@ -3671,7 +3686,7 @@ const cards = {
 		"GuardianStars": "Uranus,Neptune",
 		"Password": "12829151",
 		"Lore": "A lady swordsman that floats like a butterfly and sings like a bee.",
-		"ImageID": "KanantheSwordmistress-FMR-EN-VG.png",
+		"ImageID": "KanantheSwordmistress-FMR-EN-VG.jpg",
 		"Wiki": "Kanan the Swordmistress (FMR)"
 	},
 	"353": {
@@ -3685,7 +3700,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mercury",
 		"Password": "44073668",
 		"Lore": "A finned creature distantly related to sea dragons.",
-		"ImageID": "Takriminos-FMR-EN-VG.png",
+		"ImageID": "Takriminos-FMR-EN-VG.jpg",
 		"Wiki": "Takriminos (FMR)"
 	},
 	"354": {
@@ -3699,7 +3714,7 @@ const cards = {
 		"GuardianStars": "Moon,Mars",
 		"Password": "71068263",
 		"Lore": "A deceptively cute stuffed animal that bites.",
-		"ImageID": "StuffedAnimal-FMR-EN-VG.png",
+		"ImageID": "StuffedAnimal-FMR-EN-VG.jpg",
 		"Wiki": "Stuffed Animal (FMR)"
 	},
 	"355": {
@@ -3713,7 +3728,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "07562372",
 		"Lore": "A cryptic doomsday machine that comes from the edge of the universe.",
-		"ImageID": "MegasonicEye-FMR-EN-VG.png",
+		"ImageID": "MegasonicEye-FMR-EN-VG.jpg",
 		"Wiki": "Megasonic Eye (FMR)"
 	},
 	"356": {
@@ -3725,7 +3740,7 @@ const cards = {
 		"DEF": 2100,
 		"GuardianStars": "Jupiter,Venus",
 		"Lore": "A very vicious lion with sharp and long claws.",
-		"ImageID": "SuperWarlion-FMR-EN-VG.png",
+		"ImageID": "SuperWarlion-FMR-EN-VG.jpg",
 		"Wiki": "Super War-lion (FMR)"
 	},
 	"357": {
@@ -3739,7 +3754,7 @@ const cards = {
 		"GuardianStars": "Mars,Uranus",
 		"Password": "70345785",
 		"Lore": "A three-headed, fire-breathing monster.",
-		"ImageID": "Yamadron-FMR-EN-VG.png",
+		"ImageID": "Yamadron-FMR-EN-VG.jpg",
 		"Wiki": "Yamadron (FMR)"
 	},
 	"358": {
@@ -3753,7 +3768,7 @@ const cards = {
 		"GuardianStars": "Sun,Neptune",
 		"Password": "06740720",
 		"Lore": "A sacred dragon that burns away wickedness with its mystical flames.",
-		"ImageID": "Seiyaryu-FMR-EN-VG.png",
+		"ImageID": "Seiyaryu-FMR-EN-VG.jpg",
 		"Wiki": "Seiyaryu (FMR)"
 	},
 	"359": {
@@ -3767,7 +3782,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "33734439",
 		"Lore": "Bony and Tubby, a friendly pair of skeletons.",
-		"ImageID": "ThreeleggedZombies-FMR-EN-VG.png",
+		"ImageID": "ThreeleggedZombies-FMR-EN-VG.jpg",
 		"Wiki": "Three-legged Zombies (FMR)"
 	},
 	"36": {
@@ -3781,7 +3796,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "29491031",
 		"Lore": "A monster with the head of a poisonous snake. One look will turn an unwary opponent to stone.",
-		"ImageID": "TheSnakeHair-FMR-EN-VG.png",
+		"ImageID": "TheSnakeHair-FMR-EN-VG.jpg",
 		"Wiki": "The Snake Hair (FMR)"
 	},
 	"360": {
@@ -3793,7 +3808,7 @@ const cards = {
 		"DEF": 2300,
 		"GuardianStars": "Moon,Saturn",
 		"Lore": "A huge, brutal monster that attacks with razor-sharp claws.",
-		"ImageID": "ZeraTheMant-FMR-EN-VG.png",
+		"ImageID": "ZeraTheMant-FMR-EN-VG.jpg",
 		"Wiki": "Zera The Mant (FMR)"
 	},
 	"361": {
@@ -3807,7 +3822,7 @@ const cards = {
 		"GuardianStars": "Neptune,Jupiter",
 		"Password": "05628232",
 		"Lore": "A rare penguin that flies with the wings on its head.",
-		"ImageID": "FlyingPenguin-FMR-EN-VG.png",
+		"ImageID": "FlyingPenguin-FMR-EN-VG.jpg",
 		"Wiki": "Flying Penguin (FMR)"
 	},
 	"362": {
@@ -3820,7 +3835,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mars",
 		"Password": "32012841",
 		"Lore": "A Millennium Item candidate that is said to block any powerful attack.",
-		"ImageID": "MillenniumShield-FMR-EN-VG.png",
+		"ImageID": "MillenniumShield-FMR-EN-VG.jpg",
 		"Wiki": "Millennium Shield (FMR)"
 	},
 	"363": {
@@ -3834,7 +3849,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "68401546",
 		"Lore": "Flies around spreading happiness to all.",
-		"ImageID": "FairysGift-FMR-EN-VG.png",
+		"ImageID": "FairysGift-FMR-EN-VG.jpg",
 		"Wiki": "Fairy's Gift (FMR)"
 	},
 	"364": {
@@ -3846,7 +3861,7 @@ const cards = {
 		"DEF": 2500,
 		"GuardianStars": "Moon,Uranus",
 		"Lore": "A powerful warrior with the same capabilities as the legendary Blue-eyes White Dragon.",
-		"ImageID": "BlackLusterSoldier-FMR-EN-VG.png",
+		"ImageID": "BlackLusterSoldier-FMR-EN-VG.jpg",
 		"Wiki": "Black Luster Soldier (FMR)"
 	},
 	"365": {
@@ -3858,7 +3873,7 @@ const cards = {
 		"DEF": 1800,
 		"GuardianStars": "Venus,Pluto",
 		"Lore": "An arcane glass that draws its enemies in to the mirror world.",
-		"ImageID": "FiendsMirror-FMR-EN-VG.png",
+		"ImageID": "FiendsMirror-FMR-EN-VG.jpg",
 		"Wiki": "Fiend's Mirror (FMR)"
 	},
 	"366": {
@@ -3871,7 +3886,7 @@ const cards = {
 		"GuardianStars": "Uranus,Jupiter",
 		"Password": "67284908",
 		"Lore": "Walls appear on the field to form a labyrinth with no exit.",
-		"ImageID": "LabyrinthWall-FMR-EN-VG.png",
+		"ImageID": "LabyrinthWall-FMR-EN-VG.jpg",
 		"Wiki": "Labyrinth Wall (FMR)"
 	},
 	"367": {
@@ -3885,7 +3900,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Uranus",
 		"Password": "94773007",
 		"Lore": "A monster spider that dwells under the earth.",
-		"ImageID": "JiraiGumo-FMR-EN-VG.png",
+		"ImageID": "JiraiGumo-FMR-EN-VG.jpg",
 		"Wiki": "Jirai Gumo (FMR)"
 	},
 	"368": {
@@ -3899,7 +3914,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "30778711",
 		"Lore": "A dangerous zombie that crawls in the dark.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Shadow Ghoul (FMR)"
 	},
 	"369": {
@@ -3913,7 +3928,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "63162310",
 		"Lore": "An unusually fast monster that sweeps across walls to attack it enemies.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Wall Shadow (FMR)"
 	},
 	"37": {
@@ -3927,7 +3942,7 @@ const cards = {
 		"GuardianStars": "Saturn,Mercury",
 		"Password": "66889139",
 		"Lore": "A warrior's prowess combines with a dragon's speed to create a powerful offensive force.",
-		"ImageID": "GaiatheDragonChampion-FMR-EN-VG.png",
+		"ImageID": "GaiatheDragonChampion-FMR-EN-VG.jpg",
 		"Wiki": "Gaia the Dragon Champion (FMR)"
 	},
 	"370": {
@@ -3941,7 +3956,7 @@ const cards = {
 		"GuardianStars": "Moon,Mercury",
 		"Password": "99551425",
 		"Lore": "A tank that races around a labyrinth hunting down its enemies.",
-		"ImageID": "LabyrinthTank-FMR-EN-VG.png",
+		"ImageID": "LabyrinthTank-FMR-EN-VG.jpg",
 		"Wiki": "Labyrinth Tank (FMR)"
 	},
 	"371": {
@@ -3955,7 +3970,7 @@ const cards = {
 		"GuardianStars": "Pluto,Mars",
 		"Password": "25955164",
 		"Lore": "A golem that uses lightning attacker similar to the labyrinth brothers.",
-		"ImageID": "SangaoftheThunder-FMR-EN-VG.png",
+		"ImageID": "SangaoftheThunder-FMR-EN-VG.jpg",
 		"Wiki": "Sanga of the Thunder (FMR)"
 	},
 	"372": {
@@ -3969,7 +3984,7 @@ const cards = {
 		"GuardianStars": "Saturn,Mars",
 		"Password": "62340868",
 		"Lore": "A golem that controls the winds like the labyrinth brothers.",
-		"ImageID": "Kazejin-FMR-EN-VG.png",
+		"ImageID": "Kazejin-FMR-EN-VG.jpg",
 		"Wiki": "Kazejin (FMR)"
 	},
 	"373": {
@@ -3983,7 +3998,7 @@ const cards = {
 		"GuardianStars": "Neptune,Saturn",
 		"Password": "98434877",
 		"Lore": "A golem that uses water attacks like the labyrinth brothers.",
-		"ImageID": "Suijin-FMR-EN-VG.png",
+		"ImageID": "Suijin-FMR-EN-VG.jpg",
 		"Wiki": "Suijin (FMR)"
 	},
 	"374": {
@@ -3995,7 +4010,7 @@ const cards = {
 		"DEF": 3400,
 		"GuardianStars": "Moon,Mars",
 		"Lore": "Sanga, Kazejin, and Suijin join to form a single, powerful monster.",
-		"ImageID": "GateGuardian-FMR-EN-VG.png",
+		"ImageID": "GateGuardian-FMR-EN-VG.jpg",
 		"Wiki": "Gate Guardian (FMR)"
 	},
 	"375": {
@@ -4009,7 +4024,7 @@ const cards = {
 		"GuardianStars": "Uranus,Moon",
 		"Password": "51228280",
 		"Lore": "Hidden under the floors of a labyrinth, it swallows any who pass above.",
-		"ImageID": "DungeonWorm-FMR-EN-VG.png",
+		"ImageID": "DungeonWorm-FMR-EN-VG.jpg",
 		"Wiki": "Dungeon Worm (FMR)"
 	},
 	"376": {
@@ -4023,7 +4038,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Pluto",
 		"Password": "97612389",
 		"Lore": "A master of monsters that exercises control over several creatures.",
-		"ImageID": "MonsterTamer-FMR-EN-VG.png",
+		"ImageID": "MonsterTamer-FMR-EN-VG.jpg",
 		"Wiki": "Monster Tamer (FMR)"
 	},
 	"377": {
@@ -4037,7 +4052,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "24611934",
 		"Lore": "Ryu-kishin enhanced by the power of darkness. Very sharp talons make it a worthy opponent.",
-		"ImageID": "RyukishinPowered-FMR-EN-VG.png",
+		"ImageID": "RyukishinPowered-FMR-EN-VG.jpg",
 		"Wiki": "Ryu-kishin Powered (FMR)"
 	},
 	"378": {
@@ -4051,7 +4066,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "50005633",
 		"Lore": "A monster formed by the vengeful souls of those passed away in battle.",
-		"ImageID": "Swordstalker-FMR-EN-VG.png",
+		"ImageID": "Swordstalker-FMR-EN-VG.jpg",
 		"Wiki": "Swordstalker (FMR)"
 	},
 	"379": {
@@ -4065,7 +4080,7 @@ const cards = {
 		"GuardianStars": "Mercury,Saturn",
 		"Password": "97590747",
 		"Lore": "A genie of the lamp that's at the beck and call of its master.",
-		"ImageID": "LaJinntheMysticalGenie-FMR-EN-VG.png",
+		"ImageID": "LaJinntheMysticalGenie-FMR-EN-VG.jpg",
 		"Wiki": "La Jinn the Mystical Genie"
 	},
 	"38": {
@@ -4079,7 +4094,7 @@ const cards = {
 		"GuardianStars": "Mercury,Jupiter",
 		"Password": "06368038",
 		"Lore": "A knight mounted on a horse that travels faster than the wind. His battle charge is a force to be reckoned with.",
-		"ImageID": "GaiatheFierceKnight-FMR-EN-VG.png",
+		"ImageID": "GaiatheFierceKnight-FMR-EN-VG.jpg",
 		"Wiki": "Gaia the Fierce Knight (FMR)"
 	},
 	"380": {
@@ -4091,7 +4106,7 @@ const cards = {
 		"DEF": 3800,
 		"GuardianStars": "Sun,Venus",
 		"Lore": "The Ultimate dragon formed by the fusion of the three Blue-eyes White Dragon.",
-		"ImageID": "BlueeyesUltimateDragon-FMR-EN-VG.png",
+		"ImageID": "BlueeyesUltimateDragon-FMR-EN-VG.jpg",
 		"Wiki": "Blue-eyes Ultimate Dragon (FMR)"
 	},
 	"381": {
@@ -4105,7 +4120,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mars",
 		"Password": "59383041",
 		"Lore": "An alligator monster straight from the cartoons.",
-		"ImageID": "ToonAlligator-FMR-EN-VG.png",
+		"ImageID": "ToonAlligator-FMR-EN-VG.jpg",
 		"Wiki": "Toon Alligator (FMR)"
 	},
 	"382": {
@@ -4119,7 +4134,7 @@ const cards = {
 		"GuardianStars": "Uranus,Sun",
 		"Password": "26378150",
 		"Lore": "With an axe in each hand, this monster delivers heavy damage.",
-		"ImageID": "RudeKaiser-FMR-EN-VG.png",
+		"ImageID": "RudeKaiser-FMR-EN-VG.jpg",
 		"Wiki": "Rude Kaiser (FMR)"
 	},
 	"383": {
@@ -4133,7 +4148,7 @@ const cards = {
 		"GuardianStars": "Saturn,Sun",
 		"Password": "62762898",
 		"Lore": "A dragon from the cartoons that's more dangerous than it appears to be.",
-		"ImageID": "ParrotDragon-FMR-EN-VG.png",
+		"ImageID": "ParrotDragon-FMR-EN-VG.jpg",
 		"Wiki": "Parrot Dragon (FMR)"
 	},
 	"384": {
@@ -4147,7 +4162,7 @@ const cards = {
 		"GuardianStars": "Moon,Uranus",
 		"Password": "99261403",
 		"Lore": "A cartoon rabbit that quickly leaps all over the place, making it a difficult target.",
-		"ImageID": "DarkRabbit-FMR-EN-VG.png",
+		"ImageID": "DarkRabbit-FMR-EN-VG.jpg",
 		"Wiki": "Dark Rabbit (FMR)"
 	},
 	"385": {
@@ -4161,7 +4176,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "25655502",
 		"Lore": "A jack-in-the-box that excels in surprise attacks.",
-		"ImageID": "Bickuribox-FMR-EN-VG.png",
+		"ImageID": "Bickuribox-FMR-EN-VG.jpg",
 		"Wiki": "Bickuribox (FMR)"
 	},
 	"386": {
@@ -4175,7 +4190,7 @@ const cards = {
 		"GuardianStars": "Saturn,Moon",
 		"Password": "52040216",
 		"Lore": "A favorite pet for harpies, but a very dangerous dragon.",
-		"ImageID": "HarpiesPetDragon-FMR-EN-VG.png",
+		"ImageID": "HarpiesPetDragon-FMR-EN-VG.jpg",
 		"Wiki": "Harpie's Pet Dragon (FMR)"
 	},
 	"387": {
@@ -4189,7 +4204,7 @@ const cards = {
 		"GuardianStars": "mercury,Uranus",
 		"Password": "98049915",
 		"Lore": "A lamp used by wizards to mix potions.",
-		"ImageID": "MysticLamp-FMR-EN-VG.png",
+		"ImageID": "MysticLamp-FMR-EN-VG.jpg",
 		"Wiki": "Mystic Lamp (FMR)"
 	},
 	"388": {
@@ -4203,7 +4218,7 @@ const cards = {
 		"GuardianStars": "Mercury,Neptune",
 		"Password": "24433920",
 		"Lore": "A horrible torture machine with a large pendulum.",
-		"ImageID": "PendulumMachine-FMR-EN-VG.png",
+		"ImageID": "PendulumMachine-FMR-EN-VG.jpg",
 		"Wiki": "Pendulum Machine (FMR)"
 	},
 	"389": {
@@ -4217,7 +4232,7 @@ const cards = {
 		"GuardianStars": "Sun,Mars",
 		"Password": "51828629",
 		"Lore": "Armed with a soul-searing spear, this creature favors magic attacks.",
-		"ImageID": "GiltiatheDKnight-FMR-EN-VG.png",
+		"ImageID": "GiltiatheDKnight-FMR-EN-VG.jpg",
 		"Wiki": "Giltia the D. Knight (FMR)"
 	},
 	"39": {
@@ -4231,7 +4246,7 @@ const cards = {
 		"GuardianStars": "Saturn,Pluto",
 		"Password": "28279543",
 		"Lore": "A wicked dragon that taps dark forces to execute a powerful attack.",
-		"ImageID": "CurseofDragon-FMR-EN-VG.png",
+		"ImageID": "CurseofDragon-FMR-EN-VG.jpg",
 		"Wiki": "Curse of Dragon (FMR)"
 	},
 	"390": {
@@ -4245,7 +4260,7 @@ const cards = {
 		"GuardianStars": "Mars,Pluto",
 		"Password": "87322377",
 		"Lore": "A spider machine that launches explosive rockets against its enemies.",
-		"ImageID": "LauncherSpider-FMR-EN-VG.png",
+		"ImageID": "LauncherSpider-FMR-EN-VG.jpg",
 		"Wiki": "Launcher Spider (FMR)"
 	},
 	"391": {
@@ -4259,7 +4274,7 @@ const cards = {
 		"GuardianStars": "Moon,Mercury",
 		"Password": "24311372",
 		"Lore": "A monster whose full potential can be achieved when transformed in to its metal\nform.",
-		"ImageID": "Zoa-FMR-EN-VG.png",
+		"ImageID": "Zoa-FMR-EN-VG.jpg",
 		"Wiki": "Zoa (FMR)"
 	},
 	"392": {
@@ -4273,7 +4288,7 @@ const cards = {
 		"GuardianStars": "Moon,Mars",
 		"Password": "50705071",
 		"Lore": "A metallic Zoa capable of intensive attacks.",
-		"ImageID": "Metalzoa-FMR-EN-VG.png",
+		"ImageID": "Metalzoa-FMR-EN-VG.jpg",
 		"Wiki": "Metalzoa (FMR)"
 	},
 	"393": {
@@ -4287,7 +4302,7 @@ const cards = {
 		"GuardianStars": "Neptune,Sun",
 		"Password": "86100785",
 		"Lore": "A sea creature that swallows enemies and slowly digests them.",
-		"ImageID": "ZoneEater-FMR-EN-VG.png",
+		"ImageID": "ZoneEater-FMR-EN-VG.jpg",
 		"Wiki": "Zone Eater (FMR)"
 	},
 	"394": {
@@ -4301,7 +4316,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "13599884",
 		"Lore": "An iron-tailed monster equipped with very sharp scissors.",
-		"ImageID": "SteelScorpion-FMR-EN-VG.png",
+		"ImageID": "SteelScorpion-FMR-EN-VG.jpg",
 		"Wiki": "Steel Scorpion (FMR)"
 	},
 	"395": {
@@ -4315,7 +4330,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "59983499",
 		"Lore": "An elf that dances across the sky with wings of razor-sharp blades.",
-		"ImageID": "DancingElf-FMR-EN-VG.png",
+		"ImageID": "DancingElf-FMR-EN-VG.jpg",
 		"Wiki": "Dancing Elf (FMR)"
 	},
 	"396": {
@@ -4329,7 +4344,7 @@ const cards = {
 		"GuardianStars": "Saturn,Venus",
 		"Password": "86088138",
 		"Lore": "Frightening in appearance, this creature uses its large eyes and ears to keep track of any movement.",
-		"ImageID": "Ocubeam-FMR-EN-VG.png",
+		"ImageID": "Ocubeam-FMR-EN-VG.jpg",
 		"Wiki": "Ocubeam (FMR)"
 	},
 	"397": {
@@ -4343,7 +4358,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "12472242",
 		"Lore": "Not a very powerful monster despite its large fangs and spikes.",
-		"ImageID": "Leghul-FMR-EN-VG.png",
+		"ImageID": "Leghul-FMR-EN-VG.jpg",
 		"Wiki": "Leghul (FMR)"
 	},
 	"398": {
@@ -4357,7 +4372,7 @@ const cards = {
 		"GuardianStars": "Neptune,moon",
 		"Password": "58861941",
 		"Lore": "A monstrous bullfrog with poison spikes.",
-		"ImageID": "Ooguchi-FMR-EN-VG.png",
+		"ImageID": "Ooguchi-FMR-EN-VG.jpg",
 		"Wiki": "Ooguchi (FMR)"
 	},
 	"399": {
@@ -4371,7 +4386,7 @@ const cards = {
 		"GuardianStars": "Uranus,Venus",
 		"Password": "85255550",
 		"Lore": "An eastern warrior armed with a cursed sword.",
-		"ImageID": "SwordsmanfromaForeignLand-FMR-EN-VG.png",
+		"ImageID": "SwordsmanfromaForeignLand-FMR-EN-VG.jpg",
 		"Wiki": "Swordsman from a Foreign Land (FMR)"
 	},
 	"4": {
@@ -4385,7 +4400,7 @@ const cards = {
 		"GuardianStars": "Uranus,Sun",
 		"Password": "88819587",
 		"Lore": "Much more than just a child, this dragon is gifted with untapped power.",
-		"ImageID": "BabyDragon-FMR-EN-VG.png",
+		"ImageID": "BabyDragon-FMR-EN-VG.jpg",
 		"Wiki": "Baby Dragon (FMR)"
 	},
 	"40": {
@@ -4399,7 +4414,7 @@ const cards = {
 		"GuardianStars": "Mars,Moon",
 		"Password": "55763552",
 		"Lore": "A jar carved with strange patterns. It has a particularly high defense factor.",
-		"ImageID": "DragonPiper-FMR-EN-VG.png",
+		"ImageID": "DragonPiper-FMR-EN-VG.jpg",
 		"Wiki": "Dragon Piper (FMR)"
 	},
 	"400": {
@@ -4413,7 +4428,7 @@ const cards = {
 		"GuardianStars": "Neptune,Venus",
 		"Password": "11250655",
 		"Lore": "A fire-breathing reptilian monster.",
-		"ImageID": "EmperoroftheLandandSea-FMR-EN-VG.png",
+		"ImageID": "EmperoroftheLandandSea-FMR-EN-VG.jpg",
 		"Wiki": "Emperor of the Land and Sea (FMR)"
 	},
 	"401": {
@@ -4427,7 +4442,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Venus",
 		"Password": "48649353",
 		"Lore": "A bull monster resurrected by the dark arts that appears from inside a jar.",
-		"ImageID": "UshiOni-FMR-EN-VG.png",
+		"ImageID": "UshiOni-FMR-EN-VG.jpg",
 		"Wiki": "Ushi Oni (FMR)"
 	},
 	"402": {
@@ -4441,7 +4456,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "84133008",
 		"Lore": "A servant that maintains a close watch on anything and everything. It throws up a smokescreen when discovered.",
-		"ImageID": "MonsterEye-FMR-EN-VG.png",
+		"ImageID": "MonsterEye-FMR-EN-VG.jpg",
 		"Wiki": "Monster Eye (FMR)"
 	},
 	"403": {
@@ -4455,7 +4470,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mercury",
 		"Password": "10538007",
 		"Lore": "Huge monster with a lion's main similar to the \"King of Beasts\".",
-		"ImageID": "Leogun-FMR-EN-VG.png",
+		"ImageID": "Leogun-FMR-EN-VG.jpg",
 		"Wiki": "Leogun (FMR)"
 	},
 	"404": {
@@ -4469,7 +4484,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mercury",
 		"Password": "47922711",
 		"Lore": "A fast-moving sea monster that has the body of a horse and of a fish.",
-		"ImageID": "Tatsunootoshigo-FMR-EN-VG.png",
+		"ImageID": "Tatsunootoshigo-FMR-EN-VG.jpg",
 		"Wiki": "Tatsunootoshigo (FMR)"
 	},
 	"405": {
@@ -4483,7 +4498,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "73911410",
 		"Lore": "A rampaging machine that wields a massive sword.",
-		"ImageID": "SaberSlasher-FMR-EN-VG.png",
+		"ImageID": "SaberSlasher-FMR-EN-VG.jpg",
 		"Wiki": "Saber Slasher (FMR)"
 	},
 	"406": {
@@ -4497,7 +4512,7 @@ const cards = {
 		"GuardianStars": "Moon,Uranus",
 		"Password": "10315429",
 		"Lore": "A machine with several blades hidden with its square body.",
-		"ImageID": "YaibaRobo-FMR-EN-VG.png",
+		"ImageID": "YaibaRobo-FMR-EN-VG.jpg",
 		"Wiki": "Yaiba Robo (FMR)"
 	},
 	"407": {
@@ -4511,7 +4526,7 @@ const cards = {
 		"GuardianStars": "Mars,Sun",
 		"Password": "46700124",
 		"Lore": "Armored with super alloy, this robot attacks with blasts of fire launched from both arms.",
-		"ImageID": "MachineKing-FMR-EN-VG.png",
+		"ImageID": "MachineKing-FMR-EN-VG.jpg",
 		"Wiki": "Machine King (FMR)"
 	},
 	"408": {
@@ -4525,7 +4540,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "72299832",
 		"Lore": "This monster swings an earth-shaking axe that can eliminate enemies with a single blow.",
-		"ImageID": "GiantMechsoldier-FMR-EN-VG.png",
+		"ImageID": "GiantMechsoldier-FMR-EN-VG.jpg",
 		"Wiki": "Giant Mech-soldier (FMR)"
 	},
 	"409": {
@@ -4539,7 +4554,7 @@ const cards = {
 		"GuardianStars": "Mars,moon",
 		"Password": "09293977",
 		"Lore": "A golden, fire-breathing dragon that burns any opponent in its path.",
-		"ImageID": "MetalDragon-FMR-EN-VG.png",
+		"ImageID": "MetalDragon-FMR-EN-VG.jpg",
 		"Wiki": "Metal Dragon (FMR)"
 	},
 	"41": {
@@ -4553,7 +4568,7 @@ const cards = {
 		"GuardianStars": "Sun,Uranus",
 		"Password": "91152256",
 		"Lore": "An elf who learned to wield a sword, he baffles enemies with lightning-swift attacks.",
-		"ImageID": "CelticGuardian-FMR-EN-VG.png",
+		"ImageID": "CelticGuardian-FMR-EN-VG.jpg",
 		"Wiki": "Celtic Guardian (FMR)"
 	},
 	"410": {
@@ -4567,7 +4582,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "45688586",
 		"Lore": "A spider-shaped, mechanized monster with sickles at the end of its legs.",
-		"ImageID": "MechanicalSpider-FMR-EN-VG.png",
+		"ImageID": "MechanicalSpider-FMR-EN-VG.jpg",
 		"Wiki": "Mechanical Spider (FMR)"
 	},
 	"411": {
@@ -4581,7 +4596,7 @@ const cards = {
 		"GuardianStars": "Moon,mercury",
 		"Password": "72076281",
 		"Lore": "A mechanized bat that attacks by dropping explosion orbs.",
-		"ImageID": "Bat-FMR-EN-VG.png",
+		"ImageID": "Bat-FMR-EN-VG.jpg",
 		"Wiki": "Bat (FMR)"
 	},
 	"412": {
@@ -4595,7 +4610,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Uranus",
 		"Password": "08471389",
 		"Lore": "A wolf made entirely of iron. Its steel jaws can bit through anything.",
-		"ImageID": "GigatechWolf-FMR-EN-VG.png",
+		"ImageID": "GigatechWolf-FMR-EN-VG.jpg",
 		"Wiki": "Giga-tech Wolf (FMR)"
 	},
 	"413": {
@@ -4609,7 +4624,7 @@ const cards = {
 		"GuardianStars": "Moon,Mars",
 		"Password": "44865098",
 		"Lore": "Round-shaped soldiers that roll around and act as guardians to the Machine King.",
-		"ImageID": "CyberSoldier-FMR-EN-VG.png",
+		"ImageID": "CyberSoldier-FMR-EN-VG.jpg",
 		"Wiki": "Cyber Soldier (FMR)"
 	},
 	"414": {
@@ -4623,7 +4638,7 @@ const cards = {
 		"GuardianStars": "Neptune,Uranus",
 		"Password": "71950093",
 		"Lore": "Armed with a pair of shovels, this creature is a walking engine of destruction.",
-		"ImageID": "ShovelCrusher-FMR-EN-VG.png",
+		"ImageID": "ShovelCrusher-FMR-EN-VG.jpg",
 		"Wiki": "Shovel Crusher (FMR)"
 	},
 	"415": {
@@ -4637,7 +4652,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "07359741",
 		"Lore": "A hunter that relentlessly pursues its target by order of the Machine King",
-		"ImageID": "Mechanicalchacer-FMR-EN-VG.png",
+		"ImageID": "Mechanicalchacer-FMR-EN-VG.jpg",
 		"Wiki": "Mechanicalchacer"
 	},
 	"416": {
@@ -4651,7 +4666,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "34743446",
 		"Lore": "Each separate part of this creature is an individual weapon capable of devastating attacks.",
-		"ImageID": "Blocker-FMR-EN-VG.png",
+		"ImageID": "Blocker-FMR-EN-VG.jpg",
 		"Wiki": "Blocker (FMR)"
 	},
 	"417": {
@@ -4665,7 +4680,7 @@ const cards = {
 		"GuardianStars": "Mars,Venus",
 		"Password": "70138455",
 		"Lore": "A walking time device that loves to blow enemies away.",
-		"ImageID": "BlastJuggler-FMR-EN-VG.png",
+		"ImageID": "BlastJuggler-FMR-EN-VG.jpg",
 		"Wiki": "Blast Juggler (FMR)"
 	},
 	"418": {
@@ -4679,7 +4694,7 @@ const cards = {
 		"GuardianStars": "Venus,Neptune",
 		"Password": "07526150",
 		"Lore": "A massive iron golem that appears from a dimensional rift.",
-		"ImageID": "Golgoil-FMR-EN-VG.png",
+		"ImageID": "Golgoil-FMR-EN-VG.jpg",
 		"Wiki": "Golgoil (FMR)"
 	},
 	"419": {
@@ -4693,7 +4708,7 @@ const cards = {
 		"GuardianStars": "Moon,Uranus",
 		"Password": "33621868",
 		"Lore": "This creature swings around a huge spiked ball to destroy its enemies.",
-		"ImageID": "Giganto-FMR-EN-VG.png",
+		"ImageID": "Giganto-FMR-EN-VG.jpg",
 		"Wiki": "Giganto (FMR)"
 	},
 	"42": {
@@ -4707,7 +4722,7 @@ const cards = {
 		"GuardianStars": "Venus,Mars",
 		"Password": "28546905",
 		"Lore": "Manipulates enemies attacks with the power of illusion. A very rare card.",
-		"ImageID": "IllusionistFacelessMage-FMR-EN-VG.png",
+		"ImageID": "IllusionistFacelessMage-FMR-EN-VG.jpg",
 		"Wiki": "Illusionist Faceless Mage (FMR)"
 	},
 	"420": {
@@ -4721,7 +4736,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "69015963",
 		"Lore": "Created in a basement lab, this infernal machine launches rockets from within its mouth.",
-		"ImageID": "CyberStein-FMR-EN-VG.png",
+		"ImageID": "CyberStein-FMR-EN-VG.jpg",
 		"Wiki": "Cyber-Stein (FMR)"
 	},
 	"421": {
@@ -4735,7 +4750,7 @@ const cards = {
 		"GuardianStars": "Moon,mercury",
 		"Password": "06400512",
 		"Lore": "A strike force equipped with radar detectors and sensors.",
-		"ImageID": "CyberCommander-FMR-EN-VG.png",
+		"ImageID": "CyberCommander-FMR-EN-VG.jpg",
 		"Wiki": "Cyber Commander (FMR)"
 	},
 	"422": {
@@ -4749,7 +4764,7 @@ const cards = {
 		"GuardianStars": "Moon,mars",
 		"Password": "32809211",
 		"Lore": "created in an underground lab, this artificial being occasionally goes berserk.",
-		"ImageID": "Jinzo7-FMR-EN-VG.png",
+		"ImageID": "Jinzo7-FMR-EN-VG.jpg",
 		"Wiki": "Jinzo 7 (FMR)"
 	},
 	"423": {
@@ -4763,7 +4778,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Pluto",
 		"Password": "69893315",
 		"Lore": "An armadillo-like creature that forms a die whenever it rolls up its body.",
-		"ImageID": "DiceArmadillo-FMR-EN-VG.png",
+		"ImageID": "DiceArmadillo-FMR-EN-VG.jpg",
 		"Wiki": "Dice Armadillo (FMR)"
 	},
 	"424": {
@@ -4777,7 +4792,7 @@ const cards = {
 		"GuardianStars": "Saturn,Uranus",
 		"Password": "95288024",
 		"Lore": "A bird-like dragon with four bladed wings.",
-		"ImageID": "SkyDragon-FMR-EN-VG.png",
+		"ImageID": "SkyDragon-FMR-EN-VG.jpg",
 		"Wiki": "Sky Dragon (FMR)"
 	},
 	"425": {
@@ -4791,7 +4806,7 @@ const cards = {
 		"GuardianStars": "Pluto,Jupiter",
 		"Password": "31786629",
 		"Lore": "A dragon that summons thunder and lightning to attack its opponents.",
-		"ImageID": "ThunderDragon-FMR-EN-VG.png",
+		"ImageID": "ThunderDragon-FMR-EN-VG.jpg",
 		"Wiki": "Thunder Dragon (FMR)"
 	},
 	"426": {
@@ -4805,7 +4820,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mars",
 		"Password": "68171737",
 		"Lore": "With a body consisting entirely of rocks, this dragon flings boulders at its enemies.",
-		"ImageID": "StoneD-FMR-EN-VG.png",
+		"ImageID": "StoneD-FMR-EN-VG.jpg",
 		"Wiki": "Stone D. (FMR)"
 	},
 	"427": {
@@ -4819,7 +4834,7 @@ const cards = {
 		"GuardianStars": "Sun,Jupiter",
 		"Password": "94566432",
 		"Lore": "A very powerful dragon emperor.",
-		"ImageID": "KaiserDragon-FMR-EN-VG.png",
+		"ImageID": "KaiserDragon-FMR-EN-VG.jpg",
 		"Wiki": "Kaiser Dragon (FMR)"
 	},
 	"428": {
@@ -4833,7 +4848,7 @@ const cards = {
 		"GuardianStars": "Sun,Saturn",
 		"Password": "31560081",
 		"Lore": "Despite its weak strength, this creature is capable of casting spells to eliminate darkness.",
-		"ImageID": "MagicianofFaith-FMR-EN-VG.png",
+		"ImageID": "MagicianofFaith-FMR-EN-VG.jpg",
 		"Wiki": "Magician of Faith (FMR)"
 	},
 	"429": {
@@ -4847,7 +4862,7 @@ const cards = {
 		"GuardianStars": "Sun,Uranus",
 		"Password": "67959180",
 		"Lore": "A shy goddess that seems to spend the majority of her time sleeping.",
-		"ImageID": "GoddessofWhim-FMR-EN-VG.png",
+		"ImageID": "GoddessofWhim-FMR-EN-VG.jpg",
 		"Wiki": "Goddess of Whim (FMR)"
 	},
 	"43": {
@@ -4861,7 +4876,7 @@ const cards = {
 		"GuardianStars": "Uranus,Jupiter",
 		"Password": "54541900",
 		"Lore": "A very average looking fighter with an unusually high attack factor.",
-		"ImageID": "KarbonalaWarrior-FMR-EN-VG.png",
+		"ImageID": "KarbonalaWarrior-FMR-EN-VG.jpg",
 		"Wiki": "Karbonala Warrior (FMR)"
 	},
 	"430": {
@@ -4875,7 +4890,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mercury",
 		"Password": "93343894",
 		"Lore": "This creature surrounds opponents with water and envelops them in a sweeping attack.",
-		"ImageID": "WaterMagician-FMR-EN-VG.png",
+		"ImageID": "WaterMagician-FMR-EN-VG.jpg",
 		"Wiki": "Water Magician (FMR)"
 	},
 	"431": {
@@ -4889,7 +4904,7 @@ const cards = {
 		"GuardianStars": "Neptune,Moon",
 		"Password": "20848593",
 		"Lore": "A very aggressive mermaid with spikes for attacking enemies.",
-		"ImageID": "IceWater-FMR-EN-VG.png",
+		"ImageID": "IceWater-FMR-EN-VG.jpg",
 		"Wiki": "Ice Water (FMR)"
 	},
 	"432": {
@@ -4903,7 +4918,7 @@ const cards = {
 		"GuardianStars": "Neptune,Venus",
 		"Password": "66836598",
 		"Lore": "A fairy that wanders the seas. Rumored to have the capabilities for summoning sea dragons.",
-		"ImageID": "WaterdragonFairy-FMR-EN-VG.png",
+		"ImageID": "WaterdragonFairy-FMR-EN-VG.jpg",
 		"Wiki": "Waterdragon Fairy (FMR)"
 	},
 	"433": {
@@ -4917,7 +4932,7 @@ const cards = {
 		"GuardianStars": "Sun,Pluto",
 		"Password": "93221206",
 		"Lore": "This elf is rumored to have lived for thousands of years. He leads an army of spirits against his enemies.",
-		"ImageID": "AncientElf-FMR-EN-VG.png",
+		"ImageID": "AncientElf-FMR-EN-VG.jpg",
 		"Wiki": "Ancient Elf (FMR)"
 	},
 	"434": {
@@ -4931,7 +4946,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "29616941",
 		"Lore": "A rare female magic user armed with a vicious whip.",
-		"ImageID": "BeautifulBeastTrainer-FMR-EN-VG.png",
+		"ImageID": "BeautifulBeastTrainer-FMR-EN-VG.jpg",
 		"Wiki": "Beautiful Beast Trainer (FMR)"
 	},
 	"435": {
@@ -4945,7 +4960,7 @@ const cards = {
 		"GuardianStars": "Neptune,Venus",
 		"Password": "55014050",
 		"Lore": "A beautiful creature that flings icy arrows.",
-		"ImageID": "WaterGirl-FMR-EN-VG.png",
+		"ImageID": "WaterGirl-FMR-EN-VG.jpg",
 		"Wiki": "Water Girl (FMR)"
 	},
 	"436": {
@@ -4959,7 +4974,7 @@ const cards = {
 		"GuardianStars": "Neptune,Jupiter",
 		"Password": "92409659",
 		"Lore": "A white horned dolphin that attacks by calling up tidal waves.",
-		"ImageID": "WhiteDolphin-FMR-EN-VG.png",
+		"ImageID": "WhiteDolphin-FMR-EN-VG.jpg",
 		"Wiki": "White Dolphin (FMR)"
 	},
 	"437": {
@@ -4973,7 +4988,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mars",
 		"Password": "28593363",
 		"Lore": "A violent shark that attacks anything and everything in the sea.",
-		"ImageID": "DeepseaShark-FMR-EN-VG.png",
+		"ImageID": "DeepseaShark-FMR-EN-VG.jpg",
 		"Wiki": "Deepsea Shark (FMR)"
 	},
 	"438": {
@@ -4987,7 +5002,7 @@ const cards = {
 		"GuardianStars": "Neptune,Saturn",
 		"Password": "55998462",
 		"Lore": "A steel fish armed with a sharp dorsal fin.",
-		"ImageID": "MetalFish-FMR-EN-VG.png",
+		"ImageID": "MetalFish-FMR-EN-VG.jpg",
 		"Wiki": "Metal Fish (FMR)"
 	},
 	"439": {
@@ -5001,7 +5016,7 @@ const cards = {
 		"GuardianStars": "Neptune,sun",
 		"Password": "81386177",
 		"Lore": "A beautiful swimmer with a very nasty temperament.",
-		"ImageID": "BottomDweller-FMR-EN-VG.png",
+		"ImageID": "BottomDweller-FMR-EN-VG.jpg",
 		"Wiki": "Bottom Dweller (FMR)"
 	},
 	"44": {
@@ -5015,7 +5030,7 @@ const cards = {
 		"GuardianStars": "Sun,Pluto",
 		"Password": "91939608",
 		"Lore": "A unique doll gifted with mystical power. Particularly powerful when attacking against dark forces.",
-		"ImageID": "RogueDoll-FMR-EN-VG.png",
+		"ImageID": "RogueDoll-FMR-EN-VG.jpg",
 		"Wiki": "Rogue Doll (FMR)"
 	},
 	"440": {
@@ -5029,7 +5044,7 @@ const cards = {
 		"GuardianStars": "Neptune,Sun",
 		"Password": "23771716",
 		"Lore": "A rare rainbow fish that is almost impossible to catch.",
-		"ImageID": "7ColoredFish-FMR-EN-VG.png",
+		"ImageID": "7ColoredFish-FMR-EN-VG.jpg",
 		"Wiki": "7 Colored Fish (FMR)"
 	},
 	"441": {
@@ -5043,7 +5058,7 @@ const cards = {
 		"GuardianStars": "Neptune,Venus",
 		"Password": "50176820",
 		"Lore": "This creature carries a plasma cannon on its back.",
-		"ImageID": "MechBass-FMR-EN-VG.png",
+		"ImageID": "MechBass-FMR-EN-VG.jpg",
 		"Wiki": "Mech Bass (FMR)"
 	},
 	"442": {
@@ -5057,7 +5072,7 @@ const cards = {
 		"GuardianStars": "Neptune,Moon",
 		"Password": "86164529",
 		"Lore": "A dragon that dwells in the sea. It is capable of spitting high-pressure blasts of water.",
-		"ImageID": "AquaDragon-FMR-EN-VG.png",
+		"ImageID": "AquaDragon-FMR-EN-VG.jpg",
 		"Wiki": "Aqua Dragon (FMR)"
 	},
 	"443": {
@@ -5071,7 +5086,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mercury",
 		"Password": "23659124",
 		"Lore": "The King of the Seas, this creature is protected by a solid shell and spits poisonous bubbles at its enemies.",
-		"ImageID": "SeaKingDragon-FMR-EN-VG.png",
+		"ImageID": "SeaKingDragon-FMR-EN-VG.jpg",
 		"Wiki": "Sea King Dragon (FMR)"
 	},
 	"444": {
@@ -5085,7 +5100,7 @@ const cards = {
 		"GuardianStars": "Neptune,Jupiter",
 		"Password": "59053232",
 		"Lore": "A strange one-eyed monster armed with a dangerous spear.",
-		"ImageID": "TuruPurun-FMR-EN-VG.png",
+		"ImageID": "TuruPurun-FMR-EN-VG.jpg",
 		"Wiki": "Turu-Purun (FMR)"
 	},
 	"445": {
@@ -5099,7 +5114,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mars",
 		"Password": "85448931",
 		"Lore": "A merman warrior that attacks anyone who dares to pollute the sea.",
-		"ImageID": "GuardianoftheSea-FMR-EN-VG.png",
+		"ImageID": "GuardianoftheSea-FMR-EN-VG.jpg",
 		"Wiki": "Guardian of the Sea (FMR)"
 	},
 	"446": {
@@ -5113,7 +5128,7 @@ const cards = {
 		"GuardianStars": "Neptune,Saturn",
 		"Password": "12436646",
 		"Lore": "A creature that drowns its opponents by mesmerizing them with the ball on the end of its tail.",
-		"ImageID": "AquaSnake-FMR-EN-VG.png",
+		"ImageID": "AquaSnake-FMR-EN-VG.jpg",
 		"Wiki": "Aqua Snake (FMR)"
 	},
 	"447": {
@@ -5127,7 +5142,7 @@ const cards = {
 		"GuardianStars": "Neptune,Sun",
 		"Password": "58831685",
 		"Lore": "A sea serpent that bites anything that passes nearby.",
-		"ImageID": "GiantRedSeasnake-FMR-EN-VG.png",
+		"ImageID": "GiantRedSeasnake-FMR-EN-VG.jpg",
 		"Wiki": "Giant Red Seasnake (FMR)"
 	},
 	"448": {
@@ -5141,7 +5156,7 @@ const cards = {
 		"GuardianStars": "Pluto,mercury",
 		"Password": "85326399",
 		"Lore": "Using the spikes sprouting from its body, this creature stabs its opponents and floods then with electricity.",
-		"ImageID": "SpikeSeadra-FMR-EN-VG.png",
+		"ImageID": "SpikeSeadra-FMR-EN-VG.jpg",
 		"Wiki": "Spike Seadra (FMR)"
 	},
 	"449": {
@@ -5155,7 +5170,7 @@ const cards = {
 		"GuardianStars": "Neptune,moon",
 		"Password": "11714098",
 		"Lore": "A massive and well-protected giant turtle that has lived over 30,000 years.",
-		"ImageID": "30000YearWhiteTurtle-FMR-EN-VG.png",
+		"ImageID": "30000YearWhiteTurtle-FMR-EN-VG.jpg",
 		"Wiki": "30,000-Year White Turtle (FMR)"
 	},
 	"45": {
@@ -5169,7 +5184,7 @@ const cards = {
 		"GuardianStars": "Pluto,Sun",
 		"Password": "27324313",
 		"Lore": "Attacks its enemies with thunder.",
-		"ImageID": "OscilloHero2-FMR-EN-VG.png",
+		"ImageID": "OscilloHero2-FMR-EN-VG.jpg",
 		"Wiki": "Oscillo Hero 2 (FMR)"
 	},
 	"450": {
@@ -5183,7 +5198,7 @@ const cards = {
 		"GuardianStars": "Neptune,Venus",
 		"Password": "48109103",
 		"Lore": "An amphibian sworn to avenge the death of its brothers.",
-		"ImageID": "KappaAvenger-FMR-EN-VG.png",
+		"ImageID": "KappaAvenger-FMR-EN-VG.jpg",
 		"Wiki": "Kappa Avenger (FMR)"
 	},
 	"451": {
@@ -5197,7 +5212,7 @@ const cards = {
 		"GuardianStars": "Neptune,Saturn",
 		"Password": "84103702",
 		"Lore": "A crab monster with two scissors for cutting up enemies.",
-		"ImageID": "Kanikabuto-FMR-EN-VG.png",
+		"ImageID": "Kanikabuto-FMR-EN-VG.jpg",
 		"Wiki": "Kanikabuto (FMR)"
 	},
 	"452": {
@@ -5211,7 +5226,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mercury",
 		"Password": "10598400",
 		"Lore": "A newly evolved crayfish with sharp scissors for clipping the enemy.",
-		"ImageID": "Zarigun-FMR-EN-VG.png",
+		"ImageID": "Zarigun-FMR-EN-VG.jpg",
 		"Wiki": "Zarigun (FMR)"
 	},
 	"453": {
@@ -5225,7 +5240,7 @@ const cards = {
 		"GuardianStars": "Uranus,Jupiter",
 		"Password": "47986555",
 		"Lore": "A golem that has protected treasure for nearly millennium.",
-		"ImageID": "MillenniumGolem-FMR-EN-VG.png",
+		"ImageID": "MillenniumGolem-FMR-EN-VG.jpg",
 		"Wiki": "Millennium Golem (FMR)"
 	},
 	"454": {
@@ -5239,7 +5254,7 @@ const cards = {
 		"GuardianStars": "Uranus,Sun",
 		"Password": "73481154",
 		"Lore": "A golem with a massive right hand for crushing its victims.",
-		"ImageID": "DestroyerGolem-FMR-EN-VG.png",
+		"ImageID": "DestroyerGolem-FMR-EN-VG.jpg",
 		"Wiki": "Destroyer Golem (FMR)"
 	},
 	"455": {
@@ -5253,7 +5268,7 @@ const cards = {
 		"GuardianStars": "Moon,Uranus",
 		"Password": "10476868",
 		"Lore": "A monster that charges into enemies firing a pair of cannons mounted on its shoulders.",
-		"ImageID": "BarrelRock-FMR-EN-VG.png",
+		"ImageID": "BarrelRock-FMR-EN-VG.jpg",
 		"Wiki": "Barrel Rock (FMR)"
 	},
 	"456": {
@@ -5267,7 +5282,7 @@ const cards = {
 		"GuardianStars": "Uranus,Venus",
 		"Password": "46864967",
 		"Lore": "A rock warrior that wields a very heavy sword carved from stone.",
-		"ImageID": "MinomushiWarrior-FMR-EN-VG.png",
+		"ImageID": "MinomushiWarrior-FMR-EN-VG.jpg",
 		"Wiki": "Minomushi Warrior (FMR)"
 	},
 	"457": {
@@ -5281,7 +5296,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mercury",
 		"Password": "72269672",
 		"Lore": "A creature that erupts with anger, resulting in a crushing rain of boulders.",
-		"ImageID": "StoneGhost-FMR-EN-VG.png",
+		"ImageID": "StoneGhost-FMR-EN-VG.jpg",
 		"Wiki": "Stone Ghost (FMR)"
 	},
 	"458": {
@@ -5295,7 +5310,7 @@ const cards = {
 		"GuardianStars": "Pluto,Venus",
 		"Password": "09653271",
 		"Lore": "A monster that judges wrong-doers and punishes them appropriately.",
-		"ImageID": "KaminariAttack-FMR-EN-VG.png",
+		"ImageID": "KaminariAttack-FMR-EN-VG.jpg",
 		"Wiki": "Kaminari Attack (FMR)"
 	},
 	"459": {
@@ -5309,7 +5324,7 @@ const cards = {
 		"GuardianStars": "Pluto,Saturn",
 		"Password": "45042329",
 		"Lore": "This creature attacks enemies with electromagnetic wave.",
-		"ImageID": "TripwireBeast-FMR-EN-VG.png",
+		"ImageID": "TripwireBeast-FMR-EN-VG.jpg",
 		"Wiki": "Tripwire Beast (FMR)"
 	},
 	"46": {
@@ -5323,7 +5338,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "53829412",
 		"Lore": "This creature's tough hide deflects just about any attack.",
-		"ImageID": "Griffore-FMR-EN-VG.png",
+		"ImageID": "Griffore-FMR-EN-VG.jpg",
 		"Wiki": "Griffore (FMR)"
 	},
 	"460": {
@@ -5337,7 +5352,7 @@ const cards = {
 		"GuardianStars": "Pluto,Jupiter",
 		"Password": "12146024",
 		"Lore": "This creature spits a gooey substance that robs enemies of mobility and then stuns them with electric shocks.",
-		"ImageID": "BoltEscargot-FMR-EN-VG.png",
+		"ImageID": "BoltEscargot-FMR-EN-VG.jpg",
 		"Wiki": "Bolt Escargot (FMR)"
 	},
 	"461": {
@@ -5351,7 +5366,7 @@ const cards = {
 		"GuardianStars": "Pluto,Moon",
 		"Password": "48531733",
 		"Lore": "A monster with a pair of electric whips instead of arms.",
-		"ImageID": "BoltPenguin-FMR-EN-VG.png",
+		"ImageID": "BoltPenguin-FMR-EN-VG.jpg",
 		"Wiki": "Bolt Penguin (FMR)"
 	},
 	"462": {
@@ -5365,7 +5380,7 @@ const cards = {
 		"GuardianStars": "Pluto,Sun",
 		"Password": "84926738",
 		"Lore": "A creature that attacks enemies with thunderbolts.",
-		"ImageID": "TheImmortalofThunder-FMR-EN-VG.png",
+		"ImageID": "TheImmortalofThunder-FMR-EN-VG.jpg",
 		"Wiki": "The Immortal of Thunder (FMR)"
 	},
 	"463": {
@@ -5379,7 +5394,7 @@ const cards = {
 		"GuardianStars": "Pluto,Mars",
 		"Password": "11324436",
 		"Lore": "A serpent with a tail for storing  electricity.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Electric Snake (FMR)"
 	},
 	"464": {
@@ -5393,7 +5408,7 @@ const cards = {
 		"GuardianStars": "Saturn,mercury",
 		"Password": "47319141",
 		"Lore": "A hunter of the skies that has never missed a target.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Wing Eagle (FMR)"
 	},
 	"465": {
@@ -5407,7 +5422,7 @@ const cards = {
 		"GuardianStars": "Saturn,Pluto",
 		"Password": "74703140",
 		"Lore": "A judge of the sky that delivers a sentence with punishing sliver-white claws.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Punished Eagle (FMR)"
 	},
 	"466": {
@@ -5421,7 +5436,7 @@ const cards = {
 		"GuardianStars": "Saturn,Sun",
 		"Password": "10202894",
 		"Lore": "This monster swoops down and attacks with a rain of knives stored in its wings.",
-		"ImageID": "SkullRedBird-FMR-EN-VG.png",
+		"ImageID": "SkullRedBird-FMR-EN-VG.jpg",
 		"Wiki": "Skull Red Bird (FMR)"
 	},
 	"467": {
@@ -5435,7 +5450,7 @@ const cards = {
 		"GuardianStars": "Mars,Mercury",
 		"Password": "46696593",
 		"Lore": "A monster burning with flames and capable of delivering a rain of spark by flapping its wings.",
-		"ImageID": "CrimsonSunbird-FMR-EN-VG.png",
+		"ImageID": "CrimsonSunbird-FMR-EN-VG.jpg",
 		"Wiki": "Crimson Sunbird (FMR)"
 	},
 	"468": {
@@ -5449,7 +5464,7 @@ const cards = {
 		"GuardianStars": "Saturn,Moon",
 		"Password": "73081602",
 		"Lore": "A creature that attacks its enemies with its large beak.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Queen Bird (FMR)"
 	},
 	"469": {
@@ -5463,7 +5478,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mars",
 		"Password": "09076207",
 		"Lore": "A blue ninja that attacks with a large sickle and spiked feet.",
-		"ImageID": "ArmedNinja-FMR-EN-VG.png",
+		"ImageID": "ArmedNinja-FMR-EN-VG.jpg",
 		"Wiki": "Armed Ninja (FMR)"
 	},
 	"47": {
@@ -5477,7 +5492,7 @@ const cards = {
 		"GuardianStars": "Uranus,Jupiter",
 		"Password": "80813021",
 		"Lore": "Not as tough as it looks in terms of defense. This monster's sharp horn gives it an edge when attacking.",
-		"ImageID": "Torike-FMR-EN-VG.png",
+		"ImageID": "Torike-FMR-EN-VG.jpg",
 		"Wiki": "Torike (FMR)"
 	},
 	"470": {
@@ -5491,7 +5506,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "46474915",
 		"Lore": "This creature casts a spell of terror and confusion just before attacking its enemies.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Magical Ghost (FMR)"
 	},
 	"471": {
@@ -5505,7 +5520,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "72869010",
 		"Lore": "This clown feeds the life force of its enemies to a monstrous lizard.",
-		"ImageID": "SoulHunter-FMR-EN-VG.png",
+		"ImageID": "SoulHunter-FMR-EN-VG.jpg",
 		"Wiki": "Soul Hunter (FMR)"
 	},
 	"472": {
@@ -5519,7 +5534,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "08353769",
 		"Lore": "A monster that suffocates its enemy by feeding on the surrounding air supply.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Air Eater (FMR)"
 	},
 	"473": {
@@ -5533,7 +5548,7 @@ const cards = {
 		"GuardianStars": "Mars,Pluto",
 		"Password": "35752363",
 		"Lore": "A fiery warrior creature that unleashes intense heat from its body.",
-		"ImageID": "VermillionSparrow-FMR-EN-VG.png",
+		"ImageID": "VermillionSparrow-FMR-EN-VG.jpg",
 		"Wiki": "Vermillion Sparrow (FMR)"
 	},
 	"474": {
@@ -5547,7 +5562,7 @@ const cards = {
 		"GuardianStars": "Neptune,Sun",
 		"Password": "71746462",
 		"Lore": "A cruel monster that slices up enemies with its sharp claws.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Sea Kamen (FMR)"
 	},
 	"475": {
@@ -5561,7 +5576,7 @@ const cards = {
 		"GuardianStars": "Neptune,Jupiter",
 		"Password": "08131171",
 		"Lore": "A flying poison snake that is not very good at maneuvering on the ground.",
-		"ImageID": "SinisterSerpent-FMR-EN-VG.png",
+		"ImageID": "SinisterSerpent-FMR-EN-VG.jpg",
 		"Wiki": "Sinister Serpent (FMR)"
 	},
 	"476": {
@@ -5575,7 +5590,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "34536276",
 		"Lore": "A spider armed with scissors to attack anything that it traps in its web.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Ganigumo (FMR)"
 	},
 	"477": {
@@ -5589,7 +5604,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "70924884",
 		"Lore": "A stag beetle monster with saw-toothed horn and arms.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Alinsection (FMR)"
 	},
 	"478": {
@@ -5603,7 +5618,7 @@ const cards = {
 		"GuardianStars": "Saturn,Neptune",
 		"Password": "07019529",
 		"Lore": "Insect soldiers that attack in swarms.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Insect Soldiers of the Sky (FMR)"
 	},
 	"479": {
@@ -5617,7 +5632,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Venus",
 		"Password": "33413638",
 		"Lore": "A cockroach warrior that hides in small spaces and emerges to attack enemies.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Cockroach Knight (FMR)"
 	},
 	"48": {
@@ -5631,7 +5646,7 @@ const cards = {
 		"GuardianStars": "Moon,Uranus",
 		"Password": "26202165",
 		"Lore": "A compact, three-eyed monster that is dangerous when faced in the dark.",
-		"ImageID": "Sangan-FMR-EN-VG.png",
+		"ImageID": "Sangan-FMR-EN-VG.jpg",
 		"Wiki": "Sangan (FMR)"
 	},
 	"480": {
@@ -5645,7 +5660,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "60802233",
 		"Lore": "A violent stag beetle with a razor-like cutter.",
-		"ImageID": "Kuwagataα-FMR-EN-VG.png",
+		"ImageID": "Kuwagataα-FMR-EN-VG.jpg",
 		"Wiki": "Kuwagata α (FMR)"
 	},
 	"481": {
@@ -5659,7 +5674,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Uranus",
 		"Password": "06297941",
 		"Lore": "A clever mouse with a sharpened left claw.",
-		"ImageID": "Burglar-FMR-EN-VG.png",
+		"ImageID": "Burglar-FMR-EN-VG.jpg",
 		"Wiki": "Burglar (FMR)"
 	},
 	"482": {
@@ -5673,7 +5688,7 @@ const cards = {
 		"GuardianStars": "Uranus,Neptune",
 		"Password": "33691040",
 		"Lore": "A very dangerous monster with spikes on its head and tail.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Pragtical (FMR)"
 	},
 	"483": {
@@ -5687,7 +5702,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Pluto",
 		"Password": "69780745",
 		"Lore": "A malevolent creature that resembles a winged lion.",
-		"ImageID": "Garvas-FMR-EN-VG.png",
+		"ImageID": "Garvas-FMR-EN-VG.jpg",
 		"Wiki": "Garvas (FMR)"
 	},
 	"484": {
@@ -5701,7 +5716,7 @@ const cards = {
 		"GuardianStars": "Neptune,Moon",
 		"Password": "95174353",
 		"Lore": "A monster that envelops an enemy and slowly digests them.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Ameba (FMR)"
 	},
 	"485": {
@@ -5715,7 +5730,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "32569498",
 		"Lore": "This creature rolls massive objects to crush its enemies.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Korogashi (FMR)"
 	},
 	"486": {
@@ -5729,7 +5744,7 @@ const cards = {
 		"GuardianStars": "Sun,Jupiter",
 		"Password": "68963107",
 		"Lore": "A book wizard with page after page of potent spells.",
-		"ImageID": "BooKoo-FMR-EN-VG.png",
+		"ImageID": "BooKoo-FMR-EN-VG.jpg",
 		"Wiki": "Boo Koo (FMR)"
 	},
 	"487": {
@@ -5743,7 +5758,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "95952802",
 		"Lore": "A beast covered in flowers from head to toe.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Flower Wolf (FMR)"
 	},
 	"488": {
@@ -5757,7 +5772,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "21347810",
 		"Lore": "A flower creature with rainbow-colored blossoms that lure an enemy into its waiting jaws.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Rainbow Flower (FMR)"
 	},
 	"489": {
@@ -5771,7 +5786,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Venus",
 		"Password": "67841515",
 		"Lore": "A dangerous flower that fire pollen projectiles.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Barrel Lily (FMR)"
 	},
 	"49": {
@@ -5785,7 +5800,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Uranus",
 		"Password": "53606874",
 		"Lore": "A giant ant that dwells in the jungle. Powerful in terms of both ATK and DEF factor.",
-		"ImageID": "BigInsect-FMR-EN-VG.png",
+		"ImageID": "BigInsect-FMR-EN-VG.jpg",
 		"Wiki": "Big Insect (FMR)"
 	},
 	"490": {
@@ -5799,7 +5814,7 @@ const cards = {
 		"GuardianStars": "Moon,Uranus",
 		"Password": "94230224",
 		"Lore": "A ball covered in sharp needles. Usually rains down on enemies in a group.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Needle Ball (FMR)"
 	},
 	"491": {
@@ -5813,7 +5828,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "20624263",
 		"Lore": "A beautiful peacock-like creature that fires its feathers at opponents.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Peacock (FMR)"
 	},
 	"492": {
@@ -5827,7 +5842,7 @@ const cards = {
 		"GuardianStars": "Sun,Neptune",
 		"Password": "67629977",
 		"Lore": "Trailed by a beautiful tail, this shooting star inflicts damage when it hits an enemy.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Hoshiningen (FMR)"
 	},
 	"493": {
@@ -5841,7 +5856,7 @@ const cards = {
 		"GuardianStars": "Sun,Venus",
 		"Password": "93013676",
 		"Lore": "A wizard dressed in blue who is usually found meditating.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Maha Vailo (FMR)"
 	},
 	"494": {
@@ -5855,7 +5870,7 @@ const cards = {
 		"GuardianStars": "Neptune,Venus",
 		"Password": "29402771",
 		"Lore": "An unusual mermaid that appears whenever a rainbow bridges the sky.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Rainbow Marine Mermaid (FMR)"
 	},
 	"495": {
@@ -5869,7 +5884,7 @@ const cards = {
 		"GuardianStars": "Sun,Mars",
 		"Password": "56907389",
 		"Lore": "A fantastic guitar player that attacks enemies with ultrasonic emissions.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Musician King (FMR)"
 	},
 	"496": {
@@ -5883,7 +5898,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Uranus",
 		"Password": "92391084",
 		"Lore": "A ferocious rabbit with sharp claws.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Wilmee (FMR)"
 	},
 	"497": {
@@ -5897,7 +5912,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mercury",
 		"Password": "29380133",
 		"Lore": "A hermit crab with the head of a dragon.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Yado Karu (FMR)"
 	},
 	"498": {
@@ -5911,7 +5926,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "55784832",
 		"Lore": "A strange fiend with long arms and razor-sharp talons.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Morinphen (FMR)"
 	},
 	"499": {
@@ -5925,7 +5940,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "81179446",
 		"Lore": "Attacks by blowing webs at its enemies. Nobody knows whats the final form of this insect might be.",
-		"ImageID": "Kattapillar-FMR-EN-VG.png",
+		"ImageID": "Kattapillar-FMR-EN-VG.jpg",
 		"Wiki": "Kattapillar (FMR)"
 	},
 	"5": {
@@ -5939,7 +5954,7 @@ const cards = {
 		"GuardianStars": "Saturn,Sun",
 		"Password": "15303296",
 		"Lore": "A very elusive creature that looks like a harmless statue until it attacks.",
-		"ImageID": "Ryukishin-FMR-EN-VG.png",
+		"ImageID": "Ryukishin-FMR-EN-VG.jpg",
 		"Wiki": "Ryu-kishin (FMR)"
 	},
 	"50": {
@@ -5953,7 +5968,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Pluto",
 		"Password": "89091579",
 		"Lore": "Usually found travelling in swarms, this creature's ideal environment is the forest.",
-		"ImageID": "BasicInsect-FMR-EN-VG.png",
+		"ImageID": "BasicInsect-FMR-EN-VG.jpg",
 		"Wiki": "Basic Insect (FMR)"
 	},
 	"500": {
@@ -5967,7 +5982,7 @@ const cards = {
 		"GuardianStars": "Moon,Mercury",
 		"Password": "28563545",
 		"Lore": "A fearsome monster sent from the netherworld to destroy dragons.",
-		"ImageID": "DragonSeeker-FMR-EN-VG.png",
+		"ImageID": "DragonSeeker-FMR-EN-VG.jpg",
 		"Wiki": "Dragon Seeker (FMR)"
 	},
 	"501": {
@@ -5981,7 +5996,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Pluto",
 		"Password": "54652250",
 		"Lore": "A creature that slices and dices with its scissors and feeds off its victims.",
-		"ImageID": "ManeaterBug-FMR-EN-VG.png",
+		"ImageID": "ManeaterBug-FMR-EN-VG.jpg",
 		"Wiki": "Man-eater Bug (FMR)"
 	},
 	"502": {
@@ -5995,7 +6010,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mars",
 		"Password": "81057959",
 		"Lore": "Gifted with the power of dragons, This warrior wields a sword created from a dragon fang.",
-		"ImageID": "DHuman-FMR-EN-VG.png",
+		"ImageID": "DHuman-FMR-EN-VG.jpg",
 		"Wiki": "D. Human (FMR)"
 	},
 	"503": {
@@ -6009,7 +6024,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "17441953",
 		"Lore": "A fox-like creature with a protective shell.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Turtle Raccoon (FMR)"
 	},
 	"504": {
@@ -6023,7 +6038,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "53830602",
 		"Lore": "A monster that leaks acid from its pores to melt anything that touches its skin.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Fungi of the Musk (FMR)"
 	},
 	"505": {
@@ -6037,7 +6052,7 @@ const cards = {
 		"GuardianStars": "Uranus,Jupiter",
 		"Password": "80234301",
 		"Lore": "A clear crystal that focuses light to create a powerful laser beam.",
-		"ImageID": "Prisman-FMR-EN-VG.png",
+		"ImageID": "Prisman-FMR-EN-VG.jpg",
 		"Wiki": "Prisman (FMR)"
 	},
 	"506": {
@@ -6051,7 +6066,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Venus",
 		"Password": "16229315",
 		"Lore": "A huge moth that generates a whirlwind containing poison dust.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Gale Dogra (FMR)"
 	},
 	"507": {
@@ -6065,7 +6080,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "53713014",
 		"Lore": "A flying fish with a sharp head for piercing targets.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Crazy Fish (FMR)"
 	},
 	"508": {
@@ -6079,7 +6094,7 @@ const cards = {
 		"GuardianStars": "Uranus,Sun",
 		"Password": "89112729",
 		"Lore": "A mechanical dinosaur equipped with a beam cannon.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Cyber Saurus (FMR)"
 	},
 	"509": {
@@ -6093,7 +6108,7 @@ const cards = {
 		"GuardianStars": "Uranus,Moon",
 		"Password": "16507828",
 		"Lore": "A colossal dinosaur that stomps on anything that wanders into its path.",
-		"ImageID": "Bracchioraidus-FMR-EN-VG.png",
+		"ImageID": "Bracchioraidus-FMR-EN-VG.jpg",
 		"Wiki": "Bracchio-raidus (FMR)"
 	},
 	"51": {
@@ -6107,7 +6122,7 @@ const cards = {
 		"GuardianStars": "Neptune,Sun",
 		"Password": "15480588",
 		"Lore": "A lizard with a very tough hide and a very vicious bite.",
-		"ImageID": "ArmoredLizard-FMR-EN-VG.png",
+		"ImageID": "ArmoredLizard-FMR-EN-VG.jpg",
 		"Wiki": "Armored Lizard (FMR)"
 	},
 	"510": {
@@ -6121,7 +6136,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "42591472",
 		"Lore": "A laughing flower whose chuckles can drive an enemy mad.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Laughing Flower (FMR)"
 	},
 	"511": {
@@ -6135,7 +6150,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Uranus",
 		"Password": "84990171",
 		"Lore": "A plant warrior that attacks with a combination of sword-swings and pea projectiles.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Bean Soldier (FMR)"
 	},
 	"512": {
@@ -6149,7 +6164,7 @@ const cards = {
 		"GuardianStars": "Moon,mars",
 		"Password": "11384280",
 		"Lore": "A highly destructive machine armed with a powerful cannon.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Cannon Soldier (FMR)"
 	},
 	"513": {
@@ -6163,7 +6178,7 @@ const cards = {
 		"GuardianStars": "Sun,Saturn",
 		"Password": "47879985",
 		"Lore": "A sentry robot armed with homing rockets for guarding throne rooms from intruders.",
-		"ImageID": "GuardianoftheThroneRoom-FMR-EN-VG.png",
+		"ImageID": "GuardianoftheThroneRoom-FMR-EN-VG.jpg",
 		"Wiki": "Guardian of the Throne Room (FMR)"
 	},
 	"514": {
@@ -6177,7 +6192,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "74277583",
 		"Lore": "A creature capable of manipulating several scissors with definite results.",
-		"ImageID": "BraveScizzar-FMR-EN-VG.png",
+		"ImageID": "BraveScizzar-FMR-EN-VG.jpg",
 		"Wiki": "Brave Scizzar (FMR)"
 	},
 	"515": {
@@ -6191,7 +6206,7 @@ const cards = {
 		"GuardianStars": "Uranus,Venus",
 		"Password": "10262698",
 		"Lore": "A massive stone idol from Easter Island that fires laser rings from its mouth.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "The Statue of Easter Island (FMR)"
 	},
 	"516": {
@@ -6205,7 +6220,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mercury",
 		"Password": "46657337",
 		"Lore": "A monster that angers an opponent to the point that the enemy goes berserk.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Muka Muka (FMR)"
 	},
 	"517": {
@@ -6219,7 +6234,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mars",
 		"Password": "73051941",
 		"Lore": "Appears from underground and attacks with long, snake-like tentacles.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Sand Stone (FMR)"
 	},
 	"518": {
@@ -6233,7 +6248,7 @@ const cards = {
 		"GuardianStars": "Uranus,Neptune",
 		"Password": "09540040",
 		"Lore": "A stone turtle with a very high defense factor.",
-		"ImageID": "BoulderTortoise-FMR-EN-VG.png",
+		"ImageID": "BoulderTortoise-FMR-EN-VG.jpg",
 		"Wiki": "Boulder Tortoise (FMR)"
 	},
 	"519": {
@@ -6247,7 +6262,7 @@ const cards = {
 		"GuardianStars": "Mars,Saturn",
 		"Password": "46534755",
 		"Lore": "A fiery squid that can maintain its flames underwater.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Fire Kraken (FMR)"
 	},
 	"52": {
@@ -6261,7 +6276,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "52584282",
 		"Lore": "A massive beetle with a tough hide and a dangerous horn.",
-		"ImageID": "HerculesBeetle-FMR-EN-VG.png",
+		"ImageID": "HerculesBeetle-FMR-EN-VG.jpg",
 		"Wiki": "Hercules Beetle (FMR)"
 	},
 	"520": {
@@ -6275,7 +6290,7 @@ const cards = {
 		"GuardianStars": "Saturn,Mars",
 		"Password": "72929454",
 		"Lore": "A rare flying turtle that inhabits the sea.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Turtle Bird (FMR)"
 	},
 	"521": {
@@ -6289,7 +6304,7 @@ const cards = {
 		"GuardianStars": "Saturn,Venus",
 		"Password": "08327462",
 		"Lore": "The breath from this bird robs creatures of their life force.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Skullbird (FMR)"
 	},
 	"522": {
@@ -6303,7 +6318,7 @@ const cards = {
 		"GuardianStars": "Saturn,Mercury",
 		"Password": "35712107",
 		"Lore": "A huge bird known for its sharp dive attacks.",
-		"ImageID": "MonstrousBird-FMR-EN-VG.png",
+		"ImageID": "MonstrousBird-FMR-EN-VG.jpg",
 		"Wiki": "Monstrous Bird (FMR)"
 	},
 	"523": {
@@ -6317,7 +6332,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "71107816",
 		"Lore": "Defeated enemies served as ingredients for this gourmet monster.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "The Bistro Butcher (FMR)"
 	},
 	"524": {
@@ -6331,7 +6346,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mars",
 		"Password": "08201910",
 		"Lore": "An extraterrestrial life form that loves to live in the water.",
-		"ImageID": "StarBoy-FMR-EN-VG.png",
+		"ImageID": "StarBoy-FMR-EN-VG.jpg",
 		"Wiki": "Star Boy (FMR)"
 	},
 	"525": {
@@ -6345,7 +6360,7 @@ const cards = {
 		"GuardianStars": "Uranus,Jupiter",
 		"Password": "34690519",
 		"Lore": "Music from this creature's flute can drain an enemy's willpower.",
-		"ImageID": "SpiritoftheMountain-FMR-EN-VG.png",
+		"ImageID": "SpiritoftheMountain-FMR-EN-VG.jpg",
 		"Wiki": "Spirit of the Mountain (FMR)"
 	},
 	"526": {
@@ -6359,7 +6374,7 @@ const cards = {
 		"GuardianStars": "Moon,Uranus",
 		"Password": "70084224",
 		"Lore": "Armed with a huge sickle, this monster can fire beams from its large eyes.",
-		"ImageID": "NeckHunter-FMR-EN-VG.png",
+		"ImageID": "NeckHunter-FMR-EN-VG.jpg",
 		"Wiki": "Neck Hunter (FMR)"
 	},
 	"527": {
@@ -6373,7 +6388,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "07489323",
 		"Lore": "Often mistaken as a cute pet, this creature is a very dangerous beast.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Milus Radiant (FMR)"
 	},
 	"528": {
@@ -6387,7 +6402,7 @@ const cards = {
 		"GuardianStars": "Uranus,Sun",
 		"Password": "33878931",
 		"Lore": "A very fast monster that rolls up and rams its enemies.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Togex (FMR)"
 	},
 	"529": {
@@ -6401,7 +6416,7 @@ const cards = {
 		"GuardianStars": "Mars,Pluto",
 		"Password": "60862676",
 		"Lore": "A flaming beast that is lethal to the touch.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Flame Cerebrus (FMR)"
 	},
 	"53": {
@@ -6415,7 +6430,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "88979991",
 		"Lore": "A huge bee with exceptional strength. Particularly dangerous when a swarm is encountered.",
-		"ImageID": "KillerNeedle-FMR-EN-VG.png",
+		"ImageID": "KillerNeedle-FMR-EN-VG.jpg",
 		"Wiki": "Killer Needle (FMR)"
 	},
 	"530": {
@@ -6429,7 +6444,7 @@ const cards = {
 		"GuardianStars": "Mercury,Moon",
 		"Password": "06367785",
 		"Lore": "Uses a wand to cast various spells against an enemy.",
-		"ImageID": "Eldeen-FMR-EN-VG.png",
+		"ImageID": "Eldeen-FMR-EN-VG.jpg",
 		"Wiki": "Eldeen (FMR)"
 	},
 	"531": {
@@ -6443,7 +6458,7 @@ const cards = {
 		"GuardianStars": "Mercury,Saturn",
 		"Password": "32751480",
 		"Lore": "Turns enemies to stone and crushes them to dust.",
-		"ImageID": "MysticalSand-FMR-EN-VG.png",
+		"ImageID": "MysticalSand-FMR-EN-VG.jpg",
 		"Wiki": "Mystical Sand (FMR)"
 	},
 	"532": {
@@ -6457,7 +6472,7 @@ const cards = {
 		"GuardianStars": "Sun,Uranus",
 		"Password": "69140098",
 		"Lore": "Elf twins that attack an enemy from opposite sides.",
-		"ImageID": "GeminiElf-FMR-EN-VG.png",
+		"ImageID": "GeminiElf-FMR-EN-VG.jpg",
 		"Wiki": "Gemini Elf (FMR)"
 	},
 	"533": {
@@ -6471,7 +6486,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "95144193",
 		"Lore": "An insect monster with the jaws of a stag and the horn of a beetle.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Kwagar Hercules (FMR)"
 	},
 	"534": {
@@ -6485,7 +6500,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "32539892",
 		"Lore": "A monster with four highly dexterous arms for executing separate attacks.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Minar (FMR)"
 	},
 	"535": {
@@ -6499,7 +6514,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "68928540",
 		"Lore": "A man-shaped mantis with two razor sharp scythes.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Kamakiriman (FMR)"
 	},
 	"536": {
@@ -6513,7 +6528,7 @@ const cards = {
 		"GuardianStars": "Neptune,Saturn",
 		"Password": "94412545",
 		"Lore": "A chameleon-like monster that can hide anywhere by changing colors.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Mechaleon (FMR)"
 	},
 	"537": {
@@ -6527,7 +6542,7 @@ const cards = {
 		"GuardianStars": "Pluto,Mercury",
 		"Password": "21817254",
 		"Lore": "Rolls along the ground releasing bolts of electricity to attack its enemies.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Mega Thunderball (FMR)"
 	},
 	"538": {
@@ -6541,7 +6556,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Venus",
 		"Password": "07805359",
 		"Lore": "Swallows enemies whole and uses their essence as energy.",
-		"ImageID": "Niwatori-FMR-EN-VG.png",
+		"ImageID": "Niwatori-FMR-EN-VG.jpg",
 		"Wiki": "Niwatori (FMR)"
 	},
 	"539": {
@@ -6555,7 +6570,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "34290067",
 		"Lore": "A zombie shark that wanders the ocean depths, cursing any that dare cross its path.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Corroding Shark (FMR)"
 	},
 	"54": {
@@ -6569,7 +6584,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "15367030",
 		"Lore": "A large, spherical roach that attacks its enemies by rolling over them. Its tough defense makes it formidable foe.",
-		"ImageID": "Gokibore-FMR-EN-VG.png",
+		"ImageID": "Gokibore-FMR-EN-VG.jpg",
 		"Wiki": "Gokibore (FMR)"
 	},
 	"540": {
@@ -6583,7 +6598,7 @@ const cards = {
 		"GuardianStars": "Sun,Pluto",
 		"Password": "60694662",
 		"Lore": "A phantom fairy that fires countless arrows at anything that harbors an urge to attack.",
-		"ImageID": "Skelengel-FMR-EN-VG.png",
+		"ImageID": "Skelengel-FMR-EN-VG.jpg",
 		"Wiki": "Skelengel (FMR)"
 	},
 	"541": {
@@ -6597,7 +6612,7 @@ const cards = {
 		"GuardianStars": "Saturn,Pluto",
 		"Password": "07089711",
 		"Lore": "This creature blocks enemy movement with gale-force winds and attacks with a massive battle axe.",
-		"ImageID": "HaneHane-FMR-EN-VG.png",
+		"ImageID": "HaneHane-FMR-EN-VG.jpg",
 		"Wiki": "Hane-Hane (FMR)"
 	},
 	"542": {
@@ -6611,7 +6626,7 @@ const cards = {
 		"GuardianStars": "Neptune,Sun",
 		"Password": "33178416",
 		"Lore": "A rocket-launching fish protected by thorny spikes.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Misairuzame (FMR)"
 	},
 	"543": {
@@ -6625,7 +6640,7 @@ const cards = {
 		"GuardianStars": "Neptune,moon",
 		"Password": "69572024",
 		"Lore": "This creature is powered by the life force of the fishes it captures with its long tongue.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Tongyo (FMR)"
 	},
 	"544": {
@@ -6639,7 +6654,7 @@ const cards = {
 		"GuardianStars": "Moon,Mercury",
 		"Password": "96967123",
 		"Lore": "A highly accurate mechanical monster covered with large caliber cannons.",
-		"ImageID": "DharmaCannon-FMR-EN-VG.png",
+		"ImageID": "DharmaCannon-FMR-EN-VG.jpg",
 		"Wiki": "Dharma Cannon (FMR)"
 	},
 	"545": {
@@ -6653,7 +6668,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "32355828",
 		"Lore": "A skeletal zombie dragon that is capable of flying across the skies.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Skelgon (FMR)"
 	},
 	"546": {
@@ -6667,7 +6682,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mars",
 		"Password": "69750536",
 		"Lore": "A massive beast of a fish with arms, legs and razor-sharp teeth.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Wow Warrior (FMR)"
 	},
 	"547": {
@@ -6681,7 +6696,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "95744531",
 		"Lore": "This monster spins about its enemy launching blinding leaves and painful seeds.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Griggle (FMR)"
 	},
 	"548": {
@@ -6695,7 +6710,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "21239280",
 		"Lore": "A zombie rat that hunts felines.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Bone Mouse (FMR)"
 	},
 	"549": {
@@ -6709,7 +6724,7 @@ const cards = {
 		"GuardianStars": "Neptune,Jupiter",
 		"Password": "68638985",
 		"Lore": "A slime creature with a frog's head that croaks as it attacks.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Frog the Jam (FMR)"
 	},
 	"55": {
@@ -6723,7 +6738,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Venus",
 		"Password": "41762634",
 		"Lore": "A giant blood-sucking flea that's devastating when attacking.",
-		"ImageID": "GiantFlea-FMR-EN-VG.png",
+		"ImageID": "GiantFlea-FMR-EN-VG.jpg",
 		"Wiki": "Giant Flea (FMR)"
 	},
 	"550": {
@@ -6737,7 +6752,7 @@ const cards = {
 		"GuardianStars": "Neptune,Saturn",
 		"Password": "94022093",
 		"Lore": "A strange sea serpent with a massive mouth lined with huge fangs.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Behegon (FMR)"
 	},
 	"551": {
@@ -6751,7 +6766,7 @@ const cards = {
 		"GuardianStars": "Mercury,Jupiter",
 		"Password": "21417692",
 		"Lore": "A wicked elf that just loves to engage in battle.",
-		"ImageID": "DarkElf-FMR-EN-VG.png",
+		"ImageID": "DarkElf-FMR-EN-VG.jpg",
 		"Wiki": "Dark Elf (FMR)"
 	},
 	"552": {
@@ -6765,7 +6780,7 @@ const cards = {
 		"GuardianStars": "Saturn,Neptune",
 		"Password": "57405307",
 		"Lore": "Creates powerful tornadoes with its huge wings.",
-		"ImageID": "WingedDragon2-FMR-EN-VG.png",
+		"ImageID": "WingedDragon2-FMR-EN-VG.jpg",
 		"Wiki": "Winged Dragon 2"
 	},
 	"553": {
@@ -6779,7 +6794,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Uranus",
 		"Password": "93900406",
 		"Lore": "A fully grown Mushroom Man with an increased attack factor.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Mushroom Man 2 (FMR)"
 	},
 	"554": {
@@ -6793,7 +6808,7 @@ const cards = {
 		"GuardianStars": "Mercury,Mars",
 		"Password": "20394040",
 		"Lore": "This brother of Swamp Battleguard may not be powerful but is pretty good on\ndefense.",
-		"ImageID": "LavaBattleguard-FMR-EN-VG.png",
+		"ImageID": "LavaBattleguard-FMR-EN-VG.jpg",
 		"Wiki": "Lava Battleguard (FMR)"
 	},
 	"555": {
@@ -6807,7 +6822,7 @@ const cards = {
 		"GuardianStars": "Mars,Uranus",
 		"Password": "56789759",
 		"Lore": "A crimson dragon that spits fireballs at its enemies.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Tyhone 2 (FMR)"
 	},
 	"556": {
@@ -6821,7 +6836,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "93788854",
 		"Lore": "A monster that aimlessly wanders in search of enemies.",
-		"ImageID": "TheWanderingDoomed-FMR-EN-VG.png",
+		"ImageID": "TheWanderingDoomed-FMR-EN-VG.jpg",
 		"Wiki": "The Wandering Doomed (FMR)"
 	},
 	"557": {
@@ -6835,7 +6850,7 @@ const cards = {
 		"GuardianStars": "Moon,Mars",
 		"Password": "29172562",
 		"Lore": "A steel idol worshiped in the Land of Machines.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Steel Ogre Grotto 1 (FMR)"
 	},
 	"558": {
@@ -6849,7 +6864,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "55567161",
 		"Lore": "Not a very reliable sorcerer's servant.",
-		"ImageID": "PottheTrick-FMR-EN-VG.png",
+		"ImageID": "PottheTrick-FMR-EN-VG.jpg",
 		"Wiki": "Pot the Trick (FMR)"
 	},
 	"559": {
@@ -6863,7 +6878,7 @@ const cards = {
 		"GuardianStars": "Venus,Sun",
 		"Password": "82065276",
 		"Lore": "A strange warrior from another dimension.",
-		"ImageID": "OscilloHero-FMR-EN-VG.png",
+		"ImageID": "OscilloHero-FMR-EN-VG.jpg",
 		"Wiki": "Oscillo Hero (FMR)"
 	},
 	"56": {
@@ -6877,7 +6892,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "87756343",
 		"Lore": "Not much in its larval from, this creature is a force to be reckoned with when it grows to become a colossal moth.",
-		"ImageID": "LarvaeMoth-FMR-EN-VG.png",
+		"ImageID": "LarvaeMoth-FMR-EN-VG.jpg",
 		"Wiki": "Larvae Moth (FMR)"
 	},
 	"560": {
@@ -6891,7 +6906,7 @@ const cards = {
 		"GuardianStars": "Venus,Mars",
 		"Password": "28450915",
 		"Lore": "A creature that came from another galaxy.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Invader from Another Dimension (FMR)"
 	},
 	"561": {
@@ -6905,7 +6920,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "55444629",
 		"Lore": "A low class minor dragon incapable of breathing fire.",
-		"ImageID": "LesserDragon-FMR-EN-VG.png",
+		"ImageID": "LesserDragon-FMR-EN-VG.jpg",
 		"Wiki": "Lesser Dragon (FMR)"
 	},
 	"562": {
@@ -6919,7 +6934,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Pluto",
 		"Password": "81843628",
 		"Lore": "A larva with steel spikes to attack the unwary.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Needle Worm (FMR)"
 	},
 	"563": {
@@ -6933,7 +6948,7 @@ const cards = {
 		"GuardianStars": "Mercury,Uranus",
 		"Password": "17238333",
 		"Lore": "A harmless creature usually found in the attic of any home.",
-		"ImageID": "WretchedGhostoftheAttic-FMR-EN-VG.png",
+		"ImageID": "WretchedGhostoftheAttic-FMR-EN-VG.jpg",
 		"Wiki": "Wretched Ghost of the Attic (FMR)"
 	},
 	"564": {
@@ -6947,7 +6962,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "54622031",
 		"Lore": "A very unusual skeletal zombie elephant with glowing gold bones.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Great Mammoth of Goldfine (FMR)"
 	},
 	"565": {
@@ -6961,7 +6976,7 @@ const cards = {
 		"GuardianStars": "Neptune,Sun",
 		"Password": "80727036",
 		"Lore": "A black shark that can detect almost any scent in the water.",
-		"ImageID": "ManeatingBlackShark-FMR-EN-VG.png",
+		"ImageID": "ManeatingBlackShark-FMR-EN-VG.jpg",
 		"Wiki": "Man-eating Black Shark (FMR)"
 	},
 	"566": {
@@ -6975,7 +6990,7 @@ const cards = {
 		"GuardianStars": "Neptune,Moon",
 		"Password": "17115745",
 		"Lore": "A very long snake that often appears in legends and myths.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Yormungarde (FMR)"
 	},
 	"567": {
@@ -6989,7 +7004,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "43500484",
 		"Lore": "A thorny plant found in the darklands that wraps itself around any unwary traveler.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Darkworld Thorns (FMR)"
 	},
 	"568": {
@@ -7003,7 +7018,7 @@ const cards = {
 		"GuardianStars": "Uranus,Moon",
 		"Password": "89904598",
 		"Lore": "Man-like dinosaur lacking in strength but with a high I.Q.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Anthrosaurus (FMR)"
 	},
 	"569": {
@@ -7017,7 +7032,7 @@ const cards = {
 		"GuardianStars": "Neptune,Venus",
 		"Password": "16353197",
 		"Lore": "A blood-sucking snake in human form that attacks any living thing that passes nearby.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Drooling Lizard (FMR)"
 	},
 	"57": {
@@ -7031,7 +7046,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Uranus",
 		"Password": "14141448",
 		"Lore": "A powerful creature of the forest, this huge moth attacks its enemies by spreading  poison dust with its wings.",
-		"ImageID": "GreatMoth-FMR-EN-VG.png",
+		"ImageID": "GreatMoth-FMR-EN-VG.jpg",
 		"Wiki": "Great Moth (FMR)"
 	},
 	"570": {
@@ -7045,7 +7060,7 @@ const cards = {
 		"GuardianStars": "Uranus,Venus",
 		"Password": "42348802",
 		"Lore": "A tiger-striped dragon that is often seen racing across the wasteland with tremendous speed.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Trakadon (FMR)"
 	},
 	"571": {
@@ -7059,7 +7074,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "89832901",
 		"Lore": "A jet-black dragon that inhabits the jungles and feeds on trees.",
-		"ImageID": "BDragonJungleKing-FMR-EN-VG.png",
+		"ImageID": "BDragonJungleKing-FMR-EN-VG.jpg",
 		"Wiki": "B. Dragon Jungle King (FMR)"
 	},
 	"572": {
@@ -7073,7 +7088,7 @@ const cards = {
 		"GuardianStars": "Uranus,Venus",
 		"Password": "15237615",
 		"Lore": "Empress of the Golden Kingdom. None may refuse her will.",
-		"ImageID": "EmpressJudge-FMR-EN-VG.png",
+		"ImageID": "EmpressJudge-FMR-EN-VG.jpg",
 		"Wiki": "Empress Judge (FMR)"
 	},
 	"573": {
@@ -7087,7 +7102,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mercury",
 		"Password": "42625254",
 		"Lore": "A very ferocious monster spawned from a T-Rex.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Little D (FMR)"
 	},
 	"574": {
@@ -7101,7 +7116,7 @@ const cards = {
 		"GuardianStars": "Mercury,Pluto",
 		"Password": "78010363",
 		"Lore": "This forest-dwelling witch can see all with the eye on her forehead.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Witch of the Black Forest (FMR)"
 	},
 	"575": {
@@ -7115,7 +7130,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "14015067",
 		"Lore": "A white goat that has inhabited the forest for ages. The creature is actually an elder of the woods.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Ancient One of the Deep Forest (FMR)"
 	},
 	"576": {
@@ -7129,7 +7144,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "41403766",
 		"Lore": "A rare scarlet scorpion that can be found in the tundra — not in the desert.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Giant Scorpion of the Tundra (FMR)"
 	},
 	"577": {
@@ -7143,7 +7158,7 @@ const cards = {
 		"GuardianStars": "Saturn,Mars",
 		"Password": "77998771",
 		"Lore": "A very wise, long-nosed goblin with supernatural powers.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Crow Goblin (FMR)"
 	},
 	"578": {
@@ -7157,7 +7172,7 @@ const cards = {
 		"GuardianStars": "Mercury,Neptune",
 		"Password": "04392470",
 		"Lore": "A wizard with a black cape that is actually a talking lion disguised as a man.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Leo Wizard (FMR)"
 	},
 	"579": {
@@ -7171,7 +7186,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Venus",
 		"Password": "40387124",
 		"Lore": "A rare flower that blooms in a pitch-dark abyss.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Abyss Flower (FMR)"
 	},
 	"58": {
@@ -7185,7 +7200,7 @@ const cards = {
 		"GuardianStars": "Mercury,Saturn",
 		"Password": "40640057",
 		"Lore": "By itself, this creature may not seem like much. But in the dark, it attacks in numbers as a formidable force.",
-		"ImageID": "Kuriboh-FMR-EN-VG.png",
+		"ImageID": "Kuriboh-FMR-EN-VG.jpg",
 		"Wiki": "Kuriboh (FMR)"
 	},
 	"580": {
@@ -7199,7 +7214,7 @@ const cards = {
 		"GuardianStars": "Moon,Uranus",
 		"Password": "76775123",
 		"Lore": "A cutting-edge robot that eliminates intruders upon detection.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Patrol Robo (FMR)"
 	},
 	"581": {
@@ -7213,7 +7228,7 @@ const cards = {
 		"GuardianStars": "Saturn,Sun",
 		"Password": "03170832",
 		"Lore": "This bird is a precursor to disaster!!",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Takuhee (FMR)"
 	},
 	"582": {
@@ -7227,7 +7242,7 @@ const cards = {
 		"GuardianStars": "Sun,Neptune",
 		"Password": "35565537",
 		"Lore": "A popular creature in mythology that delivers judgment with a sharp spear.",
-		"ImageID": "DarkWitch-FMR-EN-VG.png",
+		"ImageID": "DarkWitch-FMR-EN-VG.jpg",
 		"Wiki": "Dark Witch (FMR)"
 	},
 	"583": {
@@ -7241,7 +7256,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mercury",
 		"Password": "72053645",
 		"Lore": "This creature is known to predict the weather with very little accuracy.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Weather Report (FMR)"
 	},
 	"584": {
@@ -7255,7 +7270,7 @@ const cards = {
 		"GuardianStars": "Sun,Venus",
 		"Password": "08058240",
 		"Lore": "This creature corners its enemies and seals away their power.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Binding Chain (FMR)"
 	},
 	"585": {
@@ -7269,7 +7284,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "34442949",
 		"Lore": "A mechanically enhanced snail that is no faster than it used to be.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Mechanical Snail (FMR)"
 	},
 	"586": {
@@ -7283,7 +7298,7 @@ const cards = {
 		"GuardianStars": "Moon,Mercury",
 		"Password": "61831093",
 		"Lore": "A creature that transforms into the image of its enemy and copies every offensive move.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Greenkappa (FMR)"
 	},
 	"587": {
@@ -7297,7 +7312,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "07225792",
 		"Lore": "A highly evolved Larvas that is even more powerful than before.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Mon Larvas (FMR)"
 	},
 	"588": {
@@ -7311,7 +7326,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Uranus",
 		"Password": "34320307",
 		"Lore": "A living vase that blinds enemies with pollen and attacks with its sharp teeth.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Living Vase (FMR)"
 	},
 	"589": {
@@ -7325,7 +7340,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Pluto",
 		"Password": "60715406",
 		"Lore": "Attacks nearby opponents by reaching out with its blue vines.",
-		"ImageID": "TentaclePlant-FMR-EN-VG.png",
+		"ImageID": "TentaclePlant-FMR-EN-VG.jpg",
 		"Wiki": "Tentacle Plant (FMR)"
 	},
 	"59": {
@@ -7339,7 +7354,7 @@ const cards = {
 		"GuardianStars": "Mercury,Pluto",
 		"Password": "40374923",
 		"Lore": "A mammoth that protects the gravesite of its pack. It's absolutely merciless when facing graverobbers.",
-		"ImageID": "MammothGraveyard-FMR-EN-VG.png",
+		"ImageID": "MammothGraveyard-FMR-EN-VG.jpg",
 		"Wiki": "Mammoth Graveyard (FMR)"
 	},
 	"590": {
@@ -7353,7 +7368,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "06103114",
 		"Lore": "Wraps its coils around opponents and pecks them with its huge beak.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Beaked Snake (FMR)"
 	},
 	"591": {
@@ -7367,7 +7382,7 @@ const cards = {
 		"GuardianStars": "Uranus,Neptune",
 		"Password": "33508719",
 		"Lore": "A large jar that attacks nearby enemies by unleashing the monster it contains inside.",
-		"ImageID": "MorphingJar-FMR-EN-VG.png",
+		"ImageID": "MorphingJar-FMR-EN-VG.jpg",
 		"Wiki": "Morphing Jar (FMR)"
 	},
 	"592": {
@@ -7381,7 +7396,7 @@ const cards = {
 		"GuardianStars": "Sun,Mars",
 		"Password": "69992868",
 		"Lore": "A fairy of the arts and an excellent harp player.",
-		"ImageID": "MuseA-FMR-EN-VG.png",
+		"ImageID": "MuseA-FMR-EN-VG.jpg",
 		"Wiki": "Muse-A (FMR)"
 	},
 	"593": {
@@ -7395,7 +7410,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mars",
 		"Password": "96981563",
 		"Lore": "A monster turtle with a crimson shell. It feeds on fire.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Giant Turtle Who Feeds on Flames (FMR)"
 	},
 	"594": {
@@ -7409,7 +7424,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "32485271",
 		"Lore": "A red rose possessed by a vile spirit that feeds on the life force of others to provide the flower with nourishment.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Rose Spectre of Dunn (FMR)"
 	},
 	"595": {
@@ -7423,7 +7438,7 @@ const cards = {
 		"GuardianStars": "Venus,Jupiter",
 		"Password": "68870276",
 		"Lore": "Drags enemies into a mirror world.",
-		"ImageID": "FiendRefrection1-FMR-EN-VG.png",
+		"ImageID": "FiendRefrection1-FMR-EN-VG.jpg",
 		"Wiki": "Fiend Refrection 1"
 	},
 	"596": {
@@ -7437,7 +7452,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "95265975",
 		"Lore": "A monster that can eat all it wants but is never fulfilled.",
-		"ImageID": "GhoulwithanAppetite-FMR-EN-VG.png",
+		"ImageID": "GhoulwithanAppetite-FMR-EN-VG.jpg",
 		"Wiki": "Ghoul with an Appetite (FMR)"
 	},
 	"597": {
@@ -7451,7 +7466,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "21263083",
 		"Lore": "With skin tinged a bluish white, this strange creature is a fearsome sight to behold.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Pale Beast (FMR)"
 	},
 	"598": {
@@ -7465,7 +7480,7 @@ const cards = {
 		"GuardianStars": "Saturn,Moon",
 		"Password": "68658728",
 		"Lore": "A monster created an experimental attempt to graft wings on beasts.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Little Chimera (FMR)"
 	},
 	"599": {
@@ -7479,7 +7494,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mercury",
 		"Password": "94042337",
 		"Lore": "A monster capable of bringing on sudden rain showers.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Violent Rain (FMR)"
 	},
 	"6": {
@@ -7493,7 +7508,7 @@ const cards = {
 		"GuardianStars": "Moon,Jupiter",
 		"Password": "41392891",
 		"Lore": "A playful little imp that lurks in the dark, waiting to attack an unwary enemy.",
-		"ImageID": "FeralImp-FMR-EN-VG.png",
+		"ImageID": "FeralImp-FMR-EN-VG.jpg",
 		"Wiki": "Feral Imp (FMR)"
 	},
 	"60": {
@@ -7507,7 +7522,7 @@ const cards = {
 		"GuardianStars": "Neptune,Moon",
 		"Password": "13429800",
 		"Lore": "A giant white shark with razor-sharp teeth.",
-		"ImageID": "GreatWhite-FMR-EN-VG.png",
+		"ImageID": "GreatWhite-FMR-EN-VG.jpg",
 		"Wiki": "Great White (FMR)"
 	},
 	"600": {
@@ -7521,7 +7536,7 @@ const cards = {
 		"GuardianStars": "Mercury,Moon",
 		"Password": "20541432",
 		"Lore": "Seals away the good in a soul to create a wicked being.",
-		"ImageID": "KeyMace2-FMR-EN-VG.png",
+		"ImageID": "KeyMace2-FMR-EN-VG.jpg",
 		"Wiki": "Key Mace 2 (FMR)"
 	},
 	"601": {
@@ -7535,7 +7550,7 @@ const cards = {
 		"GuardianStars": "Sun,Jupiter",
 		"Password": "57935140",
 		"Lore": "A cute fairy dedicated to bringing about eternal love.",
-		"ImageID": "Tenderness-FMR-EN-VG.png",
+		"ImageID": "Tenderness-FMR-EN-VG.jpg",
 		"Wiki": "Tenderness (FMR)"
 	},
 	"602": {
@@ -7549,7 +7564,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mars",
 		"Password": "93920745",
 		"Lore": "A low-class penguin soldier that attacks in a group.",
-		"ImageID": "PenguinSoldier-FMR-EN-VG.png",
+		"ImageID": "PenguinSoldier-FMR-EN-VG.jpg",
 		"Wiki": "Penguin Soldier (FMR)"
 	},
 	"603": {
@@ -7563,7 +7578,7 @@ const cards = {
 		"GuardianStars": "Sun,Saturn",
 		"Password": "20315854",
 		"Lore": "A beautiful and powerful dragon fairy.",
-		"ImageID": "FairyDragon-FMR-EN-VG.png",
+		"ImageID": "FairyDragon-FMR-EN-VG.jpg",
 		"Wiki": "Fairy Dragon (FMR)"
 	},
 	"604": {
@@ -7577,7 +7592,7 @@ const cards = {
 		"GuardianStars": "Moon,Mars",
 		"Password": "56713552",
 		"Lore": "An ill-mannered field mouse that chews on anything.",
-		"ImageID": "ObeseMarmotofNefariousness-FMR-EN-VG.png",
+		"ImageID": "ObeseMarmotofNefariousness-FMR-EN-VG.jpg",
 		"Wiki": "Obese Marmot of Nefariousness (FMR)"
 	},
 	"605": {
@@ -7591,7 +7606,7 @@ const cards = {
 		"GuardianStars": "Neptune,Saturn",
 		"Password": "93108297",
 		"Lore": "A liquid life form that moves freely in water.",
-		"ImageID": "LiquidBeast-FMR-EN-VG.png",
+		"ImageID": "LiquidBeast-FMR-EN-VG.jpg",
 		"Wiki": "Liquid Beast (FMR)"
 	},
 	"606": {
@@ -7605,7 +7620,7 @@ const cards = {
 		"GuardianStars": "Neptune,Sun",
 		"Password": "29692206",
 		"Lore": "An undersea creature that attacks with two whip-like tails.",
-		"ImageID": "TwinLongRods2-FMR-EN-VG.png",
+		"ImageID": "TwinLongRods2-FMR-EN-VG.jpg",
 		"Wiki": "Twin Long Rods 2 (FMR)"
 	},
 	"607": {
@@ -7619,7 +7634,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "55691901",
 		"Lore": "A monster with a massive maw that allows it to swallow an enemy whole.",
-		"ImageID": "GreatBill-FMR-EN-VG.png",
+		"ImageID": "GreatBill-FMR-EN-VG.jpg",
 		"Wiki": "Great Bill (FMR)"
 	},
 	"608": {
@@ -7633,7 +7648,7 @@ const cards = {
 		"GuardianStars": "Sun,Uranus",
 		"Password": "82085619",
 		"Lore": "The peacemaker among monsters.",
-		"ImageID": "ShiningFriendship-FMR-EN-VG.png",
+		"ImageID": "ShiningFriendship-FMR-EN-VG.jpg",
 		"Wiki": "Shining Friendship (FMR)"
 	},
 	"609": {
@@ -7647,7 +7662,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "28470714",
 		"Lore": "A monster fly that swoops down with sharp sword-like arms extended out front.",
-		"ImageID": "Bladefly-FMR-EN-VG.png",
+		"ImageID": "Bladefly-FMR-EN-VG.jpg",
 		"Wiki": "Bladefly (FMR)"
 	},
 	"61": {
@@ -7661,7 +7676,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Pluto",
 		"Password": "49417509",
 		"Lore": "A rarely seen wolf with a powerful nose for catching the scent of an enemy.",
-		"ImageID": "Wolf-FMR-EN-VG.png",
+		"ImageID": "Wolf-FMR-EN-VG.jpg",
 		"Wiki": "Wolf (FMR)"
 	},
 	"610": {
@@ -7675,7 +7690,7 @@ const cards = {
 		"GuardianStars": "Pluto,Sun",
 		"Password": "55875323",
 		"Lore": "A lizard that discharges electricity stored in its body.",
-		"ImageID": "ElectricLizard-FMR-EN-VG.png",
+		"ImageID": "ElectricLizard-FMR-EN-VG.jpg",
 		"Wiki": "Electric Lizard (FMR)"
 	},
 	"611": {
@@ -7689,7 +7704,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "81863068",
 		"Lore": "A servant of fiends used primarily for scouting an area.",
-		"ImageID": "HirosShadowScout-FMR-EN-VG.png",
+		"ImageID": "HirosShadowScout-FMR-EN-VG.jpg",
 		"Wiki": "Hiro's Shadow Scout (FMR)"
 	},
 	"612": {
@@ -7703,7 +7718,7 @@ const cards = {
 		"GuardianStars": "Sun,Pluto",
 		"Password": "17358176",
 		"Lore": "Soothes the souls of others by chanting a mysterious spell.",
-		"ImageID": "LadyofFaith-FMR-EN-VG.png",
+		"ImageID": "LadyofFaith-FMR-EN-VG.jpg",
 		"Wiki": "Lady of Faith (FMR)"
 	},
 	"613": {
@@ -7717,7 +7732,7 @@ const cards = {
 		"GuardianStars": "Pluto,Moon",
 		"Password": "54752875",
 		"Lore": "A two-headed Thunder Dragon capable of powerful electric attacks.",
-		"ImageID": "TwinheadedThunderDragon-FMR-EN-VG.png",
+		"ImageID": "TwinheadedThunderDragon-FMR-EN-VG.jpg",
 		"Wiki": "Twin-headed Thunder Dragon (FMR)"
 	},
 	"614": {
@@ -7731,7 +7746,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Venus",
 		"Password": "80141480",
 		"Lore": "A hunter that uses its spider web to entrap its enemies.",
-		"ImageID": "HunterSpider-FMR-EN-VG.png",
+		"ImageID": "HunterSpider-FMR-EN-VG.jpg",
 		"Wiki": "Hunter Spider (FMR)"
 	},
 	"615": {
@@ -7745,7 +7760,7 @@ const cards = {
 		"GuardianStars": "Neptune,Moon",
 		"Password": "17535588",
 		"Lore": "A bluish starfish with a solid hide capable of fending off attacks.",
-		"ImageID": "ArmoredStarfish-FMR-EN-VG.png",
+		"ImageID": "ArmoredStarfish-FMR-EN-VG.jpg",
 		"Wiki": "Armored Starfish (FMR)"
 	},
 	"616": {
@@ -7759,7 +7774,7 @@ const cards = {
 		"GuardianStars": "Sun,Neptune",
 		"Password": "43530283",
 		"Lore": "A fairy that controls the feelings of others, instilling them with bravery.",
-		"ImageID": "HourglassofCourage-FMR-EN-VG.png",
+		"ImageID": "HourglassofCourage-FMR-EN-VG.jpg",
 		"Wiki": "Hourglass of Courage (FMR)"
 	},
 	"617": {
@@ -7773,7 +7788,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mercury",
 		"Password": "29929832",
 		"Lore": "A sea creature with sharp teeth that won't release a victim once they're locked on.",
-		"ImageID": "MarineBeast-FMR-EN-VG.png",
+		"ImageID": "MarineBeast-FMR-EN-VG.jpg",
 		"Wiki": "Marine Beast (FMR)"
 	},
 	"618": {
@@ -7787,7 +7802,7 @@ const cards = {
 		"GuardianStars": "Mercury,Mars",
 		"Password": "56413937",
 		"Lore": "A lady warrior drenched in the essence from a thousand battlefields",
-		"ImageID": "WarriorofTradition-FMR-EN-VG.png",
+		"ImageID": "WarriorofTradition-FMR-EN-VG.jpg",
 		"Wiki": "Warrior of Tradition (FMR)"
 	},
 	"619": {
@@ -7801,7 +7816,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mars",
 		"Password": "82818645",
 		"Lore": "A clay idol representing a rock spirit. The creature has significant attack and defense factors.",
-		"ImageID": "RockSpirit-FMR-EN-VG.png",
+		"ImageID": "RockSpirit-FMR-EN-VG.jpg",
 		"Wiki": "Rock Spirit (FMR)"
 	},
 	"62": {
@@ -7815,7 +7830,7 @@ const cards = {
 		"GuardianStars": "Saturn,Neptune",
 		"Password": "76812113",
 		"Lore": "A human-shaped animal with wings. Beautiful to watch, but lethal when engaged in battle.",
-		"ImageID": "HarpieLady-FMR-EN-VG.png",
+		"ImageID": "HarpieLady-FMR-EN-VG.jpg",
 		"Wiki": "Harpie Lady (FMR)"
 	},
 	"620": {
@@ -7829,7 +7844,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "29802344",
 		"Lore": "A creature made up of several snakes that attack separately in battle.",
-		"ImageID": "Snakeyashi-FMR-EN-VG.png",
+		"ImageID": "Snakeyashi-FMR-EN-VG.jpg",
 		"Wiki": "Snakeyashi (FMR)"
 	},
 	"621": {
@@ -7843,7 +7858,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "55291359",
 		"Lore": "A vile warrior wizard adept at casting doom-dealing spells.",
-		"ImageID": "SuccubusKnight-FMR-EN-VG.png",
+		"ImageID": "SuccubusKnight-FMR-EN-VG.jpg",
 		"Wiki": "Succubus Knight (FMR)"
 	},
 	"622": {
@@ -7857,7 +7872,7 @@ const cards = {
 		"GuardianStars": "Sun,Venus",
 		"Password": "81686058",
 		"Lore": "Controls air currents and can generate a sudden gust of wind to blow away an opponent.",
-		"ImageID": "IllWitch-FMR-EN-VG.png",
+		"ImageID": "IllWitch-FMR-EN-VG.jpg",
 		"Wiki": "Ill Witch (FMR)"
 	},
 	"623": {
@@ -7871,7 +7886,7 @@ const cards = {
 		"GuardianStars": "Uranus,Jupiter",
 		"Password": "18180762",
 		"Lore": "The appearance of this creature is preceded by the ground melting under an opponent's feet.",
-		"ImageID": "TheThingThatHidesIntheMud-FMR-EN-VG.png",
+		"ImageID": "TheThingThatHidesIntheMud-FMR-EN-VG.jpg",
 		"Wiki": "The Thing That Hides In the Mud (FMR)"
 	},
 	"624": {
@@ -7885,7 +7900,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mercury",
 		"Password": "54579801",
 		"Lore": "An amphibian warrior that can easily navigate beneath the waters.",
-		"ImageID": "HighTideGyojin-FMR-EN-VG.png",
+		"ImageID": "HighTideGyojin-FMR-EN-VG.jpg",
 		"Wiki": "High Tide Gyojin (FMR)"
 	},
 	"625": {
@@ -7899,7 +7914,7 @@ const cards = {
 		"GuardianStars": "Neptune,Venus",
 		"Password": "81563416",
 		"Lore": "A fairy dedicated to protecting fountains from pollution.",
-		"ImageID": "FairyoftheFountain-FMR-EN-VG.png",
+		"ImageID": "FairyoftheFountain-FMR-EN-VG.jpg",
 		"Wiki": "Fairy of the Fountain (FMR)"
 	},
 	"626": {
@@ -7913,7 +7928,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mars",
 		"Password": "17968114",
 		"Lore": "A mermaid sentry serving the Sea King and his kingdom.",
-		"ImageID": "AmazonoftheSeas-FMR-EN-VG.png",
+		"ImageID": "AmazonoftheSeas-FMR-EN-VG.jpg",
 		"Wiki": "Amazon of the Seas (FMR)"
 	},
 	"627": {
@@ -7927,7 +7942,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Uranus",
 		"Password": "43352213",
 		"Lore": "This fast creature can easily elude enemy attacks and counter them with its vicious claws.",
-		"ImageID": "Nekogal2-FMR-EN-VG.png",
+		"ImageID": "Nekogal2-FMR-EN-VG.jpg",
 		"Wiki": "Nekogal 2 (FMR)"
 	},
 	"628": {
@@ -7941,7 +7956,7 @@ const cards = {
 		"GuardianStars": "Mercury,Saturn",
 		"Password": "80741828",
 		"Lore": "An inexperienced witch who just started learning the mystic dark arts.",
-		"ImageID": "WitchsApprentice-FMR-EN-VG.png",
+		"ImageID": "WitchsApprentice-FMR-EN-VG.jpg",
 		"Wiki": "Witch's Apprentice (FMR)"
 	},
 	"629": {
@@ -7955,7 +7970,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Pluto",
 		"Password": "16246527",
 		"Lore": "A rat that is protected by armor-like fur.",
-		"ImageID": "ArmoredRat-FMR-EN-VG.png",
+		"ImageID": "ArmoredRat-FMR-EN-VG.jpg",
 		"Wiki": "Armored Rat (FMR)"
 	},
 	"63": {
@@ -7969,7 +7984,7 @@ const cards = {
 		"GuardianStars": "Saturn,Mars",
 		"Password": "12206212",
 		"Lore": "Three fierce sisters who relentlessly attack as a team.",
-		"ImageID": "HarpieLadySisters-FMR-EN-VG.png",
+		"ImageID": "HarpieLadySisters-FMR-EN-VG.jpg",
 		"Wiki": "Harpie Lady Sisters (FMR)"
 	},
 	"630": {
@@ -7983,7 +7998,7 @@ const cards = {
 		"GuardianStars": "Neptune,Saturn",
 		"Password": "43230671",
 		"Lore": "A powerful prehistoric lizard warrior.",
-		"ImageID": "AncientLizardWarrior-FMR-EN-VG.png",
+		"ImageID": "AncientLizardWarrior-FMR-EN-VG.jpg",
 		"Wiki": "Ancient Lizard Warrior (FMR)"
 	},
 	"631": {
@@ -7997,7 +8012,7 @@ const cards = {
 		"GuardianStars": "Moon,Venus",
 		"Password": "79629370",
 		"Lore": "A lunar sorcerer that uses mystical spells to induce hallucinations.",
-		"ImageID": "MaidenoftheMoonlight-FMR-EN-VG.png",
+		"ImageID": "MaidenoftheMoonlight-FMR-EN-VG.jpg",
 		"Wiki": "Maiden of the Moonlight (FMR)"
 	},
 	"632": {
@@ -8011,7 +8026,7 @@ const cards = {
 		"GuardianStars": "Uranus,Sun",
 		"Password": "15023985",
 		"Lore": "A rock giant consisting of massive boulders.",
-		"ImageID": "StoneOgreGrotto-FMR-EN-VG.png",
+		"ImageID": "StoneOgreGrotto-FMR-EN-VG.jpg",
 		"Wiki": "Stone Ogre Grotto (FMR)"
 	},
 	"633": {
@@ -8025,7 +8040,7 @@ const cards = {
 		"GuardianStars": "Sun,Mars",
 		"Password": "42418084",
 		"Lore": "A messenger of newborn life.",
-		"ImageID": "WingedEggofNewLife-FMR-EN-VG.png",
+		"ImageID": "WingedEggofNewLife-FMR-EN-VG.jpg",
 		"Wiki": "Winged Egg of New Life (FMR)"
 	},
 	"634": {
@@ -8039,7 +8054,7 @@ const cards = {
 		"GuardianStars": "Neptune,Jupiter",
 		"Password": "78402798",
 		"Lore": "A green-scaled lizard warrior dedicated to protecting the sea.",
-		"ImageID": "NightLizard-FMR-EN-VG.png",
+		"ImageID": "NightLizard-FMR-EN-VG.jpg",
 		"Wiki": "Night Lizard (FMR)"
 	},
 	"635": {
@@ -8053,7 +8068,7 @@ const cards = {
 		"GuardianStars": "Uranus,Moon",
 		"Password": "05901497",
 		"Lore": "Not very useful double of a queen.",
-		"ImageID": "QueensDouble-FMR-EN-VG.png",
+		"ImageID": "QueensDouble-FMR-EN-VG.jpg",
 		"Wiki": "Queen's Double (FMR)"
 	},
 	"636": {
@@ -8067,7 +8082,7 @@ const cards = {
 		"GuardianStars": "Saturn,Venus",
 		"Password": "41396436",
 		"Lore": "A bird that glows with a blue flame and has a head of hair shaped like a crown.",
-		"ImageID": "BluewingedCrown-FMR-EN-VG.png",
+		"ImageID": "BluewingedCrown-FMR-EN-VG.jpg",
 		"Wiki": "Blue-winged Crown (FMR)"
 	},
 	"637": {
@@ -8081,7 +8096,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "78780140",
 		"Lore": "A protector of the forest. This massive tree continues to grow.",
-		"ImageID": "Trent-FMR-EN-VG.png",
+		"ImageID": "Trent-FMR-EN-VG.jpg",
 		"Wiki": "Trent (FMR)"
 	},
 	"638": {
@@ -8095,7 +8110,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "04179849",
 		"Lore": "Queen of the tree spirit who is embraced by brilliant autumn leaves.",
-		"ImageID": "QueenofAutumnLeaves-FMR-EN-VG.png",
+		"ImageID": "QueenofAutumnLeaves-FMR-EN-VG.jpg",
 		"Wiki": "Queen of Autumn Leaves (FMR)"
 	},
 	"639": {
@@ -8109,7 +8124,7 @@ const cards = {
 		"GuardianStars": "Neptune,Sun",
 		"Password": "40173854",
 		"Lore": "A bugroth unit modified for underwater warfare",
-		"ImageID": "AmphibiousBugroth-FMR-EN-VG.png",
+		"ImageID": "AmphibiousBugroth-FMR-EN-VG.jpg",
 		"Wiki": "Amphibious Bugroth (FMR)"
 	},
 	"64": {
@@ -8123,7 +8138,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "49791927",
 		"Lore": "A fast and powerful axe-wielding beast warrior.",
-		"ImageID": "TigerAxe-FMR-EN-VG.png",
+		"ImageID": "TigerAxe-FMR-EN-VG.jpg",
 		"Wiki": "Tiger Axe (FMR)"
 	},
 	"640": {
@@ -8137,7 +8152,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Venus",
 		"Password": "77568553",
 		"Lore": "A gigantic caterpillar that spits acid capable of melting almost anything.",
-		"ImageID": "AcidCrawler-FMR-EN-VG.png",
+		"ImageID": "AcidCrawler-FMR-EN-VG.jpg",
 		"Wiki": "Acid Crawler (FMR)"
 	},
 	"641": {
@@ -8151,7 +8166,7 @@ const cards = {
 		"GuardianStars": "Uranus,Venus",
 		"Password": "03056267",
 		"Lore": "A scheming queen who covets the king's throne during his absence.",
-		"ImageID": "InvaderoftheThrone-FMR-EN-VG.png",
+		"ImageID": "InvaderoftheThrone-FMR-EN-VG.jpg",
 		"Wiki": "Invader of the Throne (FMR)"
 	},
 	"642": {
@@ -8165,7 +8180,7 @@ const cards = {
 		"GuardianStars": "Venus,Saturn",
 		"Password": "30451366",
 		"Lore": "A black-haired sheep that is capable of sorcery.",
-		"ImageID": "MysticalSheep1-FMR-EN-VG.png",
+		"ImageID": "MysticalSheep1-FMR-EN-VG.jpg",
 		"Wiki": "Mystical Sheep 1 (FMR)"
 	},
 	"643": {
@@ -8179,7 +8194,7 @@ const cards = {
 		"GuardianStars": "Moon,Uranus",
 		"Password": "76446915",
 		"Lore": "A creature that hides in a saucer and appears only to attack enemies.",
-		"ImageID": "DiskMagician-FMR-EN-VG.png",
+		"ImageID": "DiskMagician-FMR-EN-VG.jpg",
 		"Wiki": "Disk Magician (FMR)"
 	},
 	"644": {
@@ -8193,7 +8208,7 @@ const cards = {
 		"GuardianStars": "Mars,Pluto",
 		"Password": "02830619",
 		"Lore": "A very swift, fire breathing viper.",
-		"ImageID": "FlameViper-FMR-EN-VG.png",
+		"ImageID": "FlameViper-FMR-EN-VG.jpg",
 		"Wiki": "Flame Viper (FMR)"
 	},
 	"645": {
@@ -8207,7 +8222,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mercury",
 		"Password": "39239728",
 		"Lore": "Mechanical soldier with a mind of its own. Originally created to protect members of the royal family.",
-		"ImageID": "RoyalGuard-FMR-EN-VG.png",
+		"ImageID": "RoyalGuard-FMR-EN-VG.jpg",
 		"Wiki": "Royal Guard (FMR)"
 	},
 	"646": {
@@ -8221,7 +8236,7 @@ const cards = {
 		"GuardianStars": "Neptune,Moon",
 		"Password": "65623423",
 		"Lore": "Looks like any other slime, but definitely much more powerful!",
-		"ImageID": "GruesomeGoo-FMR-EN-VG.png",
+		"ImageID": "GruesomeGoo-FMR-EN-VG.jpg",
 		"Wiki": "Gruesome Goo (FMR)"
 	},
 	"647": {
@@ -8235,7 +8250,7 @@ const cards = {
 		"GuardianStars": "Neptune,Venus",
 		"Password": "02118022",
 		"Lore": "This amphibian creature boasts a high attack factor, but not much of one for defense.",
-		"ImageID": "Hyosube-FMR-EN-VG.png",
+		"ImageID": "Hyosube-FMR-EN-VG.jpg",
 		"Wiki": "Hyosube (FMR)"
 	},
 	"648": {
@@ -8249,7 +8264,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "38116136",
 		"Lore": "A machine designed to blitz its enemies.",
-		"ImageID": "MachineAttacker-FMR-EN-VG.png",
+		"ImageID": "MachineAttacker-FMR-EN-VG.jpg",
 		"Wiki": "Machine Attacker (FMR)"
 	},
 	"649": {
@@ -8263,7 +8278,7 @@ const cards = {
 		"GuardianStars": "Mercury,Uranus",
 		"Password": "64501875",
 		"Lore": "Confuses enemy monsters with noise that is harsh to the ears.",
-		"ImageID": "Hibikime-FMR-EN-VG.png",
+		"ImageID": "Hibikime-FMR-EN-VG.jpg",
 		"Wiki": "Hibikime (FMR)"
 	},
 	"65": {
@@ -8277,7 +8292,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "90357090",
 		"Lore": "A snow wolf that's beautiful to the eye but absolutely vicious in battle.",
-		"ImageID": "SilverFang-FMR-EN-VG.png",
+		"ImageID": "SilverFang-FMR-EN-VG.jpg",
 		"Wiki": "Silver Fang (FMR)"
 	},
 	"650": {
@@ -8291,7 +8306,7 @@ const cards = {
 		"GuardianStars": "Moon,Mercury",
 		"Password": "91996584",
 		"Lore": "Attacks from the skies with a whip-like tail.",
-		"ImageID": "WhiptailCrow-FMR-EN-VG.png",
+		"ImageID": "WhiptailCrow-FMR-EN-VG.jpg",
 		"Wiki": "Whiptail Crow (FMR)"
 	},
 	"651": {
@@ -8300,7 +8315,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "37390589",
 		"Lore": "A boomerang featuring the effects of two cards: the Legendary Sword and the Sword of Dark Destruction.",
-		"ImageID": "KunaiwithChain-FMR-EN-VG.png",
+		"ImageID": "KunaiwithChain-FMR-EN-VG.jpg",
 		"Wiki": "Kunai with Chain (FMR)"
 	},
 	"652": {
@@ -8309,7 +8324,7 @@ const cards = {
 		"Cost": 10,
 		"Password": "64389297",
 		"Lore": "A card for boosting the power of the Labyrinth Wall.",
-		"ImageID": "MagicalLabyrinth-FMR-EN-VG.png",
+		"ImageID": "MagicalLabyrinth-FMR-EN-VG.jpg",
 		"Wiki": "Magical Labyrinth (FMR)"
 	},
 	"653": {
@@ -8318,7 +8333,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "90873992",
 		"Lore": "field.",
-		"ImageID": "WarriorElimination-FMR-EN-VG.png",
+		"ImageID": "WarriorElimination-FMR-EN-VG.jpg",
 		"Wiki": "Warrior Elimination (FMR)"
 	},
 	"654": {
@@ -8327,7 +8342,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "32268901",
 		"Lore": "Increases the strength of those who control the power of Salamandra.",
-		"ImageID": "Salamandra-FMR-EN-VG.png",
+		"ImageID": "Salamandra-FMR-EN-VG.jpg",
 		"Wiki": "Salamandra (FMR)"
 	},
 	"655": {
@@ -8336,7 +8351,7 @@ const cards = {
 		"Cost": 10,
 		"Password": "69666645",
 		"Lore": "Cancels the magic over all level-reduced monsters and sets them at level 0.",
-		"ImageID": "Cursebreaker-FMR-EN-VG.png",
+		"ImageID": "Cursebreaker-FMR-EN-VG.jpg",
 		"Wiki": "Cursebreaker (FMR)"
 	},
 	"656": {
@@ -8345,7 +8360,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "95051344",
 		"Lore": "Eliminates all Zombie creatures.",
-		"ImageID": "EternalRest-FMR-EN-VG.png",
+		"ImageID": "EternalRest-FMR-EN-VG.jpg",
 		"Wiki": "Eternal Rest (FMR)"
 	},
 	"657": {
@@ -8354,7 +8369,7 @@ const cards = {
 		"Cost": 50000,
 		"Password": "22046459",
 		"Lore": "A card that increases the power of any selected monster by 2 levels.",
-		"ImageID": "Megamorph-FMR-EN-VG.png",
+		"ImageID": "Megamorph-FMR-EN-VG.jpg",
 		"Wiki": "Megamorph (FMR)"
 	},
 	"658": {
@@ -8363,7 +8378,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "68540058",
 		"Lore": "A card that changes any selected monster to a Machine monster.",
-		"ImageID": "Metalmorph-FMR-EN-VG.png",
+		"ImageID": "Metalmorph-FMR-EN-VG.jpg",
 		"Wiki": "Metalmorph (FMR)"
 	},
 	"659": {
@@ -8372,7 +8387,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "94939166",
 		"Lore": "A horn that increases the power of fairy creatures.",
-		"ImageID": "WingedTrumpeter-FMR-EN-VG.png",
+		"ImageID": "WingedTrumpeter-FMR-EN-VG.jpg",
 		"Wiki": "Winged Trumpeter (FMR)"
 	},
 	"66": {
@@ -8386,7 +8401,7 @@ const cards = {
 		"GuardianStars": "Uranus,Moon",
 		"Password": "01184620",
 		"Lore": "A man hunter with powerful arms that can crush boulders.",
-		"ImageID": "Kojikocy-FMR-EN-VG.png",
+		"ImageID": "Kojikocy-FMR-EN-VG.jpg",
 		"Wiki": "Kojikocy (FMR)"
 	},
 	"660": {
@@ -8395,7 +8410,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "21323861",
 		"Lore": "Acid rain monsters.",
-		"ImageID": "StainStorm-FMR-EN-VG.png",
+		"ImageID": "StainStorm-FMR-EN-VG.jpg",
 		"Wiki": "Stain Storm (FMR)"
 	},
 	"661": {
@@ -8404,7 +8419,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "57728570",
 		"Lore": "Opponent monsters in play with attack factors of 1500 or more are eliminated.",
-		"ImageID": "CrushCard-FMR-EN-VG.png",
+		"ImageID": "CrushCard-FMR-EN-VG.jpg",
 		"Wiki": "Crush Card (FMR)"
 	},
 	"662": {
@@ -8413,7 +8428,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "94716515",
 		"Lore": "An insecticide for wiping out an opponent's monsters that are currently in play.",
-		"ImageID": "EradicatingAerosol-FMR-EN-VG.png",
+		"ImageID": "EradicatingAerosol-FMR-EN-VG.jpg",
 		"Wiki": "Eradicating Aerosol (FMR)"
 	},
 	"663": {
@@ -8422,7 +8437,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "20101223",
 		"Lore": "A magic wind that reduces to rubble an opponent's monsters that are currently in play.",
-		"ImageID": "BreathofLight-FMR-EN-VG.png",
+		"ImageID": "BreathofLight-FMR-EN-VG.jpg",
 		"Wiki": "Breath of Light (FMR)"
 	},
 	"664": {
@@ -8431,7 +8446,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "56606928",
 		"Lore": "A blast of heat dries up and eliminates an opponent's monsters that are currently in play.",
-		"ImageID": "EternalDraught-FMR-EN-VG.png",
+		"ImageID": "EternalDraught-FMR-EN-VG.jpg",
 		"Wiki": "Eternal Draught (FMR)"
 	},
 	"665": {
@@ -8440,7 +8455,7 @@ const cards = {
 		"Cost": 10,
 		"Password": "83094937",
 		"Lore": "Sacrifices the monster with the highest defense rating and summons Shield.",
-		"ImageID": "CurseofMillenniumShield-FMR-EN-VG.png",
+		"ImageID": "CurseofMillenniumShield-FMR-EN-VG.jpg",
 		"Wiki": "Curse of Millennium Shield (FMR)"
 	},
 	"666": {
@@ -8449,7 +8464,7 @@ const cards = {
 		"Cost": 10,
 		"Password": "29089635",
 		"Lore": "Sacrifices monsters to summon Yamadron.",
-		"ImageID": "YamadronRitual-FMR-EN-VG.png",
+		"ImageID": "YamadronRitual-FMR-EN-VG.jpg",
 		"Wiki": "Yamadron Ritual (FMR)"
 	},
 	"667": {
@@ -8458,7 +8473,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "56483330",
 		"Lore": "Sacrifices Kazejin, Suijin and Sanga of the Thunder to summon Gate Guardian.",
-		"ImageID": "GateGuardianRitual-FMR-EN-VG.png",
+		"ImageID": "GateGuardianRitual-FMR-EN-VG.jpg",
 		"Wiki": "Gate Guardian Ritual (FMR)"
 	},
 	"668": {
@@ -8467,7 +8482,7 @@ const cards = {
 		"Cost": 800,
 		"Password": "82878489",
 		"Lore": "A glaring light that increases the power of all monsters.",
-		"ImageID": "BrightCastle-FMR-EN-VG.png",
+		"ImageID": "BrightCastle-FMR-EN-VG.jpg",
 		"Wiki": "Bright Castle (FMR)"
 	},
 	"669": {
@@ -8476,7 +8491,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "29267084",
 		"Lore": "Decreases an opponent's in-play monsters by two levels.",
-		"ImageID": "ShadowSpell-FMR-EN-VG.png",
+		"ImageID": "ShadowSpell-FMR-EN-VG.jpg",
 		"Wiki": "Shadow Spell (FMR)"
 	},
 	"67": {
@@ -8490,7 +8505,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Moon",
 		"Password": "48579379",
 		"Lore": "The final incarnation of the ultimate insect, the Great Moth!",
-		"ImageID": "PerfectlyUltimateGreatMoth-FMR-EN-VG.png",
+		"ImageID": "PerfectlyUltimateGreatMoth-FMR-EN-VG.jpg",
 		"Wiki": "Perfectly Ultimate Great Moth (FMR)"
 	},
 	"670": {
@@ -8499,7 +8514,7 @@ const cards = {
 		"Cost": 100,
 		"Password": "55761792",
 		"Lore": "Ceremony conducted to summon Black Luster Soldier. Sacrifice required.",
-		"ImageID": "BlackLusterRitual-FMR-EN-VG.png",
+		"ImageID": "BlackLusterRitual-FMR-EN-VG.jpg",
 		"Wiki": "Black Luster Ritual (FMR)"
 	},
 	"671": {
@@ -8508,7 +8523,7 @@ const cards = {
 		"Cost": 100,
 		"Password": "81756897",
 		"Lore": "Ceremony conducted to summon Zera. Sacrifice required.",
-		"ImageID": "ZeraRitual-FMR-EN-VG.png",
+		"ImageID": "ZeraRitual-FMR-EN-VG.jpg",
 		"Wiki": "Zera Ritual (FMR)"
 	},
 	"672": {
@@ -8517,7 +8532,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "18144506",
 		"Lore": "Destroy all opponent Magic Cards that are in play.",
-		"ImageID": "HarpiesFeatherDuster-FMR-EN-VG.png",
+		"ImageID": "HarpiesFeatherDuster-FMR-EN-VG.jpg",
 		"Wiki": "Harpie's Feather Duster (FMR)"
 	},
 	"673": {
@@ -8526,7 +8541,7 @@ const cards = {
 		"Cost": 100,
 		"Password": "54539105",
 		"Lore": "Ceremony conducted to summon War Lion. Sacrifice required.",
-		"ImageID": "WarlionRitual-FMR-EN-VG.png",
+		"ImageID": "WarlionRitual-FMR-EN-VG.jpg",
 		"Wiki": "War-lion Ritual (FMR)"
 	},
 	"674": {
@@ -8535,7 +8550,7 @@ const cards = {
 		"Cost": 100,
 		"Password": "81933259",
 		"Lore": "Ceremony conducted to summon Fiend's Mirror. Sacrifice required.",
-		"ImageID": "BeastryMirrorRitual-FMR-EN-VG.png",
+		"ImageID": "BeastryMirrorRitual-FMR-EN-VG.jpg",
 		"Wiki": "Beastry Mirror Ritual"
 	},
 	"675": {
@@ -8544,7 +8559,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "17928958",
 		"Lore": "Sacrifice three Blue-eyes to summon Ultimate Dragon.",
-		"ImageID": "UltimateDragon-FMR-EN-VG.png",
+		"ImageID": "UltimateDragon-FMR-EN-VG.jpg",
 		"Wiki": "Ultimate Dragon (FMR)"
 	},
 	"676": {
@@ -8553,7 +8568,7 @@ const cards = {
 		"Cost": 50,
 		"Password": "43417563",
 		"Lore": "Sacrifice Dancer and Warrior to summon Performance of Sword.",
-		"ImageID": "CommencementDance-FMR-EN-VG.png",
+		"ImageID": "CommencementDance-FMR-EN-VG.jpg",
 		"Wiki": "Commencement Dance (FMR)"
 	},
 	"677": {
@@ -8562,7 +8577,7 @@ const cards = {
 		"Cost": 50,
 		"Password": "80811661",
 		"Lore": "A card with the ingredients for making a delicious hamburger.",
-		"ImageID": "HamburgerRecipe-FMR-EN-VG.png",
+		"ImageID": "HamburgerRecipe-FMR-EN-VG.jpg",
 		"Wiki": "Hamburger Recipe (FMR)"
 	},
 	"678": {
@@ -8571,7 +8586,7 @@ const cards = {
 		"Cost": 50,
 		"Password": "16206366",
 		"Lore": "Sacrifice Beast-Warrior and Golem to summon Sengenjin.",
-		"ImageID": "RevivalofSennenGenjin-FMR-EN-VG.png",
+		"ImageID": "RevivalofSennenGenjin-FMR-EN-VG.jpg",
 		"Wiki": "Revival of Sennen Genjin (FMR)"
 	},
 	"679": {
@@ -8580,7 +8595,7 @@ const cards = {
 		"Cost": 50,
 		"Password": "43694075",
 		"Lore": "Sacrifice Warrior and Scythe Wielder to summon Skull Guardian.",
-		"ImageID": "NovoxsPrayer-FMR-EN-VG.png",
+		"ImageID": "NovoxsPrayer-FMR-EN-VG.jpg",
 		"Wiki": "Novox's Prayer (FMR)"
 	},
 	"68": {
@@ -8594,7 +8609,7 @@ const cards = {
 		"GuardianStars": "Mars,Venus",
 		"Password": "14977074",
 		"Lore": "An axe-swinging beast warrior with the head of a dragon.",
-		"ImageID": "Garoozis-FMR-EN-VG.png",
+		"ImageID": "Garoozis-FMR-EN-VG.jpg",
 		"Wiki": "Garoozis (FMR)"
 	},
 	"680": {
@@ -8603,7 +8618,7 @@ const cards = {
 		"Cost": 50,
 		"Password": "79699070",
 		"Lore": "Sacrifice a horned monster to summon Tri-horned Dragon.",
-		"ImageID": "CurseofTriHornedDragon-FMR-EN-VG.png",
+		"ImageID": "CurseofTriHornedDragon-FMR-EN-VG.jpg",
 		"Wiki": "Curse of Tri-Horned Dragon (FMR)"
 	},
 	"681": {
@@ -8612,7 +8627,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "15083728",
 		"Lore": "Monsters with Attack Factors of 500 or lower are eliminated from the play field.",
-		"ImageID": "HouseofAdhesiveTape-FMR-EN-VG.png",
+		"ImageID": "HouseofAdhesiveTape-FMR-EN-VG.jpg",
 		"Wiki": "House of Adhesive Tape (FMR)"
 	},
 	"682": {
@@ -8621,7 +8636,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "42578427",
 		"Lore": "Monsters with Attack Factors of 1000 or less are eliminated from the play field.",
-		"ImageID": "Eatgaboon-FMR-EN-VG.png",
+		"ImageID": "Eatgaboon-FMR-EN-VG.jpg",
 		"Wiki": "Eatgaboon (FMR)"
 	},
 	"683": {
@@ -8630,7 +8645,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "78977532",
 		"Lore": "When an opposing monster's Attack Factor is 1500 or lower, it is eliminated from the play field.",
-		"ImageID": "BearTrap-FMR-EN-VG.png",
+		"ImageID": "BearTrap-FMR-EN-VG.jpg",
 		"Wiki": "Bear Trap (FMR)"
 	},
 	"684": {
@@ -8639,7 +8654,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "15361130",
 		"Lore": "When an opposing monster's Attack Factor is 2000 or lower, it is eliminated from the play field.",
-		"ImageID": "InvisibleWire-FMR-EN-VG.png",
+		"ImageID": "InvisibleWire-FMR-EN-VG.jpg",
 		"Wiki": "Invisible Wire (FMR)"
 	},
 	"685": {
@@ -8648,7 +8663,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "41356845",
 		"Lore": "When an opposing monster's Attack Factor is 3000 or lower, it is eliminated from the play field.",
-		"ImageID": "AcidTrapHole-FMR-EN-VG.png",
+		"ImageID": "AcidTrapHole-FMR-EN-VG.jpg",
 		"Wiki": "Acid Trap Hole (FMR)"
 	},
 	"686": {
@@ -8657,7 +8672,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "77754944",
 		"Lore": "When an opponent's monster attacks, it is blown to smithereens and eliminated from the play field.",
-		"ImageID": "WidespreadRuin-FMR-EN-VG.png",
+		"ImageID": "WidespreadRuin-FMR-EN-VG.jpg",
 		"Wiki": "Widespread Ruin (FMR)"
 	},
 	"687": {
@@ -8666,7 +8681,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "04149689",
 		"Lore": "Reflects the damage of direct attack cards like Fire Sparks and Inferno back to your opponent.",
-		"ImageID": "GoblinFan-FMR-EN-VG.png",
+		"ImageID": "GoblinFan-FMR-EN-VG.jpg",
 		"Wiki": "Goblin Fan (FMR)"
 	},
 	"688": {
@@ -8675,7 +8690,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "40633297",
 		"Lore": "A card that reverses the effects of recovery cards and transforms the points to damage.",
-		"ImageID": "BadReactiontoSimochi-FMR-EN-VG.png",
+		"ImageID": "BadReactiontoSimochi-FMR-EN-VG.jpg",
 		"Wiki": "Bad Reaction to Simochi (FMR)"
 	},
 	"689": {
@@ -8684,7 +8699,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "77622396",
 		"Lore": "A card that reverses the effects of power-up cards and transforms the effects to power reduction.",
-		"ImageID": "ReverseTrap-FMR-EN-VG.png",
+		"ImageID": "ReverseTrap-FMR-EN-VG.jpg",
 		"Wiki": "Reverse Trap (FMR)"
 	},
 	"69": {
@@ -8698,7 +8713,7 @@ const cards = {
 		"GuardianStars": "Mars,Mercury",
 		"Password": "41462083",
 		"Lore": "A dragon that has grown and developed over a thousand years.",
-		"ImageID": "ThousandDragon-FMR-EN-VG.png",
+		"ImageID": "ThousandDragon-FMR-EN-VG.jpg",
 		"Wiki": "Thousand Dragon (FMR)"
 	},
 	"690": {
@@ -8707,7 +8722,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "03027001",
 		"Lore": "A trap card for tricking your opponent. Nothing happens when it is attacked.",
-		"ImageID": "FakeTrap-FMR-EN-VG.png",
+		"ImageID": "FakeTrap-FMR-EN-VG.jpg",
 		"Wiki": "Fake Trap (FMR)"
 	},
 	"691": {
@@ -8716,7 +8731,7 @@ const cards = {
 		"Cost": 50,
 		"Password": "39411600",
 		"Lore": "monster for sacrifice and summon Serpent Night Dragon.",
-		"ImageID": "RevivedofSerpentNightDragon-FMR-EN-VG.png",
+		"ImageID": "RevivedofSerpentNightDragon-FMR-EN-VG.jpg",
 		"Wiki": "Revived of Serpent Night Dragon"
 	},
 	"692": {
@@ -8725,7 +8740,7 @@ const cards = {
 		"Cost": 100,
 		"Password": "76806714",
 		"Lore": "Sacrifice crab and turtle to summon Crab Turtle.",
-		"ImageID": "TurtleOath-FMR-EN-VG.png",
+		"ImageID": "TurtleOath-FMR-EN-VG.jpg",
 		"Wiki": "Turtle Oath (FMR)"
 	},
 	"693": {
@@ -8734,7 +8749,7 @@ const cards = {
 		"Cost": 100,
 		"Password": "02304453",
 		"Lore": "Sacrifice a masked one to summon a new mask.",
-		"ImageID": "ContructofMask-FMR-EN-VG.png",
+		"ImageID": "ContructofMask-FMR-EN-VG.jpg",
 		"Wiki": "Contruct of Mask"
 	},
 	"694": {
@@ -8743,7 +8758,7 @@ const cards = {
 		"Cost": 100,
 		"Password": "39399168",
 		"Lore": "Sacrifice 3 Chakra.",
-		"ImageID": "ResurrectionofChakra-FMR-EN-VG.png",
+		"ImageID": "ResurrectionofChakra-FMR-EN-VG.jpg",
 		"Wiki": "Resurrection of Chakra (FMR)"
 	},
 	"695": {
@@ -8752,7 +8767,7 @@ const cards = {
 		"Cost": 50,
 		"Password": "05783166",
 		"Lore": "Sacrifice Puppeteer and Machine Monsters to summon the puppet.",
-		"ImageID": "PuppetRitual-FMR-EN-VG.png",
+		"ImageID": "PuppetRitual-FMR-EN-VG.jpg",
 		"Wiki": "Puppet Ritual (FMR)"
 	},
 	"696": {
@@ -8761,7 +8776,7 @@ const cards = {
 		"Cost": 999999,
 		"Password": "41182875",
 		"Lore": "Sacrifice the stag beetle and beetle to summon Javelin Beetle.",
-		"ImageID": "JavelinBeetlePact-FMR-EN-VG.png",
+		"ImageID": "JavelinBeetlePact-FMR-EN-VG.jpg",
 		"Wiki": "Javelin Beetle Pact (FMR)"
 	},
 	"697": {
@@ -8770,7 +8785,7 @@ const cards = {
 		"Cost": 50,
 		"Password": "78577570",
 		"Lore": "Sacrifice the Ashura's Arm and Sword-wielder to summon.",
-		"ImageID": "GarmaSwordOath-FMR-EN-VG.png",
+		"ImageID": "GarmaSwordOath-FMR-EN-VG.jpg",
 		"Wiki": "Garma Sword Oath (FMR)"
 	},
 	"698": {
@@ -8779,7 +8794,7 @@ const cards = {
 		"Cost": 50,
 		"Password": "04561679",
 		"Lore": "Sacrifice a normal Queen to summon Cosmo Queen.",
-		"ImageID": "CosmoQueensPrayer-FMR-EN-VG.png",
+		"ImageID": "CosmoQueensPrayer-FMR-EN-VG.jpg",
 		"Wiki": "Cosmo Queen's Prayer (FMR)"
 	},
 	"699": {
@@ -8788,7 +8803,7 @@ const cards = {
 		"Cost": 10,
 		"Password": "31066283",
 		"Lore": "Sacrifice Temple and Cockroach to summon Dokurorider.",
-		"ImageID": "RevivalofSkeletonRider-FMR-EN-VG.png",
+		"ImageID": "RevivalofSkeletonRider-FMR-EN-VG.jpg",
 		"Wiki": "Revival of Skeleton Rider (FMR)"
 	},
 	"7": {
@@ -8802,7 +8817,7 @@ const cards = {
 		"GuardianStars": "Saturn,Moon",
 		"Password": "87796900",
 		"Lore": "A dragon commonly found guarding mountain fortresses. Its signature attack is a sweeping dive from out of the blue.",
-		"ImageID": "WingedDragon1-FMR-EN-VG.png",
+		"ImageID": "WingedDragon1-FMR-EN-VG.jpg",
 		"Wiki": "Winged Dragon 1"
 	},
 	"70": {
@@ -8816,7 +8831,7 @@ const cards = {
 		"GuardianStars": "Neptune,Venus",
 		"Password": "77456781",
 		"Lore": "A massive squid that suddenly appears from the depths of the sea to attack unwary enemies.",
-		"ImageID": "FiendKraken-FMR-EN-VG.png",
+		"ImageID": "FiendKraken-FMR-EN-VG.jpg",
 		"Wiki": "Fiend Kraken (FMR)"
 	},
 	"700": {
@@ -8825,7 +8840,7 @@ const cards = {
 		"Cost": 10,
 		"Password": "77454922",
 		"Lore": "Sacrifice Horn and Machine Fish to summon Sea Fortress.",
-		"ImageID": "FortressWhalesOath-FMR-EN-VG.png",
+		"ImageID": "FortressWhalesOath-FMR-EN-VG.jpg",
 		"Wiki": "Fortress Whale's Oath (FMR)"
 	},
 	"701": {
@@ -8837,7 +8852,7 @@ const cards = {
 		"DEF": 1850,
 		"GuardianStars": "Sun,Saturn",
 		"Lore": "A warrior dancer with fancy dance steps.",
-		"ImageID": "PerformanceofSword-FMR-EN-VG.png",
+		"ImageID": "PerformanceofSword-FMR-EN-VG.jpg",
 		"Wiki": "Performance of Sword (FMR)"
 	},
 	"702": {
@@ -8849,7 +8864,7 @@ const cards = {
 		"DEF": 1800,
 		"GuardianStars": "Moon,Mars",
 		"Lore": "Attracts hungry enemies with tasty aromas and eats them when they get close enough.",
-		"ImageID": "HungryBurger-FMR-EN-VG.png",
+		"ImageID": "HungryBurger-FMR-EN-VG.jpg",
 		"Wiki": "Hungry Burger (FMR)"
 	},
 	"703": {
@@ -8861,7 +8876,7 @@ const cards = {
 		"DEF": 2500,
 		"GuardianStars": "Jupiter,Mercury",
 		"Lore": "A headstrong primitive man equipped with a Millennium Item.",
-		"ImageID": "Sengenjin-FMR-EN-VG.png",
+		"ImageID": "Sengenjin-FMR-EN-VG.jpg",
 		"Wiki": "Sengenjin (FMR)"
 	},
 	"704": {
@@ -8873,7 +8888,7 @@ const cards = {
 		"DEF": 2500,
 		"GuardianStars": "Sun,Jupiter",
 		"Lore": "A guardian of the law that doesn't forgive cheating. Attacks enemies with its sword-like arms.",
-		"ImageID": "SkullGuardian-FMR-EN-VG.png",
+		"ImageID": "SkullGuardian-FMR-EN-VG.jpg",
 		"Wiki": "Skull Guardian (FMR)"
 	},
 	"705": {
@@ -8885,7 +8900,7 @@ const cards = {
 		"DEF": 2350,
 		"GuardianStars": "Moon,Jupiter",
 		"Lore": "A wicked dragon with three horns protruding from its head.",
-		"ImageID": "TrihornedDragon-FMR-EN-VG.png",
+		"ImageID": "TrihornedDragon-FMR-EN-VG.jpg",
 		"Wiki": "Tri-horned Dragon (FMR)"
 	},
 	"706": {
@@ -8897,7 +8912,7 @@ const cards = {
 		"DEF": 2400,
 		"GuardianStars": "Mercury,Pluto",
 		"Lore": "A dragon created from the soul of a wicked knight.",
-		"ImageID": "SerpentNightDragon-FMR-EN-VG.png",
+		"ImageID": "SerpentNightDragon-FMR-EN-VG.jpg",
 		"Wiki": "Serpent Night Dragon (FMR)"
 	},
 	"707": {
@@ -8911,7 +8926,7 @@ const cards = {
 		"GuardianStars": "Mercury,Neptune",
 		"Password": "02504891",
 		"Lore": "A monk who has conducted several rituals in the netherworld, and who is capable of using both weapons and magic.",
-		"ImageID": "SkullKnight-FMR-EN-VG.png",
+		"ImageID": "SkullKnight-FMR-EN-VG.jpg",
 		"Wiki": "Skull Knight (FMR)"
 	},
 	"708": {
@@ -8923,7 +8938,7 @@ const cards = {
 		"DEF": 2450,
 		"GuardianStars": "Uranus,Venus",
 		"Lore": "A queen who rules over all the stars in the universe.",
-		"ImageID": "CosmoQueen-FMR-EN-VG.png",
+		"ImageID": "CosmoQueen-FMR-EN-VG.jpg",
 		"Wiki": "Cosmo Queen (FMR)"
 	},
 	"709": {
@@ -8935,7 +8950,7 @@ const cards = {
 		"DEF": 2000,
 		"GuardianStars": "Mercury,Moon",
 		"Lore": "A twisted shape that attacks with tentacle-like arms.",
-		"ImageID": "Chakra-FMR-EN-VG.png",
+		"ImageID": "Chakra-FMR-EN-VG.jpg",
 		"Wiki": "Chakra (FMR)"
 	},
 	"71": {
@@ -8949,7 +8964,7 @@ const cards = {
 		"GuardianStars": "Neptune,Mercury",
 		"Password": "14851496",
 		"Lore": "An almost invisible, semi-transparent jellyfish that drifts in the sea.",
-		"ImageID": "Jellyfish-FMR-EN-VG.png",
+		"ImageID": "Jellyfish-FMR-EN-VG.jpg",
 		"Wiki": "Jellyfish (FMR)"
 	},
 	"710": {
@@ -8961,7 +8976,7 @@ const cards = {
 		"DEF": 2500,
 		"GuardianStars": "Neptune,Jupiter",
 		"Lore": "A creature with a turtle attack and defense factors.",
-		"ImageID": "CrabTurtle-FMR-EN-VG.png",
+		"ImageID": "CrabTurtle-FMR-EN-VG.jpg",
 		"Wiki": "Crab Turtle (FMR)"
 	},
 	"711": {
@@ -8975,7 +8990,7 @@ const cards = {
 		"GuardianStars": "Sun,Uranus",
 		"Password": "38277918",
 		"Lore": "A dragon warrior armed with a crescent-shaped sword. Rumored to be from the moon.",
-		"ImageID": "Mikazukinoyaiba-FMR-EN-VG.png",
+		"ImageID": "Mikazukinoyaiba-FMR-EN-VG.jpg",
 		"Wiki": "Mikazukinoyaiba (FMR)"
 	},
 	"712": {
@@ -8989,7 +9004,7 @@ const cards = {
 		"GuardianStars": "Uranus,Neptune",
 		"Password": "64271667",
 		"Lore": "A dragon that arrived on earth by means of a comet that fell from the far reaches of space.",
-		"ImageID": "MeteorDragon-FMR-EN-VG.png",
+		"ImageID": "MeteorDragon-FMR-EN-VG.jpg",
 		"Wiki": "Meteor Dragon (FMR)"
 	},
 	"713": {
@@ -9001,7 +9016,7 @@ const cards = {
 		"DEF": 2000,
 		"GuardianStars": "Mars,Sun",
 		"Lore": "With the burning hide of a meteorite, this creature vaporizes all that it touches.",
-		"ImageID": "MeteorBDragon-FMR-EN-VG.png",
+		"ImageID": "MeteorBDragon-FMR-EN-VG.jpg",
 		"Wiki": "Meteor B. Dragon (FMR)"
 	},
 	"714": {
@@ -9015,7 +9030,7 @@ const cards = {
 		"GuardianStars": "Mars,Moon",
 		"Password": "27054370",
 		"Lore": "A heavenly stallion that flies across the skies on scarlet wings.",
-		"ImageID": "Back-FMR-EN-VG.png",
+		"ImageID": "Back-FMR-EN-VG.jpg",
 		"Wiki": "Firewing Pegasus (FMR)"
 	},
 	"715": {
@@ -9027,7 +9042,7 @@ const cards = {
 		"DEF": 2350,
 		"GuardianStars": "Moon,Saturn",
 		"Lore": "A mysterious doll with a strange dance that robs the power of opposing monsters.",
-		"ImageID": "PsychoPuppet-FMR-EN-VG.png",
+		"ImageID": "PsychoPuppet-FMR-EN-VG.jpg",
 		"Wiki": "Psycho-Puppet (FMR)"
 	},
 	"716": {
@@ -9039,7 +9054,7 @@ const cards = {
 		"DEF": 2150,
 		"GuardianStars": "Moon,Uranus",
 		"Lore": "A skilled warrior that wields six swords against opposing monsters.",
-		"ImageID": "GarmaSword-FMR-EN-VG.png",
+		"ImageID": "GarmaSword-FMR-EN-VG.jpg",
 		"Wiki": "Garma Sword (FMR)"
 	},
 	"717": {
@@ -9051,7 +9066,7 @@ const cards = {
 		"DEF": 2550,
 		"GuardianStars": "Jupiter,Uranus",
 		"Lore": "A creature with lethal scissors that cut through almost anything.",
-		"ImageID": "JavelinBeetle-FMR-EN-VG.png",
+		"ImageID": "JavelinBeetle-FMR-EN-VG.jpg",
 		"Wiki": "Javelin Beetle (FMR)"
 	},
 	"718": {
@@ -9063,7 +9078,7 @@ const cards = {
 		"DEF": 2150,
 		"GuardianStars": "Neptune,Saturn",
 		"Lore": "A sea monster with a cannon mounted on its back to blow its enemies out of the water.",
-		"ImageID": "FortressWhale-FMR-EN-VG.png",
+		"ImageID": "FortressWhale-FMR-EN-VG.jpg",
 		"Wiki": "Fortress Whale (FMR)"
 	},
 	"719": {
@@ -9075,7 +9090,7 @@ const cards = {
 		"DEF": 1850,
 		"GuardianStars": "Uranus,Mars",
 		"Lore": "A lonely rider that races across the wasteland, raising thick clouds of dust.",
-		"ImageID": "Dokurorider-FMR-EN-VG.png",
+		"ImageID": "Dokurorider-FMR-EN-VG.jpg",
 		"Wiki": "Dokurorider (FMR)"
 	},
 	"72": {
@@ -9088,7 +9103,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Venus",
 		"Password": "40240595",
 		"Lore": "This creature is capable of instantly evolving larvae into adults.",
-		"ImageID": "CocoonofEvolution-FMR-EN-VG.png",
+		"ImageID": "CocoonofEvolution-FMR-EN-VG.jpg",
 		"Wiki": "Cocoon of Evolution (FMR)"
 	},
 	"720": {
@@ -9100,14 +9115,14 @@ const cards = {
 		"DEF": 1800,
 		"GuardianStars": "Venus,Pluto",
 		"Lore": "A creature that twists the fabric of light and darkness to generate images to confuse opponents.",
-		"ImageID": "MaskofShineDark-FMR-EN-VG.png",
+		"ImageID": "MaskofShineDark-FMR-EN-VG.jpg",
 		"Wiki": "Mask of Shine \u0026 Dark (FMR)"
 	},
 	"721": {
 		"Name": "Dark Magic Ritual",
 		"CardType": "Ritual",
 		"Lore": "Ceremony for summoning the Magician of Black Chaos. Sacrifice required.",
-		"ImageID": "DarkMagicRitual-FMR-EN-VG.png",
+		"ImageID": "DarkMagicRitual-FMR-EN-VG.jpg",
 		"Wiki": "Dark Magic Ritual (FMR)"
 	},
 	"722": {
@@ -9119,7 +9134,7 @@ const cards = {
 		"DEF": 2600,
 		"GuardianStars": "Mercury,Mars",
 		"Lore": "The ultimate magic-user, who wields the power of chaos born from the fusion of Dark and Light.",
-		"ImageID": "MagicianofBlackChaos-FMR-EN-VG.png",
+		"ImageID": "MagicianofBlackChaos-FMR-EN-VG.jpg",
 		"Wiki": "Magician of Black Chaos (FMR)"
 	},
 	"73": {
@@ -9133,7 +9148,7 @@ const cards = {
 		"GuardianStars": "Mars,Neptune",
 		"Password": "76634149",
 		"Lore": "A sea dragon that's referred to as the \"King of the Ocean\". It attacks its enemies with huge tidal waves.",
-		"ImageID": "KairyuShin-FMR-EN-VG.png",
+		"ImageID": "KairyuShin-FMR-EN-VG.jpg",
 		"Wiki": "Kairyu-Shin (FMR)"
 	},
 	"74": {
@@ -9147,7 +9162,7 @@ const cards = {
 		"GuardianStars": "Uranus,Venus",
 		"Password": "13039848",
 		"Lore": "A giant warrior made of stone. A punch from this creature has earth-shaking results.",
-		"ImageID": "GiantSoldierofStone-FMR-EN-VG.png",
+		"ImageID": "GiantSoldierofStone-FMR-EN-VG.jpg",
 		"Wiki": "Giant Soldier of Stone (FMR)"
 	},
 	"75": {
@@ -9161,7 +9176,7 @@ const cards = {
 		"GuardianStars": "Mercury,Jupiter",
 		"Password": "49127943",
 		"Lore": "A meat-eating plant that is attractive to the eye but dangerous when approached.",
-		"ImageID": "ManeatingPlant-FMR-EN-VG.png",
+		"ImageID": "ManeatingPlant-FMR-EN-VG.jpg",
 		"Wiki": "Man-eating Plant (FMR)"
 	},
 	"76": {
@@ -9175,7 +9190,7 @@ const cards = {
 		"GuardianStars": "Neptune,Jupiter",
 		"Password": "76512652",
 		"Lore": "A vicious crocodile with intelligence. Hard scales from a natural armor for this creature.",
-		"ImageID": "Krokodilus-FMR-EN-VG.png",
+		"ImageID": "Krokodilus-FMR-EN-VG.jpg",
 		"Wiki": "Krokodilus (FMR)"
 	},
 	"77": {
@@ -9189,7 +9204,7 @@ const cards = {
 		"GuardianStars": "Neptune,Saturn",
 		"Password": "02906250",
 		"Lore": "A devious snake with a think body that wraps around an enemy monster and squeezes the life out of it.",
-		"ImageID": "Grappler-FMR-EN-VG.png",
+		"ImageID": "Grappler-FMR-EN-VG.jpg",
 		"Wiki": "Grappler (FMR)"
 	},
 	"78": {
@@ -9203,7 +9218,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mercury",
 		"Password": "48305365",
 		"Lore": "An axe-wielding monster of tremendous strength and agility.",
-		"ImageID": "AxeRaider-FMR-EN-VG.png",
+		"ImageID": "AxeRaider-FMR-EN-VG.jpg",
 		"Wiki": "Axe Raider (FMR)"
 	},
 	"79": {
@@ -9217,7 +9232,7 @@ const cards = {
 		"GuardianStars": "Uranus,Neptune",
 		"Password": "75390004",
 		"Lore": "Nothing stands in the way of this spike-covered dinosaur.",
-		"ImageID": "Megazowler-FMR-EN-VG.png",
+		"ImageID": "Megazowler-FMR-EN-VG.jpg",
 		"Wiki": "Megazowler (FMR)"
 	},
 	"8": {
@@ -9231,7 +9246,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Sun",
 		"Password": "14181608",
 		"Lore": "Found in moist areas, this monster launches poison spores against its enemies.",
-		"ImageID": "MushroomMan-FMR-EN-VG.png",
+		"ImageID": "MushroomMan-FMR-EN-VG.jpg",
 		"Wiki": "Mushroom Man (FMR)"
 	},
 	"80": {
@@ -9245,7 +9260,7 @@ const cards = {
 		"GuardianStars": "Uranus,Mars",
 		"Password": "01784619",
 		"Lore": "Fast on its feet, this dinosaur rips enemies to shreds with its sharp claws.",
-		"ImageID": "Uraby-FMR-EN-VG.png",
+		"ImageID": "Uraby-FMR-EN-VG.jpg",
 		"Wiki": "Uraby (FMR)"
 	},
 	"81": {
@@ -9259,7 +9274,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "38289717",
 		"Lore": "A powerful dragon with teeth that can grind almost anything to dust.",
-		"ImageID": "CrawlingDragon2-FMR-EN-VG.png",
+		"ImageID": "CrawlingDragon2-FMR-EN-VG.jpg",
 		"Wiki": "Crawling Dragon 2 (FMR)"
 	},
 	"82": {
@@ -9273,7 +9288,7 @@ const cards = {
 		"GuardianStars": "Moon,Neptune",
 		"Password": "74677422",
 		"Lore": "A very rare card with high-level ATK factor.",
-		"ImageID": "RedeyesBDragon-FMR-EN-VG.png",
+		"ImageID": "RedeyesBDragon-FMR-EN-VG.jpg",
 		"Wiki": "Red-eyes B. Dragon (FMR)"
 	},
 	"83": {
@@ -9287,7 +9302,7 @@ const cards = {
 		"GuardianStars": "Mercury,Uranus",
 		"Password": "00062121",
 		"Lore": "A creature that can generate darkness to envelop all that exists around it.",
-		"ImageID": "CastleofDarkIllusions-FMR-EN-VG.png",
+		"ImageID": "CastleofDarkIllusions-FMR-EN-VG.jpg",
 		"Wiki": "Castle of Dark Illusions (FMR)"
 	},
 	"84": {
@@ -9301,7 +9316,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "33066139",
 		"Lore": "This monster boasts a strong defense and massive scythe that cuts through almost anything.",
-		"ImageID": "ReaperoftheCards-FMR-EN-VG.png",
+		"ImageID": "ReaperoftheCards-FMR-EN-VG.jpg",
 		"Wiki": "Reaper of the Cards (FMR)"
 	},
 	"85": {
@@ -9315,7 +9330,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "69455834",
 		"Lore": "Wields the power of darkness to destroy its enemies.",
-		"ImageID": "KingofYamimakai-FMR-EN-VG.png",
+		"ImageID": "KingofYamimakai-FMR-EN-VG.jpg",
 		"Wiki": "King of Yamimakai (FMR)"
 	},
 	"86": {
@@ -9329,7 +9344,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Mercury",
 		"Password": "06840573",
 		"Lore": "This creature flies through the dark, attacking its enemies with its long hairy arms.",
-		"ImageID": "Barox-FMR-EN-VG.png",
+		"ImageID": "Barox-FMR-EN-VG.jpg",
 		"Wiki": "Barox (FMR)"
 	},
 	"87": {
@@ -9343,7 +9358,7 @@ const cards = {
 		"GuardianStars": "Mercury,Neptune",
 		"Password": "32344688",
 		"Lore": "A fire-breathing monster that dwells in the netherworld.",
-		"ImageID": "DarkChimera-FMR-EN-VG.png",
+		"ImageID": "DarkChimera-FMR-EN-VG.jpg",
 		"Wiki": "Dark Chimera (FMR)"
 	},
 	"88": {
@@ -9357,7 +9372,7 @@ const cards = {
 		"GuardianStars": "Moon,Mercury",
 		"Password": "68339286",
 		"Lore": "A fiend guarding the treasure of the netherworld. Its defense is particularly high in a dark environment.",
-		"ImageID": "MetalGuardian-FMR-EN-VG.png",
+		"ImageID": "MetalGuardian-FMR-EN-VG.jpg",
 		"Wiki": "Metal Guardian (FMR)"
 	},
 	"89": {
@@ -9371,7 +9386,7 @@ const cards = {
 		"GuardianStars": "Neptune,Sun",
 		"Password": "95727991",
 		"Lore": "Well-protected by its shell, this monster flings projectiles from its catapult.",
-		"ImageID": "CatapultTurtle-FMR-EN-VG.png",
+		"ImageID": "CatapultTurtle-FMR-EN-VG.jpg",
 		"Wiki": "Catapult Turtle (FMR)"
 	},
 	"9": {
@@ -9385,7 +9400,7 @@ const cards = {
 		"GuardianStars": "Moon,Saturn",
 		"Password": "40575313",
 		"Lore": "Ghostly beast that appears in the wasteland and is particularly troublesome when faced in large numbers.",
-		"ImageID": "ShadowSpecter-FMR-EN-VG.png",
+		"ImageID": "ShadowSpecter-FMR-EN-VG.jpg",
 		"Wiki": "Shadow Specter (FMR)"
 	},
 	"90": {
@@ -9399,7 +9414,7 @@ const cards = {
 		"GuardianStars": "Sun,Neptune",
 		"Password": "31122090",
 		"Lore": "Uses her mystical power to protect the weak and provide spiritual support.",
-		"ImageID": "GyakutennoMegami-FMR-EN-VG.png",
+		"ImageID": "GyakutennoMegami-FMR-EN-VG.jpg",
 		"Wiki": "Gyakutenno Megami (FMR)"
 	},
 	"91": {
@@ -9413,7 +9428,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Uranus",
 		"Password": "68516705",
 		"Lore": "Half man and half horse, this monster is known for its extreme speed.",
-		"ImageID": "MysticHorseman-FMR-EN-VG.png",
+		"ImageID": "MysticHorseman-FMR-EN-VG.jpg",
 		"Wiki": "Mystic Horseman (FMR)"
 	},
 	"92": {
@@ -9427,7 +9442,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Pluto",
 		"Password": "94905343",
 		"Lore": "A powerful and unstoppable combination of bull and horse.",
-		"ImageID": "RabidHorseman-FMR-EN-VG.png",
+		"ImageID": "RabidHorseman-FMR-EN-VG.jpg",
 		"Wiki": "Rabid Horseman (FMR)"
 	},
 	"93": {
@@ -9441,7 +9456,7 @@ const cards = {
 		"GuardianStars": "Uranus,Jupiter",
 		"Password": "30090452",
 		"Lore": "Prefers to face enemies one-on-one. His swiftly drawn blade delivers a quick and immediate finish.",
-		"ImageID": "Zanki-FMR-EN-VG.png",
+		"ImageID": "Zanki-FMR-EN-VG.jpg",
 		"Wiki": "Zanki (FMR)"
 	},
 	"94": {
@@ -9455,7 +9470,7 @@ const cards = {
 		"GuardianStars": "Uranus,Sun",
 		"Password": "67494157",
 		"Lore": "A weakened dragon that can no longer fly, but it still a formidable force to be reckoned with.",
-		"ImageID": "CrawlingDragon-FMR-EN-VG.png",
+		"ImageID": "CrawlingDragon-FMR-EN-VG.jpg",
 		"Wiki": "Crawling Dragon (FMR)"
 	},
 	"95": {
@@ -9469,7 +9484,7 @@ const cards = {
 		"GuardianStars": "Venus,Jupiter",
 		"Password": "93889755",
 		"Lore": "A performer in the dark circus, this clown drains the strength of its enemies with strange dances.",
-		"ImageID": "CrassClown-FMR-EN-VG.png",
+		"ImageID": "CrassClown-FMR-EN-VG.jpg",
 		"Wiki": "Crass Clown (FMR)"
 	},
 	"96": {
@@ -9482,7 +9497,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "20277860",
 		"Lore": "A warrior raised from the beyond. Blindly swings a sharp blade with devastating force.",
-		"ImageID": "ArmoredZombie-FMR-EN-VG.png",
+		"ImageID": "ArmoredZombie-FMR-EN-VG.jpg",
 		"Wiki": "Armored Zombie (FMR)"
 	},
 	"97": {
@@ -9495,7 +9510,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "66672569",
 		"Lore": "A dragon revived by sorcery. Its breath is highly corrosive.",
-		"ImageID": "DragonZombie-FMR-EN-VG.png",
+		"ImageID": "DragonZombie-FMR-EN-VG.jpg",
 		"Wiki": "Dragon Zombie (FMR)"
 	},
 	"98": {
@@ -9508,7 +9523,7 @@ const cards = {
 		"GuardianStars": "Moon,Pluto",
 		"Password": "92667214",
 		"Lore": "A clown revived by the powers of darkness. Its strange dance has sent many monsters to their ends.",
-		"ImageID": "ClownZombie-FMR-EN-VG.png",
+		"ImageID": "ClownZombie-FMR-EN-VG.jpg",
 		"Wiki": "Clown Zombie (FMR)"
 	},
 	"99": {
@@ -9522,7 +9537,7 @@ const cards = {
 		"GuardianStars": "Jupiter,Neptune",
 		"Password": "29155212",
 		"Lore": "This pumpkin king strikes at its enemies with its long tentacles.",
-		"ImageID": "PumpkingtheKingofGhosts-FMR-EN-VG.png",
+		"ImageID": "PumpkingtheKingofGhosts-FMR-EN-VG.jpg",
 		"Wiki": "Pumpking the King of Ghosts (FMR)"
 	}
 };

@@ -8,9 +8,9 @@ const pages = {
 		"title": "Fusion list",
 		"entry": "fusions"
 	},
-	drops: {
-		"title": "Card drops",
-		"entry": "drops"
+	search: {
+		"title": "Card search",
+		"entry": "search"
 	}
 };
 
@@ -109,7 +109,7 @@ module.exports = env => {
 				],
 				exclude: /node_modules/
 			}, {
-				test: /\.eot|.otf|.woff|\.ttf/,
+				test: /\.eot|.otf|.woff|\.ttf|\.svg|\.png/,
 				use: "file-loader"
 			}, {
 				test: /^((?!\.module).)*\.scss$/,

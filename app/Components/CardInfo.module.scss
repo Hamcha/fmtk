@@ -1,0 +1,89 @@
+.cardRoot {
+	display: flex;
+	flex-direction: column;
+
+	.cardData {
+		display: flex;
+		padding: 0 10px;
+		align-items: flex-start;
+
+		& > * + * { margin-left: 10px; }
+
+		.imgSection {
+			flex: 1;
+			flex-grow: 0;
+			display: flex;
+			flex-direction: column;
+			.guardianStars {
+				display: flex;
+				justify-content: space-around;
+				padding: 5px 0;
+				font-size: 20px;
+			}
+			img {
+				width: 80px;
+			}
+		}
+
+		.cardInfo {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+
+			.cardTitle {
+				font-family: "Oswald", sans-serif;
+				font-size: 15pt;
+			}
+
+			.effect {
+				font-family: "Oswald", sans-serif;
+				font-size: 12pt;
+				font-weight: 300;
+				margin: 0;
+				padding: 10px 0;
+			}
+
+			.cardLevel {
+				img {
+					width: 20px;
+				}
+			}
+
+			.infopairs {
+				display: flex;
+				flex: 1;
+				flex-wrap: wrap;
+
+				.pair {
+					display: flex;
+					flex-grow: 1;
+					border: 1px solid #dadae5;
+					margin: 1px;
+					border-radius: 3px;
+					
+					div {
+						flex: 1;
+						padding: 2px 5px;
+						font-size: 10pt;
+						text-align: center;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+					.title {
+						white-space: nowrap;
+						background: #dadae5;
+						font-family: "Oswald", sans-serif
+					}
+				}
+			}
+		}
+	}
+
+	.lore {
+		font-family: 'Libre Baskerville', serif;
+		font-size: 10pt;
+		padding: 0 20px;
+		color: #444;
+	}
+}
