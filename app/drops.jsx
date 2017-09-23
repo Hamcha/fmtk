@@ -7,7 +7,9 @@ import "./theme.scss";
 
 ReactDOM.render(
 	<main>
-		<Header title="Fusion list" />
+		<Header title="Search drops">
+			<input type="search" placeholder="Search card name" />
+		</Header>
 	</main>,
 	document.getElementById("app")
 );

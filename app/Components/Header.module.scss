@@ -1,0 +1,25 @@
+.root {
+	header {
+		background: linear-gradient(to bottom, white, #fafafa);
+		border-bottom: 1px solid #c3c3d2;
+		margin: 0; padding: 0 15px;
+		position: fixed;
+		top: 0; left: 0; right: 0;
+		display: flex;
+		flex-direction: column;
+
+		h1 {
+			font-weight: bold;
+			padding: 0; margin: 30px 0 10px 0;
+			font-size: 30px;
+		}
+
+		.prehead {
+			font-family: 'Oswald', sans-serif;
+			margin-bottom: -15pt;
+			padding-top: 10pt;
+			font-size: 10pt;
+			color: #999;
+		}
+	}
+}

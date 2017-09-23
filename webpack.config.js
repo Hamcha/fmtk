@@ -7,6 +7,10 @@ const pages = {
 	fusions: {
 		"title": "Fusion list",
 		"entry": "fusions"
+	},
+	drops: {
+		"title": "Card drops",
+		"entry": "drops"
 	}
 };
 
@@ -34,14 +38,16 @@ module.exports = env => {
 	for (let pageid in pages) {
 		entries[pageid] = "./app/" + pageid;
 		plugins.push(new HtmlWebpackPlugin({
+			inject: false,
 			filename: pageid + ".html",
-			title: "FMTK " + pages[pageid].title,
-			js: [pages[pageid].entry + ".js"],
+			title: pages[pageid].title + " (FMTK)",
+			chunks: [pageid],
 			css: cssfiles,
 			appMountId: "app",
 			mobile: true,
 			lang: "en-US",
-			template: "template.ejs"
+			template: "./template.ejs",
+			pageid: pageid
 		}));
 	}
 
@@ -53,7 +59,7 @@ module.exports = env => {
 		// Wrap entrypoints
 		const wrapEntry = entrypoint => [
 			"react-hot-loader/patch",
-			"webpack-dev-server/client?http://192.168.3.13:8080",
+			"webpack-dev-server/client?http://172.16.0.100:8080",
 			"webpack/hot/only-dev-server",
 			entrypoint
 		];
@@ -85,11 +91,17 @@ module.exports = env => {
 						loader: "babel-loader",
 						options: {
 							presets: [
-								["es2015", { "modules": false }],
+								["env", {
+									"targets": {
+										"browsers": ["last 2 versions", "safari >= 7"]
+									},
+									"modules": false
+								}],
 								"react"
 							],
 							plugins: [
 								"syntax-async-functions",
+								"transform-class-properties",
 								"react-hot-loader/babel"
 							]
 						}
