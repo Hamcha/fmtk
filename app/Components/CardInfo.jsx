@@ -17,7 +17,7 @@ const guardianStarSymbols = {
 	"Neptune": "♆",
 	"Uranus": "⛢",
 	"Pluto": "♇"
-}
+};
 
 export default class CardInfo extends React.PureComponent {
 	static propTypes = {
